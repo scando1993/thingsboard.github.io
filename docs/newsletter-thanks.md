@@ -4,4 +4,4 @@ title: Thank you!
 
 ---
 
-Thank you for your interest in ThingsBoard! Have a great day!
+Thank you for your interest in Pacificsoft! Have a great day!

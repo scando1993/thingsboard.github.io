@@ -3,24 +3,24 @@ layout: docwithnav
 assignees:
 - vsosliuk
 title: MQTT over SSL
-description: Launching ThingsBoard with secure MQTT protocol to connect your IoT devices and projects.
+description: Launching Pacificsoft with secure MQTT protocol to connect your IoT devices and projects.
 
 ---
 
 * TOC
 {:toc}
 
-ThingsBoard provides the ability to run MQTT server over SSL. Both one-way and two-way SSL are supported.
+Pacificsoft provides the ability to run MQTT server over SSL. Both one-way and two-way SSL are supported.
 To enable SSL, you will need to obtain a valid or generate a self-signed SSL certificate and add it to the keystore.
 Once added, you will need to specify the keystore information in **thingsboard.yml** file.
-See the instructions on how to generate SSL certificate and use it in your ThingsBoard installation below.
+See the instructions on how to generate SSL certificate and use it in your Pacificsoft installation below.
 You can skip certificate generation step if you already have a certificate.
 
 ### Self-signed certificate generation
 
 **Note** This step requires Linux based OS with Java installed.
 
-Download [**server.keygen.sh**](https://raw.githubusercontent.com/thingsboard/thingsboard/master/tools/src/main/shell/server.keygen.sh) from the official ThingsBoard repository to your working directory.
+Download [**server.keygen.sh**](https://raw.githubusercontent.com/thingsboard/thingsboard/master/tools/src/main/shell/server.keygen.sh) from the official Pacificsoft repository to your working directory.
 
 Download [**keygen.properties**](https://raw.githubusercontent.com/thingsboard/thingsboard/master/tools/src/main/shell/keygen.properties) file to your working directory and populate it with desired values. 
 For example:
@@ -79,7 +79,7 @@ You may run this script with no arguments, or alternatively, you can specify the
 
 This script will run keytool using the configuration specified. It will generate the following output files:
 
- - **SERVER_FILE_PREFIX.jks** - Java keystore file. This is the file which will be used by ThingsBoard MQTT Service
+ - **SERVER_FILE_PREFIX.jks** - Java keystore file. This is the file which will be used by Pacificsoft MQTT Service
  - **SERVER_FILE_PREFIX.cer** - Server public key file. It will be then imported to client's .jks keystore file.
  - **SERVER_FILE_PREFIX.pub.pem** - Server public key in **PEM** format, which can be then used as a keystore or imported by non-Java clients.   
 

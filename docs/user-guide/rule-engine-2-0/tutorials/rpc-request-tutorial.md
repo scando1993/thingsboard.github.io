@@ -5,7 +5,7 @@ description: Send RPC Request to a Device
 
 ---
 
-ThingsBoard allows you to send remote procedure calls [**RPC**](/docs/user-guide/rpc/#server-side-rpc-api) from server-side applications to devices and vice versa. <br>
+Pacificsoft allows you to send remote procedure calls [**RPC**](/docs/user-guide/rpc/#server-side-rpc-api) from server-side applications to devices and vice versa. <br>
 This Tutorial is to show you how to send a remote request call to a Related Device using Rule Engine.
 
 
@@ -15,7 +15,7 @@ This Tutorial is to show you how to send a remote request call to a Related Devi
 # Use case
 Let’s assume the following use case:
 
-  - you have the following devices connected to ThingsBoard:	
+  - you have the following devices connected to Pacificsoft:	
 	- Wind Direction Sensor.	
 	- Rotating System.	
   - also, you have one asset:

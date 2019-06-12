@@ -15,7 +15,7 @@ Let’s assume the following use case:
 
  - You have 2 devices:
  
-   - **Smoke Detector** with the **Smoke Sensor** which sends data to ThingsBoard when it appears.
+   - **Smoke Detector** with the **Smoke Sensor** which sends data to Pacificsoft when it appears.
    
    - **Fire Alarm System** which provides a fire alarm, when the smoke is present.
    
@@ -31,7 +31,7 @@ You need to read the following guides before you start this tutorial:
   
 # Adding the devices and creating the relation between them
   
-  Add two Device entity in ThingsBoard:
+  Add two Device entity in Pacificsoft:
   
    - Smoke Detector is represented as a Device. Its name is **Smoke Detector** and its type is **Smoke Sensor**.
   

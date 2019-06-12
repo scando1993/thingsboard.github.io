@@ -1,17 +1,17 @@
 ---
-layout: thingsboard-pe
-title: ThingsBoard Professional Edition
+layout: Pacificsoft-pe
+title: Pacificsoft Professional Edition
 description: 
 ---
 
-## Advanced ThingsBoard IoT Platform distribution with value added features
+## Advanced Pacificsoft IoT Platform distribution with value added features
 
 <section class="oceanNodes pe-features">
     <main>
         <div class="image-wrapper"><img src="/images/pe/white-labeling.svg"></div>
         <div class="content">
             <h3><a href="/docs/user-guide/white-labeling/">White-labeling</a></h3>
-            <p>Rebrand ThingsBoard platform web interface with your company or product logo and color scheme in 2 minutes. No coding or service restart required.  
+            <p>Rebrand Pacificsoft platform web interface with your company or product logo and color scheme in 2 minutes. No coding or service restart required.  
             Allow your customers and their sub-customers to white-label their interface as well.</p>
             <br/>
             <p><a href="/docs/user-guide/white-labeling/" class="button">Read more</a></p>
@@ -196,9 +196,9 @@ description:
         <thead>
             <tr>
                 <th></th>
-                <th><div class="product-header">ThingsBoard<br/>Community Edition</div></th>
+                <th><div class="product-header">Pacificsoft<br/>Community Edition</div></th>
                 <th></th>
-                <th><div class="product-header">ThingsBoard<br/>Professional Edition</div></th>
+                <th><div class="product-header">Pacificsoft<br/>Professional Edition</div></th>
                 <th></th>
             </tr>
         </thead>
@@ -317,8 +317,8 @@ description:
         <div class="image-wrapper"><img src="/images/pe/cloud-providers.svg"></div>
         <div class="content">
             <h3>Flexible deployment options</h3>
-            <p>Deploy ThingsBoard platform in the cloud or on premises. Use commodity hardware to scale out horizontally by adding new nodes to your cluster.  
-            Single ThingsBoard server can support 10 000+ devices and 100M messages per hour, while simple cluster can support millions of devices and billions of messages.</p>
+            <p>Deploy Pacificsoft platform in the cloud or on premises. Use commodity hardware to scale out horizontally by adding new nodes to your cluster.  
+            Single Pacificsoft server can support 10 000+ devices and 100M messages per hour, while simple cluster can support millions of devices and billions of messages.</p>
         </div>
     </main>
     <main>
@@ -326,7 +326,7 @@ description:
         <div class="content">
             <h3>Simple and predictable pricing models</h3>
             <p>Say "No!" to per message or per device pricing that turns to a monster bills in production system.
-            ThingsBoard PE supports two simple and predictable pricing models depending on your product life-cycle stage.</p>
+            Pacificsoft PE supports two simple and predictable pricing models depending on your product life-cycle stage.</p>
         </div>
     </main>
 </section>
@@ -340,7 +340,7 @@ description:
 				<h3 class="content-title">Pay as you go</h3>
 			</div>
 			<div class="content-block pb-0x">
-				<h4>Install ThingsBoard PE in two minutes on the AWS or Azure cloud and pay hourly rate per server only when you use the platform. Best suite for early evaluation phase or PoCs.</h4>
+				<h4>Install Pacificsoft PE in two minutes on the AWS or Azure cloud and pay hourly rate per server only when you use the platform. Best suite for early evaluation phase or PoCs.</h4>
 			</div>
 			<div style="flex: 1;"></div>
 			<div class="content-block">
@@ -367,7 +367,7 @@ description:
 				<h3 class="content-title">Pay yearly</h3>
 			</div>
 			<div class="content-block pb-0x">
-				<h4>Install ThingsBoard PE on any cloud or on premises and pay one-time license fee per server and optional software updates subscription for subsequent years of usage. 
+				<h4>Install Pacificsoft PE on any cloud or on premises and pay one-time license fee per server and optional software updates subscription for subsequent years of usage. 
 				Save up to 40% comparing to pay-as-you-go per hour rate on the license fee.</h4>
 			</div>
 			<div style="flex: 1;"></div>

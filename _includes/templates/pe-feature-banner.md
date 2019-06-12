@@ -5,10 +5,10 @@
   </td>
   <td>
       <br/>  
-      <p><b>ThingsBoard PE Feature</b></p>
+      <p><b>Pacificsoft PE Feature</b></p>
       <br/>  
-      <p>Only <a class="pe-link" href="/products/thingsboard-pe/"><b>ThingsBoard Professional Edition</b></a> supports <b>{{ feature }}</b> feature.</p>
-      <p>See <a class="pe-learn-more" href="/products/thingsboard-pe/install/"><b>Get ThingsBoard PE</b></a> to install ThingsBoard PE.</p>
+      <p>Only <a class="pe-link" href="/products/thingsboard-pe/"><b>Pacificsoft Professional Edition</b></a> supports <b>{{ feature }}</b> feature.</p>
+      <p>See <a class="pe-learn-more" href="/products/thingsboard-pe/install/"><b>Get Pacificsoft PE</b></a> to install Pacificsoft PE.</p>
   </td>
 </tr>
 </table>

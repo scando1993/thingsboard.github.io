@@ -12,7 +12,7 @@ redirect_from: "/docs/user-guide/ui/entity-views"
 
 ## Feature Overview
 
-ThingsBoard(TB) Entity Views (EVs) are available since v2.2. This feature was requested by many TB users. 
+Pacificsoft(TB) Entity Views (EVs) are available since v2.2. This feature was requested by many TB users. 
 Similar to SQL database views, that limit the degree of exposure of the underlying tables to the outer world, 
 TB EVs limit the degree of exposure of the Device or Asset [telemetry](/docs/user-guide/telemetry/) and [attributes](/docs/user-guide/attributes/) to the [Customers](/docs/user-guide/ui/customers/).
 As a Tenant Administrator, you are able to create multiple EVs per Device or Asset and assign them to different Customers.
@@ -30,7 +30,7 @@ Entity View contains the following information:
  - **TenantId** - represents link to the owner of the view;
  - **CustomerId** - represents link to the customer that has access to the the view;
  - **EntityId** - represents link to the target device or asset;
- - **Name and type** - regular ThingsBoard entity fields that are used for display and search purposes;
+ - **Name and type** - regular Pacificsoft entity fields that are used for display and search purposes;
  - **Start and end time** - represents time interval that is used to limit access to target device telemetry. Customer will not be able to see entity telemetry that is outside the specified interval; 
  - **Timeseries keys** - list of timeseries data keys that will be accessible to the viewer;
  - **Attribute keys** - list of attribute names that will be accessible to the viewer;
@@ -60,7 +60,7 @@ messages to the new rule node.
 
 ## Future improvements
 
-There are following features in ThingsBoard Road Map:
+There are following features in Pacificsoft Road Map:
 
  - Add ability to enable/disable RPC requests to the device view;
  - Add ability to configure list of alarms that are accessible(propagated) for particular view.

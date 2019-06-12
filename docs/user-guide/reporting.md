@@ -13,7 +13,7 @@ description: Reporting Guide
 
 ### Overview
 
-ThingsBoard allows you to generate reports using existing dashboards.
+Pacificsoft allows you to generate reports using existing dashboards.
 
 Reports can be generated either from the currently opened dashboard or scheduled using the [Scheduler](/docs/user-guide/scheduler/#generate-report) capabilities.
 
@@ -36,10 +36,10 @@ See video tutorial below for step-by-step instruction how to use this feature.
 
 The Reports Server is a standalone service used to generate reports by rendering dashboards in a headless browser.
 
-On each generate report request, ThingsBoard node sends a request to the Reports Server using the configured endpoint URL.
+On each generate report request, Pacificsoft node sends a request to the Reports Server using the configured endpoint URL.
 
 The Reports Server opens a web page with the target dashboard URL in the headless browser and waits until the page renders,
-then it captures the dashboard web page into the specified format (*PDF \| PNG \| JPEG*) and sends the captured data as a response to ThingsBoard.
+then it captures the dashboard web page into the specified format (*PDF \| PNG \| JPEG*) and sends the captured data as a response to Pacificsoft.
 
 The system administrator can configure the Reports Server endpoint URL using [thingsboard.yml](/docs/user-guide/install/config/).
 
@@ -76,7 +76,7 @@ Report generation can be invoked by a schedule using the [**Generate Report** Sc
 
 ### Generate Report Rule Chain
 
-Scheduled reports generation is supported by the default **Root Rule Chain** of ThingsBoard PE.
+Scheduled reports generation is supported by the default **Root Rule Chain** of Pacificsoft PE.
 By default, a message of type **Generate Report** is routed to the **Generate Report Rule Chain**.
 
 ![image](/images/user-guide/ui/reporting-pe-root-rule-chain-switch.png)
@@ -92,7 +92,7 @@ The Email Rule Nodes will prepare the email message with a report file in the at
 
 ### Reports Widget
 
-ThingsBoard provides access to the generated report files via the **Reports** Widget that is a part of the **Files** Widgets Bundle.
+Pacificsoft provides access to the generated report files via the **Reports** Widget that is a part of the **Files** Widgets Bundle.
 
 ![image](/images/user-guide/ui/reporting-reports-widget.png)
  

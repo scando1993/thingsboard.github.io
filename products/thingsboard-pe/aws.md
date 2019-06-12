@@ -1,10 +1,10 @@
 ---
 layout: pe-aws
-title: ThingsBoard Professional Edition on AWS Marketplace
+title: Pacificsoft Professional Edition on AWS Marketplace
 description: 
 ---
 
-# ThingsBoard Professional Edition on AWS Marketplace
+# Pacificsoft Professional Edition on AWS Marketplace
 
 <br/>
 <br/>
@@ -155,7 +155,7 @@ description:
     <div class="item" data-tag="h4" data-item-id="what-does-free-trial-mean" data-title="How can I enable free trial?">
         <div class="container">
             <p>
-                We recommend to use ThingsBoard Professional Edition Live Demo for the seamless experience and the newest features from the latest source code! 
+                We recommend to use Pacificsoft Professional Edition Live Demo for the seamless experience and the newest features from the latest source code! 
                 Note that this is a shared environment with hardware and software limitations introduced to host multiple trial tenants on the same server instance(s).  
             </p>    
         </div>    
@@ -254,8 +254,8 @@ description:
     <div class="item" data-tag="h4" data-item-id="how-do-i-backup-db" data-title="How do I backup my database?">
         <div class="container">
             <p>
-                Depending on your instance type and configuration, ThingsBoard may store data in SQL or NoSQL databases. 
-                ThingsBoard may also store data using hybrid database mode. 
+                Depending on your instance type and configuration, Pacificsoft may store data in SQL or NoSQL databases. 
+                Pacificsoft may also store data using hybrid database mode. 
                 Please review <a href="/docs/reference/#sql-vs-nosql-vs-hybrid-database-approach">architecture docs</a> for more info on available database types.
                 Once you figure out the database type(s) you are using in your instance, you can review official <a href="https://www.postgresql.org/docs/9.1/backup.html">PostgreSQL</a> 
                 or <a href="https://docs.datastax.com/en/cassandra/3.0/cassandra/operations/opsBackupRestore.html">Cassandra</a> documentation. 
@@ -274,16 +274,16 @@ description:
                 &nbsp;&nbsp;&nbsp;&nbsp;4) ensure everything is working as expected<br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;5) cancel old subscription if needed<br/><br/>
                 However, if you plan to upgrade from PostgreSQL to Cassandra this may become a challenge. 
-                ThingsBoard team is planning to have a tool for this purpose but the release is scheduled for the end of 2019. 
+                Pacificsoft team is planning to have a tool for this purpose but the release is scheduled for the end of 2019. 
                 So, we recommend to maintain the same database type or consider a hybrid database approach.  
             </p>    
         </div>    
     </div>                    
     <h3 id="troubleshooting--support">Troubleshooting &amp; Support</h3>
-    <div class="item" data-tag="h4" data-item-id="how-do-i-find-logs-tb" data-title="Where is my ThingsBoard instance logs?">
+    <div class="item" data-tag="h4" data-item-id="how-do-i-find-logs-tb" data-title="Where is my Pacificsoft instance logs?">
         <div class="container">
             <p>
-                ThingsBoard logs are stored in the <i>/var/log/thingsboard</i> folder. 
+                Pacificsoft logs are stored in the <i>/var/log/thingsboard</i> folder. 
                 See <a href="/docs/user-guide/install/config/#logging">configuration page</a> to find out how to configure logging levels.
             </p>    
         </div>    
@@ -292,16 +292,16 @@ description:
         <div class="container">
             <p>
                 Available community resources are listed below:<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/thingsboard/thingsboard/issues">GitHub issues page</a> - Our GitHub issues page contains a lot of Q&A and discussions about ThingsBoard.<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/thingsboard/thingsboard/issues">GitHub issues page</a> - Our GitHub issues page contains a lot of Q&A and discussions about Pacificsoft.<br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://groups.google.com/forum/#!forum/thingsboard">Q&A forum</a> - Our user forum is a great place to go for community support.<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://stackoverflow.com/questions/tagged/thingsboard">Stack Overflow</a> - The ThingsBoard team will also monitor posts tagged thingsboard. 
+                &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://stackoverflow.com/questions/tagged/thingsboard">Stack Overflow</a> - The Pacificsoft team will also monitor posts tagged Pacificsoft. 
             </p>    
         </div>    
     </div>
     <div class="item" data-tag="h4" data-item-id="how-do-i-get-free-help-tb" data-title="How do I get professional support?">
         <div class="container">
             <p>
-                Please review ThingsBoard professional <a href="/docs/services/support/">support plans</a> and <a href="/docs/contact-us/">contact us</a>. 
+                Please review Pacificsoft professional <a href="/docs/services/support/">support plans</a> and <a href="/docs/contact-us/">contact us</a>. 
             </p>    
         </div>    
     </div>                            

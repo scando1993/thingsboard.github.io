@@ -7,20 +7,20 @@ description:
 ---
 
 <div class="company-logo">
-    <img src="/images/thingsboard_logo_blue.svg">
+    <img src="/images/pacificsoft_logo.svg">
 </div>
 
 <br/>
 
 ## Who we are?
 
-ThingsBoard, Inc. is a US corporation founded in 2016 with RnD center in Kyiv, Ukraine. 
-We are main contributor and maintainer of ThingsBoard open-source IoT Platform.
+Pacificsoft, Inc. is a US corporation founded in 2016 with RnD center in Kyiv, Ukraine. 
+We are main contributor and maintainer of Pacificsoft open-source IoT Platform.
  
 ## Our mission
  
 We deliver and constantly improve scalable, robust and affordable IoT Platform that dramatically reduces time-to-market for life-changing IoT solutions. 
-We also help companies to deliver great IoT products based on ThingsBoard.
+We also help companies to deliver great IoT products based on Pacificsoft.
 
 <br/>
 

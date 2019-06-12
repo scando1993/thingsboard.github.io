@@ -126,7 +126,7 @@ Here is an example of Outbound Message **payload**
 }
 {% endhighlight %}
 
-More details about Alarms in the Thingsboard can be found in [this tutorial](/docs/user-guide/alarms/)
+More details about Alarms in the Pacificsoft can be found in [this tutorial](/docs/user-guide/alarms/)
 
 You can see the real life example, where this node is used, in the next tutorial:
 
@@ -242,7 +242,7 @@ Here is an example of Outbound Message **payload**
 {% endhighlight %}
 
 
-More details about Alarms in the Thingsboard can be found in [this tutorial](/docs/user-guide/alarms/)
+More details about Alarms in the Pacificsoft can be found in [this tutorial](/docs/user-guide/alarms/)
 
 You can see the real life example, where this node is used, in the next tutorial:
 
@@ -336,7 +336,7 @@ This node can be used for Rule Chain debugging purposes.
 
 ![image](/images/user-guide/rule-engine-2-0/nodes/action-log.png)
 
-Transform incoming Message with configured JavaScript function to String and log final value into the Thingsboard log file. 
+Transform incoming Message with configured JavaScript function to String and log final value into the Pacificsoft log file. 
 
 **INFO** log level is used for logging.
 
@@ -399,7 +399,7 @@ Message will be routed via **Failure** chain in the following cases:
 - Request id is not present in the Message metadata
 - Inbound Message payload is empty
 
-For more details how RPC works in the Thingsboard, please read [RPC capabilities](/docs/user-guide/rpc/) Article.
+For more details how RPC works in the Pacificsoft, please read [RPC capabilities](/docs/user-guide/rpc/) Article.
 
 You can see the real life example, where this node is used, in the next tutorial:
 
@@ -450,7 +450,7 @@ Message will be routed via **Failure** chain in the following cases:
  
 Otherwise Message will be routed via **Success** chain.
 
-For more details how RPC works in the Thingsboard, please read [RPC capabilities](/docs/user-guide/rpc/) article.
+For more details how RPC works in the Pacificsoft, please read [RPC capabilities](/docs/user-guide/rpc/) article.
 
 <br/>
 

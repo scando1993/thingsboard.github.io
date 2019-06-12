@@ -7,7 +7,7 @@ description: IoT device management Audit Log
 
 ---
 
-ThingsBoard provides the ability to track user actions in order to keep audit log. 
+Pacificsoft provides the ability to track user actions in order to keep audit log. 
 It is possible to log user actions related to main entities: assets, devices, dashboard, rules, etc. 
 
 ### User Interface
@@ -52,7 +52,7 @@ audit_log:
 ```
 
 This configuration sample disables the logging of any actions related to dashboards and logs read operations for users and rules. 
-For all other entities, ThingsBoard will log only write level operations.
+For all other entities, Pacificsoft will log only write level operations.
 
 We recommend to modify "by_tenant_partitioning" parameter based on the number of devices and user actions that will be logged. 
 The more actions you plan to log, the more precise partitioning is required. 

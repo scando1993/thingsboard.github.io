@@ -12,7 +12,7 @@ This tutorial will show how to calculate temperature delta based on the readings
 
 ## Use case
 
-Let's assume you have a warehouse with two thermometers: indoor and outdoor. In this tutorial, we will configure ThingsBoard Rule Engine to automatically calculate the delta of temperatures inside and outside the warehouse based on the latest readings from temperature sensors.
+Let's assume you have a warehouse with two thermometers: indoor and outdoor. In this tutorial, we will configure Pacificsoft Rule Engine to automatically calculate the delta of temperatures inside and outside the warehouse based on the latest readings from temperature sensors.
 Please note that this is just a simple theoretical use case to demonstrate the capabilities of the platform. You can use this tutorial as a basis for much more complex scenarios.
 
  

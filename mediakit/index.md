@@ -2,28 +2,28 @@
 layout: docwithnav
 title: Media Kit
 notitle: "true"
-description: ThingsBoard Media Kit
+description: Pacificsoft Media Kit
 
 ---
 
 <br/>
 
-## ThingsBoard Logos
+## Pacificsoft Logos
 
 <div class="mediakit-logos">
     <div class="mediakit-logo">
         <div class="logo-container logo-blue">
-            <img src="/images/thingsboard_logo_blue.svg">
+            <img src="/images/pacificsoft_logo.svg">
         </div>    
     </div>
     <div class="mediakit-logo">
         <div class="logo-container logo-white">
-            <img src="/images/thingsboard_logo_white.svg">
+            <img src="/images/pacificsoft_logo.svg">
         </div>    
     </div>
     <div class="mediakit-logo">
         <div class="logo-container logo-black">
-            <img src="/images/thingsboard_logo_black.svg">
+            <img src="/images/pacificsoft_logo.svg">
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: pe-aws
-title: ThingsBoard Professional Edition on AWS Marketplace
+title: Pacificsoft Professional Edition on AWS Marketplace
 description: 
 ---
 
@@ -11,7 +11,7 @@ description:
                 <div class="ml-vertical-align-center">
                     <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/x1e5q3" data-id="1174474" data-code="x1e5q3" method="POST" target="_blank">
                         <div class="form-title center">
-                            <h1>Deploy ThingsBoard PE Maker</h1>
+                            <h1>Deploy Pacificsoft PE Maker</h1>
                         </div>
                         <div class="subscribe-form">
                             <div class="form-section mb20">
@@ -20,7 +20,7 @@ description:
                                         <img src="/images/pe/aws_logo.svg">
                                     </div>
                                     <div class="cloud-provider-desc">
-                                        <p>Deploy using AWS marketplace. With up to 10 devices, this pricing model is ideal for makers that are getting started with ThingsBoard PE.</p>
+                                        <p>Deploy using AWS marketplace. With up to 10 devices, this pricing model is ideal for makers that are getting started with Pacificsoft PE.</p>
                                         <p>
                                             <span class="cloud-price-aws">$0.014/hr or $100/year (18% savings)</span>
                                             <span class="cloud-price-aws-desc"> for software + AWS usage fees</span>
@@ -79,7 +79,7 @@ description:
                 <div class="ml-vertical-align-center">
                     <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/c1a6q7" data-id="1174562" data-code="c1a6q7" method="POST" target="_blank">
                         <div class="form-title center">
-                            <h1>Deploy ThingsBoard PE Prototype</h1>
+                            <h1>Deploy Pacificsoft PE Prototype</h1>
                         </div>
                         <div class="subscribe-form">
                             <div class="form-section mb20">
@@ -148,7 +148,7 @@ description:
                 <div class="ml-vertical-align-center">
                     <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/f6r0q1" data-id="1174572" data-code="f6r0q1" method="POST" target="_blank">
                         <div class="form-title center">
-                            <h1>Deploy ThingsBoard PE Startup</h1>
+                            <h1>Deploy Pacificsoft PE Startup</h1>
                         </div>
                         <div class="subscribe-form">
                             <div class="form-section mb20">
@@ -217,7 +217,7 @@ description:
                 <div class="ml-vertical-align-center">
                     <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/w2i0j2" data-id="1174576" data-code="w2i0j2" method="POST" target="_blank">
                         <div class="form-title center">
-                            <h1>Deploy ThingsBoard PE Business</h1>
+                            <h1>Deploy Pacificsoft PE Business</h1>
                         </div>
                         <div class="subscribe-form">
                             <div class="form-section mb20">
@@ -286,7 +286,7 @@ description:
                 <div class="ml-vertical-align-center">
                     <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/m8r8r9" data-id="1174606" data-code="m8r8r9" method="POST" target="_blank">
                         <div class="form-title center">
-                            <h1>Deploy ThingsBoard PE Enterprise</h1>
+                            <h1>Deploy Pacificsoft PE Enterprise</h1>
                         </div>
                         <div class="subscribe-form">
                             <div class="form-section mb20">

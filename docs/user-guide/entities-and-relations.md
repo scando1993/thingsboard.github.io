@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Entities and relations
-description: IoT asset management using ThingsBoard entities and relations feature
+description: IoT asset management using Pacificsoft entities and relations feature
 
 ---
 
@@ -12,7 +12,7 @@ description: IoT asset management using ThingsBoard entities and relations featu
 
 ## Entities Overview
 
-ThingsBoard provides the user interface and REST APIs to provision and manage multiple entity types and their relations in your IoT application.
+Pacificsoft provides the user interface and REST APIs to provision and manage multiple entity types and their relations in your IoT application.
 Supported entities are:
  
  - **Tenants** - you can treat tenant as a separate business-entity: individual or organization who owns or produce devices and assets;
@@ -40,7 +40,7 @@ This guide provides the overview of the features listed above, some useful links
 
 ## Real-life application
 
-The easiest way to understand the concepts of ThingsBoard is to implement your first ThingsBoard application. 
+The easiest way to understand the concepts of Pacificsoft is to implement your first Pacificsoft application. 
 Let's assume we want to build an application that collects data from soil moisture and temperature sensors, 
 visualize this data on the dashboard, detect issues, raise alarms and control the irrigation.
 
@@ -56,7 +56,7 @@ We are going to setup following hierarchy of assets and devices:
  ![image](/images/user-guide/entities-and-relations.svg)
  
  
-Please review the following screen cast to learn how to provision region and fields assets and their relations using ThingsBoard Web UI
+Please review the following screen cast to learn how to provision region and fields assets and their relations using Pacificsoft Web UI
 
   
 <div id="video">
@@ -65,7 +65,7 @@ Please review the following screen cast to learn how to provision region and fie
     </div>
 </div>
 
-Please review the following screen cast to learn how to provision devices and their relations with assets using ThingsBoard Web UI
+Please review the following screen cast to learn how to provision devices and their relations with assets using Pacificsoft Web UI
 
 
 <div id="video">
@@ -74,7 +74,7 @@ Please review the following screen cast to learn how to provision devices and th
     </div>
 </div>
 
-You can automate this actions using ThingsBoard REST API. You can provision new asset using POST request to the following URL
+You can automate this actions using Pacificsoft REST API. You can provision new asset using POST request to the following URL
 
 ```shell 
 http(s)://host:port/api/asset
@@ -110,20 +110,20 @@ You can receive them as a result of previous REST API call or use Web UI.
 
 ### Step 2: Assign attributes to the assets
 
-ThingsBoard provides the ability to assign attributes to entities and manage them.
+Pacificsoft provides the ability to assign attributes to entities and manage them.
 This topic is covered in separate guide.    
 <p><a href="/docs/user-guide/attributes" class="button">Working with device attributes</a></p>
 
 
 ### Step 3: Upload telemetry data from devices
 
-ThingsBoard provides the ability to work with telemetry data for devices and other entities.
+Pacificsoft provides the ability to work with telemetry data for devices and other entities.
 This topic is covered in separate guide.    
 <p><a href="/docs/user-guide/telemetry" class="button">Working with telemetry data</a></p>
 
 ### Step 4: Creating Rules for Alarms
 
-ThingsBoard provides the ability to raise alarms using rule engine for devices and other entities.
+Pacificsoft provides the ability to raise alarms using rule engine for devices and other entities.
 This topic is covered in the separate guide.    
 <p><a href="/docs/user-guide/alarms" class="button">Working with alarms</a></p>
 

@@ -7,9 +7,9 @@ toc:
   path: /docs/reference/monolithic/
 - title: Microservices architecture
   path: /docs/reference/msa/
-- title: ThingsBoard Performance
+- title: Pacificsoft Performance
   section:
-  - title: ThingsBoard Performance on different AWS instances
+  - title: Pacificsoft Performance on different AWS instances
     path: /docs/reference/performance-aws-instances/
   - title: Data Collection Performance
     path: /docs/reference/performance/
@@ -17,5 +17,5 @@ toc:
     path: /docs/reference/performance-tools/
   - title: How to repeat the tests
     path: /docs/reference/performance-tests/
-- title: ThingsBoard PE Cloud Getting Started
+- title: Pacificsoft PE Cloud Getting Started
   path: /docs/reference/pe-demo-getting-started/

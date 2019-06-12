@@ -8,7 +8,7 @@ description: Rule Engine Overview
 * TOC
 {:toc}
 
-ThingsBoard Rule Engine is a highly customizable and configurable system for complex event processing. 
+Pacificsoft Rule Engine is a highly customizable and configurable system for complex event processing. 
 With rule engine you are able to filter, enrich and transform incoming messages originated by IoT devices and related assets. 
 You are also able to trigger various actions, for example, notifications or communication with external systems.
   
@@ -284,7 +284,7 @@ After pressing **Test** output will be returned in right **Output** section.
 
 ## Debugging
 
-ThingsBoard provides ability to review incoming and outgoing messages for each Rule Node.
+Pacificsoft provides ability to review incoming and outgoing messages for each Rule Node.
 To enable debug, user need to ensure that "Debug mode" checkbox is selected in the main configuration window 
 (see first image in the [Configuration](/docs/user-guide/rule-engine-2-0/overview/#configuration) section). 
 
@@ -295,7 +295,7 @@ See image below for a sample debug messages view:
 
 ## Import/Export
 
-You are able to export your rule chain to JSON format and import it to the same or another ThingsBoard instance.
+You are able to export your rule chain to JSON format and import it to the same or another Pacificsoft instance.
 
 In order to export rule chain, you should navigate to the **Rule Chains** page and click on the export button located on the particular rule chain card.
  
@@ -311,7 +311,7 @@ To learn more about internals of the rule engine, see [architecture](/docs/user-
 
 {% assign feature = "Custom Rule Engine REST API calls" %}{% include templates/pe-feature-banner.md %}
 
-ThingsBoard provides API to send custom REST API calls to the rule engine, process the payload of the request and return result of the processing in response body. 
+Pacificsoft provides API to send custom REST API calls to the rule engine, process the payload of the request and return result of the processing in response body. 
 This is useful for a number of use cases. For example:
  
  - extend existing REST API of the platform with custom API calls;
@@ -326,7 +326,7 @@ Note: the entity id you have specified in the call will be the originator of Rul
 
 ## Tutorials
 
-ThingsBoard authors have prepared several tutorials to help you get started with designing rule chains by example:
+Pacificsoft authors have prepared several tutorials to help you get started with designing rule chains by example:
 
   * [**Transform incoming messages from device**](/docs/user-guide/rule-engine-2-0/tutorials/transform-incoming-telemetry/) 
   * [**Transform incoming messages using previous messages from device**](/docs/user-guide/rule-engine-2-0/tutorials/transform-telemetry-using-previous-record/) 

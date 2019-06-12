@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Widgets Library
-description: ThingsBoard Dashboard Widgets Library
+description: Pacificsoft Dashboard Widgets Library
 
 ---
 
@@ -12,7 +12,7 @@ description: ThingsBoard Dashboard Widgets Library
 
 ## Introduction
 
-All [IoT Dashboards](/docs/user-guide/ui/dashboards/) are constructed using **ThingsBoard widgets** that are defined in Widget Library.
+All [IoT Dashboards](/docs/user-guide/ui/dashboards/) are constructed using **Pacificsoft widgets** that are defined in Widget Library.
 Each widget provides end-user functions such as data visualization, remote device control, alarms management and displaying static custom html content.
 
 ## Widget Types
@@ -99,7 +99,7 @@ Below is an example of a Static widget - "HTML card" displaying specified html c
 ## Widgets Library (Bundles)
 
 Widget definitions are grouped into widget bundles according to their purpose. There are System level and Tenant level **Widgets Bundles**.
-Initial ThingsBoard installation is shipped with the basic set of system level **Widgets Bundles**.
+Initial Pacificsoft installation is shipped with the basic set of system level **Widgets Bundles**.
 There are more than thirty widgets in seven widget bundles available out-of-the-box.
 System level bundles can be managed by a **System administrator** and are available for use by any tenant in the system.
 Tenant level bundles can be managed by a **Tenant administrator** and are available for use only by this tenant and its customers. 
@@ -172,7 +172,7 @@ Useful for changing entity attributes.
 
 #### Widgets Bundle export
 
-You are able to export widgets bundle to JSON format and import it to the same or another ThingsBoard instance.
+You are able to export widgets bundle to JSON format and import it to the same or another Pacificsoft instance.
 
 In order to export widgets bundle, you should navigate to the **Widgets Library** page and click on the export button located on the particular widgets bundle card.
  
@@ -192,7 +192,7 @@ The widgets bundle import window should a popup and you will be prompted to uplo
 
 #### Widget Type export
 
-You are able to export particular widget type from widgets bundle to JSON format and import it to the same or another ThingsBoard instance.
+You are able to export particular widget type from widgets bundle to JSON format and import it to the same or another Pacificsoft instance.
 
 In order to export widget type, you should navigate to the **Widgets Library** page, then open desired widgets bundle and finally click on the export button located on the particular widget type card.
  

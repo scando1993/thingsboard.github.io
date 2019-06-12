@@ -8,7 +8,7 @@ description: Rule Engine Architecture
 * TOC
 {:toc}
 
-ThingsBoard rule engine is based on two main components: the actor model and message queue.
+Pacificsoft rule engine is based on two main components: the actor model and message queue.
 
 <br/>
 
@@ -17,7 +17,7 @@ ThingsBoard rule engine is based on two main components: the actor model and mes
 ### Actor model
 
 Actor model enables high performance and concurrent processing of messages from device transport layer as long as server-side API calls. 
-ThingsBoard uses Akka as an actor system implementation. 
+Pacificsoft uses Akka as an actor system implementation. 
 There are two main actors related to the rule engine: Rule Chain Actor and Rule Node Actor.
 
 #### Rule Chain Actor

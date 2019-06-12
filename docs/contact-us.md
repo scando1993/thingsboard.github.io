@@ -95,7 +95,7 @@ title: Contact us
                     <select class="form-control select" name="subject">
                         <option value=""></option>
                         <option value="Technical Support">Technical Support</option>
-                        <option value="ThingsBoard Products">ThingsBoard Products</option>
+                        <option value="Pacificsoft Products">Pacificsoft Products</option>
                         <option value="Deployment Options">Deployment Options</option>
                         <option value="Training">Training</option>
                         <option value="Professional Services">Professional Services</option>

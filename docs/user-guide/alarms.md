@@ -3,14 +3,14 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Working with IoT device alarms
-description: IoT device alarm management using ThingsBoard alarms feature
+description: IoT device alarm management using Pacificsoft alarms feature
 
 ---
 
 * TOC
 {:toc}
 
-ThingsBoard provides the ability to create and manage alarms related to your entities: devices, assets, customers, etc.
+Pacificsoft provides the ability to create and manage alarms related to your entities: devices, assets, customers, etc.
 
 ### Alarm Lifecycle
 
@@ -27,14 +27,14 @@ One of the following alarm severities is supported: CRITICAL, MAJOR, MINOR, WARN
 
 ### Alarm Updates
 
-Alarm entity may be updated by external applications or ThingsBoard rules. Alarm keeps track of both clear and acknowledge time and latest change as an end time.
+Alarm entity may be updated by external applications or Pacificsoft rules. Alarm keeps track of both clear and acknowledge time and latest change as an end time.
 
 ### Alarm REST API
 
-ThingsBoard provides REST API to manage and query alarms. See demo environment [Alarm REST API](https://demo.thingsboard.io/swagger-ui.html#/alarm-controller) and general [REST API](/docs/reference/rest-api/) documentation for more details.
+Pacificsoft provides REST API to manage and query alarms. See demo environment [Alarm REST API](https://demo.thingsboard.io/swagger-ui.html#/alarm-controller) and general [REST API](/docs/reference/rest-api/) documentation for more details.
 
 ### Alarm Rules
-It is possible to create, update and clear alarm using ThingsBoard [rule engine](/docs/user-guide/rule-engine-2-0/re-getting-started/).
+It is possible to create, update and clear alarm using Pacificsoft [rule engine](/docs/user-guide/rule-engine-2-0/re-getting-started/).
 
 Please find more details about Alarm Rule Nodes:
 

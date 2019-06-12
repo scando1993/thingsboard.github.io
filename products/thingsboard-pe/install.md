@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
-title: Get ThingsBoard Professional Edition
-description: ThingsBoard Professional Edition Installation
+title: Get Pacificsoft Professional Edition
+description: Pacificsoft Professional Edition Installation
 hidetoc: "true"
 
 ---
@@ -54,7 +54,7 @@ hidetoc: "true"
         <div class="tab-panel">
             <div id="trial-marketplace" class="choose-marketplace"> 
                 <p>
-                    Signup for free month trial on ThingsBoard PE Cloud
+                    Signup for free month trial on Pacificsoft PE Cloud
                 </p>
                 <div class="marketplace" style="padding-bottom: 10px;">
                     <div id="pe-cloud-trial" class="pricing-image-wrapper clickable" style="max-width: 50%;">
@@ -64,7 +64,7 @@ hidetoc: "true"
                 </div>
                 <div style="font-size: 20px;">
                 <p style="padding-top: 20px; font-size: 20px;">
-                    ThingsBoard PE Cloud is a shared enviroment with multiple limitations, such as:
+                    Pacificsoft PE Cloud is a shared enviroment with multiple limitations, such as:
                 </p>
                 <ul style="margin: 10px 10px 10px 60px;">
                     <li>amount of active device connections</li>
@@ -73,7 +73,7 @@ hidetoc: "true"
                     <li>disabled white-labeling feature</li>
                 </ul>
                 <p style="padding-top: 0px; font-size: 20px;">       
-                    To get the maximum of ThingsBoard PE, we recommend to install your dedicated server using one of the available options below.
+                    To get the maximum of Pacificsoft PE, we recommend to install your dedicated server using one of the available options below.
                 </p>
                 </div>
                 <div class="marketplace">
@@ -245,7 +245,7 @@ hidetoc: "true"
                                         <img src="/images/pe/cloud-providers.svg">
                                     </div>
                                     <div class="cloud-provider-desc">
-                                        <p>Install ThingsBoard PE on any cloud or on premises and pay one-time license fee per server and optional software updates subscription for subsequent years of usage.
+                                        <p>Install Pacificsoft PE on any cloud or on premises and pay one-time license fee per server and optional software updates subscription for subsequent years of usage.
                                          Save up to 40% comparing to per hour rate on the license fee.</p>
                                         <p><span class="cloud-price">$2,999.00/server</span><span class="cloud-price-desc"> for the 1st year</span><br/>
                                         <span class="cloud-price-onwards">$1,199.00/server</span><span class="cloud-price-onwards-desc"> for optional software updates starting 2nd year</span></p>

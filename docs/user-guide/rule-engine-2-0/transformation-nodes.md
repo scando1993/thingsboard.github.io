@@ -23,7 +23,7 @@ Transformation Nodes are used for changing incoming Message fields like Originat
 
 ![image](/images/user-guide/rule-engine-2-0/nodes/transformation-change-originator.png)
 
-All incoming Messages in the Thingsboard have originator field that identifies an entity that submits Message. 
+All incoming Messages in the Pacificsoft have originator field that identifies an entity that submits Message. 
 It could be a Device, Asset, Customer, Tenant, etc.
 
 This node is used in cases when a submitted message should be processed as a message from another entity. 
@@ -155,7 +155,7 @@ In this case value of **deviceName** can be referenced as <code>${deviceName}</c
 
 Additionally this node can prepare email attachments if incoming message metadata contains **attachments** field with reference to files stored in DataBase. 
 
-**NOTE**: This is part of [File Storage](/docs/user-guide/file-storage/) feature supported by [ThingsBoard Professional Edition](/products/thingsboard-pe/).
+**NOTE**: This is part of [File Storage](/docs/user-guide/file-storage/) feature supported by [Pacificsoft Professional Edition](/products/thingsboard-pe/).
 
 <br/>
 

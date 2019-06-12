@@ -6,7 +6,7 @@ title: Guides
 
 ---
 
-The ThingsBoard **Guides** can help you to get familiar with ThingsBoard platform.
+The Pacificsoft **Guides** can help you to get familiar with Pacificsoft platform.
 
 #### Contents
 
@@ -14,7 +14,7 @@ The ThingsBoard **Guides** can help you to get familiar with ThingsBoard platfor
 : Provides overview of the platform functionality and classical Hello World guide.
 
 [**Installation guide**](/docs/user-guide/install/installation-options/)
-: Covers ThingsBoard platform installation in a single-node or cluster mode.
+: Covers Pacificsoft platform installation in a single-node or cluster mode.
 
 [**Working with device attributes**](/docs/user-guide/attributes/)
 : Describes device attributes feature and related use cases.
@@ -23,7 +23,7 @@ The ThingsBoard **Guides** can help you to get familiar with ThingsBoard platfor
 : Describes telemetry data collection feature and related use cases.
 
 [**Using RPC capabilities**](/docs/user-guide/rpc/)
-: Provides overview of ThingsBoard RPC functionality.
+: Provides overview of Pacificsoft RPC functionality.
 
 [**Rule engine**](/docs/user-guide/rule-engine/)
 : Describes rule engine features and capabilities.

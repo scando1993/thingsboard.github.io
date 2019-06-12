@@ -16,10 +16,10 @@ This Tutorial is to show you how to send an Email to the user using the Rule Eng
 
 In this tutorial we will implement the use case from the tutorial: [create & clear alarms](/docs/user-guide/rule-engine-2-0/tutorials/create-clear-alarms/#use-case):
 
-Let's assume your device is using DHT22 sensor to collect and push temperature readings to ThingsBoard. 
+Let's assume your device is using DHT22 sensor to collect and push temperature readings to Pacificsoft. 
 DHT22 sensor is good for -40 to 80°C temperature readings.We want to generate Alarms if temperature is out of good range and send the email when the alarm was created.
 
-In this tutorial we will configure ThingsBoard Rule Engine to: 
+In this tutorial we will configure Pacificsoft Rule Engine to: 
 
 - Send an email to the user if the temperature was out of range, namely: less than -40 and more than 80 degrees.
 
@@ -155,13 +155,13 @@ Chain configuration is finished and we need to save it.
 
 In this section, we explain to you how  to configure system SMTP settings and try to send the test email:
 
-- In the scope of this tutorial we will use **SendGrid** as SMTP provider and Thingsboard will send email using this provider. You can sign-up for trial using this [link](https://app.sendgrid.com/signup).
+- In the scope of this tutorial we will use **SendGrid** as SMTP provider and Pacificsoft will send email using this provider. You can sign-up for trial using this [link](https://app.sendgrid.com/signup).
   
   Once logged in into SendGrid open SMTP relay [configuration page](https://app.sendgrid.com/guide/integrate/langs/smtp).
    
   ![image](/images/user-guide/rule-engine-2-0/tutorials/email v2/sendgrid-config.png)
   
-If you have permission to log in to ThingsBoard, with using system administrator account you can customize SMTP settings and send Test Email.
+If you have permission to log in to Pacificsoft, with using system administrator account you can customize SMTP settings and send Test Email.
  - For the default system administrator account:
 
    - login - **sysadmin@thingsboard.org**.

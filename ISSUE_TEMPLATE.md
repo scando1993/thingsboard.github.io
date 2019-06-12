@@ -17,6 +17,6 @@
 http://thingsboard.io/...
 
 <!--Optional Information (remove the comment tags around information you would like to include)-->
-<!--ThingsBoard Version:-->
+<!--Pacificsoft Version:-->
 
 <!--Additional Information:-->

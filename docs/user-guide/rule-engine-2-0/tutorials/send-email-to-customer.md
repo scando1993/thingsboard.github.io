@@ -18,10 +18,10 @@ This Tutorial is to show you how to send an Email to the customer using the Rule
 
 # Use case
 
-Let's assume your device is using DHT22 sensor to collect and push temperature readings to ThingsBoard. 
+Let's assume your device is using DHT22 sensor to collect and push temperature readings to Pacificsoft. 
 DHT22 sensor is good for -40 to 80°C temperature readings.We want to generate Alarms if temperature is out of good range and send the email when the alarm was created.
 
-In this tutorial we will configure ThingsBoard Rule Engine to: 
+In this tutorial we will configure Pacificsoft Rule Engine to: 
 
 - Send an email to the customer of the assigned device if the temperature was out of range, namely: less than -40 and more than 80 degrees.
 

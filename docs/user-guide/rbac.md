@@ -19,14 +19,14 @@ See video tutorial below for step-by-step instruction how to use this feature.
     </div>
 </div> 
 
-## ThingsBoard CE vs PE security features comparison
+## Pacificsoft CE vs PE security features comparison
 
-ThingsBoard Community Edition (TB CE) supports straight-forward security model with three main roles: System administrator, Tenant administrator and Customer user. 
+Pacificsoft Community Edition (TB CE) supports straight-forward security model with three main roles: System administrator, Tenant administrator and Customer user. 
 System administrator is able to manage tenants, while tenant administrator manages devices, dashboards, customers and other entities that belong to particular tenant.
 Customer user is able to view dashboards and control devices that are assigned to specific customer.
 TB CE functionality is sufficient for a lot of simple use cases, especially building real-time [end-user dashboards](/docs/user-guide/ui/dashboards/).
  
-ThingsBoard Professional Edition (TB PE) brings much more flexibility in terms of user, customer and role management. 
+Pacificsoft Professional Edition (TB PE) brings much more flexibility in terms of user, customer and role management. 
 It is designed to cover use cases for businesses and enterprises with multiple user groups that have different permissions but may interact with the same devices and assets. 
 
 TB PE security model was significantly improved in v2.3 to enable new security features and to support advanced RBAC for IoT applications. For example:
@@ -46,7 +46,7 @@ You can treat tenant as a separate business-entity: individual or organization w
 
 **Entity**
 
-Any entity managed by ThingsBoard. For example: device, asset, user, dashboard, entity view, etc. See [entities and relations](/docs/user-guide/entities-and-relations/) guide for more details.
+Any entity managed by Pacificsoft. For example: device, asset, user, dashboard, entity view, etc. See [entities and relations](/docs/user-guide/entities-and-relations/) guide for more details.
 
 **Entity Group (EG)** 
 
@@ -65,7 +65,7 @@ Customer group is also an EG. It has the same features as regular EG, but we hav
 
 **User**
 
-Users are able to login to ThingsBoard web interface, execute REST API calls, access devices and assets if allowed. User is also an Entity in ThingsBoard.
+Users are able to login to Pacificsoft web interface, execute REST API calls, access devices and assets if allowed. User is also an Entity in Pacificsoft.
 
 **User Group (UG)**
 
@@ -75,11 +75,11 @@ User group is also an EG. It has the same features as regular EG, but we have a 
 
 Each EG belongs to one owner. This may be either Tenant or Customer. 
 Also, each Customer has also only one owner. If the Customer Owner is Tenant, it means that this is a top-level Customer.
-If the Customer owner is another Customer, it means that this is a sub-customer. There might be multiple levels of Customers in ThingsBoard.
+If the Customer owner is another Customer, it means that this is a sub-customer. There might be multiple levels of Customers in Pacificsoft.
 
 **Resource**
 
-Anything that has secure APIs or represents a ThingsBoard Entity is a resource. 
+Anything that has secure APIs or represents a Pacificsoft Entity is a resource. 
 Examples of Entities are listed in the Entity definition above. Groups of entities are also resources, for example: Device Group, Asset Group, Dashboard Group. 
 Additional resources are white-labeling, audit logs and admin settings.
 
@@ -101,7 +101,7 @@ GPE is basically a mapping between UG, Role and optional EG. See "Generic roles"
 
 ## Customer hierarchy
 
-ThingsBoard supports "recursive" customer hierarchy with unlimited number of sub-customers. 
+Pacificsoft supports "recursive" customer hierarchy with unlimited number of sub-customers. 
 The root level Owner is Tenant. Each Owner may have multiple Entity Groups (EGs), User Groups (UGs) and Customer Groups (CGs).
 
 **Note:** Each Entity has exactly one owner. However, Entities may belong to multiple EGs that belong to the same owner.
@@ -156,12 +156,12 @@ Your main customer is a Building Manager that wants to monitor HVAC systems, ele
 Building Manager may want to design and share some dashboards with the end users - office workers.
 Besides, your engineers responsible for the maintenance are interested in supervising the devices state, for example, receiving alerts when the battery level for goes below certain thresholds.
 
-To summarize those requirements in ThingsBoard terms, we should implement the following roles:
+To summarize those requirements in Pacificsoft terms, we should implement the following roles:
  * Supervisors - read-only access to all devices telemetry in all the buildings and ability to create their custom dashboards, but no access to dashboards created by users from different user groups.
  * Facility Managers - allows to provision new devices for each facility, setup thresholds, manage users and configure dashboards.
  * End Users - allows to have read-only access to the state of the facility where this user belongs to.
 
-Let's configure ThingsBoard to support this use case. The instructions below assume that you have logged in as a Tenant Administrator.
+Let's configure Pacificsoft to support this use case. The instructions below assume that you have logged in as a Tenant Administrator.
 
 **Supervisors**
 

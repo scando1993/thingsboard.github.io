@@ -3,18 +3,18 @@ layout: docwithnav
 assignees:
 - ikulikov
 title: Assets
-description: Thingsboard IoT Asset management
+description: Pacificsoft IoT Asset management
 
 ---
 
-Thingsboard support following asset management features using Web UI and [REST API](/docs/reference/rest-api/).
+Pacificsoft support following asset management features using Web UI and [REST API](/docs/reference/rest-api/).
 
 * TOC
 {:toc}
 
 ## Add and delete assets
 
-Tenant administrator is able to register new assets or delete them from Thingsboard.
+Tenant administrator is able to register new assets or delete them from Pacificsoft.
 
 ![image](/images/user-guide/ui/assets.png)
 

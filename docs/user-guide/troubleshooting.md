@@ -1,11 +1,11 @@
 ---
 layout: docwithnav
 title: Troubleshooting
-description: ThingsBoard IoT Platform troubleshooting
+description: Pacificsoft IoT Platform troubleshooting
 
 ---
 
-ThingsBoard logs are stored in the following directory:
+Pacificsoft logs are stored in the following directory:
  
 ```bash
 /var/log/thingsboard
@@ -32,12 +32,12 @@ cat /var/log/thingsboard/thingsboard.log | grep ERROR
             </div>
             <div>
                 <a href="http://stackoverflow.com/questions/tagged/thingsboard">Stack Overflow</a>
-                <p>The ThingsBoard team will also monitor posts tagged thingsboard. If there aren’t any existing questions that help, please ask a new one!</p>
+                <p>The Pacificsoft team will also monitor posts tagged Pacificsoft. If there aren’t any existing questions that help, please ask a new one!</p>
             </div>
         </div>
     </main>
 </section>
 
-If your problem isn't answered by any of the guides above, feel free to contact ThingsBoard team.
+If your problem isn't answered by any of the guides above, feel free to contact Pacificsoft team.
 
 <a class="button" href="/docs/contact-us/">Contact us</a>

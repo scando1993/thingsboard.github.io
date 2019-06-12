@@ -3,14 +3,14 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Working with telemetry data
-description: IoT device time-series data collection using various IoT protocols and ThingsBoard telemetry feature
+description: IoT device time-series data collection using various IoT protocols and Pacificsoft telemetry feature
 
 ---
 
 * TOC
 {:toc}
 
-ThingsBoard provides a rich set of features related to telemetry data:
+Pacificsoft provides a rich set of features related to telemetry data:
 
  - **collect** data from devices using MQTT, CoAP or HTTP protocols.
  - **store** timeseries data in Cassandra (efficient, scalable and fault-tolerant NoSQL database).
@@ -27,7 +27,7 @@ This guide provides an overview of the features listed above and some useful lin
 
 ## Device telemetry upload API
 
-ThingsBoard provides an API to upload timeseries key-value data.
+Pacificsoft provides an API to upload timeseries key-value data.
 Flexibility and simplicity of key-value format allow easy and seamless integration with almost any IoT device on the market.
 Telemetry upload API is specific for each supported network protocol.
 You can review API and examples in corresponding reference page:
@@ -43,15 +43,15 @@ provides server-side API to query and subscribe for data updates.
 
 ### Internal data storage
 
-ThingsBoard uses either Cassandra NoSQL database or SQL database to store all data.
+Pacificsoft uses either Cassandra NoSQL database or SQL database to store all data.
 
 A device that is sending data to the server will receive confirmation about data delivery as soon as data is stored in DB.
 Modern MQTT clients allow temporary local storage of undelivered data. 
-Thus, even if one of the ThingsBoard nodes goes down, the device will not lose the data and will be able to push it to other servers.
+Thus, even if one of the Pacificsoft nodes goes down, the device will not lose the data and will be able to push it to other servers.
  
 Server side applications are also able to publish telemetry valued for different entities and entity types.
   
-Although you can query the database directly, ThingsBoard provides set of RESTful and Websocket API that simplify this process and apply certain security policies:
+Although you can query the database directly, Pacificsoft provides set of RESTful and Websocket API that simplify this process and apply certain security policies:
  
  - Tenant Administrator user is able to fetch data for all entities that belong to the corresponding tenant.
  - Customer user is able to fetch data only for entities that are assigned to the corresponding customer.
@@ -110,7 +110,7 @@ The supported parameters are described below:
  - **agg** - the aggregation function. One of MIN, MAX, AVG, SUM, COUNT, NONE.
  - **limit** - the max amount of data points to return or intervals to process.
 
-ThingsBoard will use *startTs*, *endTs* and *interval* to identify aggregation partitions or sub-queries and execute asynchronous queries to DB that leverage built-in aggregation functions.
+Pacificsoft will use *startTs*, *endTs* and *interval* to identify aggregation partitions or sub-queries and execute asynchronous queries to DB that leverage built-in aggregation functions.
 
 {% capture tabspec %}get-telemetry-values
 A,get-telemetry-values.sh,shell,resources/get-telemetry-values.sh,/docs/user-guide/resources/get-telemetry-values.sh
@@ -166,13 +166,13 @@ A,web-socket.html,html,resources/web-socket.html,/docs/user-guide/resources/web-
 
 ## Data visualization
 
-ThingsBoard provides the ability to configure and customize dashboards for data visualization.
+Pacificsoft provides the ability to configure and customize dashboards for data visualization.
 This topic is covered in a separate guide.    
 <p><a href="/docs/user-guide/visualization" class="button">Data Visualization guide</a></p>
 
 ## Rule engine
 
-ThingsBoard provides the ability to configure data processing rules.
+Pacificsoft provides the ability to configure data processing rules.
 Each rule consists of
 
  - filters - to filter incoming data feed, 

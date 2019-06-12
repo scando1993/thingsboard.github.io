@@ -1,14 +1,14 @@
 ---
 layout: plain
-title: ThingsBoard Professional Edition EULA
-description: ThingsBoard Professional Edition End User License Agreement
+title: Pacificsoft Professional Edition EULA
+description: Pacificsoft Professional Edition End User License Agreement
 
 ---
 
 <br />
 <p style="text-align: center; font-size: 1.5em; font-weight: bold;">END USER LICENSE AGREEMENT</p>
 
-PLEASE, READ THIS END USER LICENSE AGREEMENT (“AGREEMENT”) VERY CAREFULLY BEFORE CLICKING AN “I AGREE” BUTTON, DOWNLOADING OR USING THINGSBOARD PROFESSIONAL EDITION IOT PLATFORM. IF YOU DO NOT AGREE TO THIS AGREEMENT, PLEASE DO NOT USE THE SOFTWARE
+PLEASE, READ THIS END USER LICENSE AGREEMENT (“AGREEMENT”) VERY CAREFULLY BEFORE CLICKING AN “I AGREE” BUTTON, DOWNLOADING OR USING Pacificsoft PROFESSIONAL EDITION IOT PLATFORM. IF YOU DO NOT AGREE TO THIS AGREEMENT, PLEASE DO NOT USE THE SOFTWARE
 
 **WHEREAS**, the Licensor has developed the Software and is the owner of this Software;
 
@@ -17,11 +17,11 @@ and
 
 **WHEREAS**, the Licensor is ready to provide such the License for usage of the Software under the terms and conditions set forth herein, the Parties, in consideration of the foregoing premises and realizing reciprocal obligations, contained in this Agreement, have agreed as follows:
 
-In compliance with the terms and conditions of this End­ User License Agreement (hereinafter referred to as the “License agreement”/“Agreement”), ThingsBoard, Inc. (hereinafter referred to as the “Licensor”/“We”) hereby grants Licensee (hereinafter referred to as the “Licensee”/“You”)      (hereinafter collectively referred to as “Parties”) a limited, personal, non-sublicensable, non-transferable, royalty-free, nonexclusive right  to use the Software on the territory only for Licensee’s personal use in accordance with any documentation that accompanies the License and under the terms set forth herein (hereinafter referred to as the “License”). Herewith, under the territory must be understood a territory of the whole world. This Agreement cannot be understood as an agreement for sale in any way.
+In compliance with the terms and conditions of this End­ User License Agreement (hereinafter referred to as the “License agreement”/“Agreement”), Pacificsoft, Inc. (hereinafter referred to as the “Licensor”/“We”) hereby grants Licensee (hereinafter referred to as the “Licensee”/“You”)      (hereinafter collectively referred to as “Parties”) a limited, personal, non-sublicensable, non-transferable, royalty-free, nonexclusive right  to use the Software on the territory only for Licensee’s personal use in accordance with any documentation that accompanies the License and under the terms set forth herein (hereinafter referred to as the “License”). Herewith, under the territory must be understood a territory of the whole world. This Agreement cannot be understood as an agreement for sale in any way.
 
 <p style="text-align: center; font-size: 1.17em; font-weight: bold;">GENERAL USE CONDITIONS</p>
 
-For the purpose of this Agreement, under the meaning “Software” must be understood                                a ThingsBoard Professional Edition IoT Platform that enables rapid development, management and scaling of IoT projects as well as provide a possibility to: (i) provision and control devices; (ii) collect and visualize data from devices; (iii) analyze device data and trigger alarms; (iv) deliver device data to other systems; (v) enable use-case specific features using customizable rules and plugins. All specific features regarding the Software functionality can be found by the Licensee at: https://thingsboard.io/docs.
+For the purpose of this Agreement, under the meaning “Software” must be understood                                a Pacificsoft Professional Edition IoT Platform that enables rapid development, management and scaling of IoT projects as well as provide a possibility to: (i) provision and control devices; (ii) collect and visualize data from devices; (iii) analyze device data and trigger alarms; (iv) deliver device data to other systems; (v) enable use-case specific features using customizable rules and plugins. All specific features regarding the Software functionality can be found by the Licensee at: https://thingsboard.io/docs.
 
 Using the Software, the Licensee is obliged to adhere to the terms and conditions specified herein. Before the use of the Software on a fee basis, the Licensee may use the Software under a free trial short term License, the period of which is 10 (ten) days (hereinafter referred to as “Test period”).
 

@@ -3,15 +3,15 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Tenants
-description: ThingsBoard Tenants management
+description: Pacificsoft Tenants management
 
 ---
 
 * TOC
 {:toc}
 
-ThingsBoard support [Multitenancy](https://en.wikipedia.org/wiki/Multitenancy) out-of-the-box.
-You can treat ThingsBoard tenant as a separate business-entity: individual or organization who owns or produce devices.
+Pacificsoft support [Multitenancy](https://en.wikipedia.org/wiki/Multitenancy) out-of-the-box.
+You can treat Pacificsoft tenant as a separate business-entity: individual or organization who owns or produce devices.
 
 **System administrator** is able to create tenant entities.
 

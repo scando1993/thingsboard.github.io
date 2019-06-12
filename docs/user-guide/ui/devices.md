@@ -3,18 +3,18 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Devices
-description: ThingsBoard IoT Device management
+description: Pacificsoft IoT Device management
 
 ---
 
-ThingsBoard support following device management features using Web UI and [REST API](/docs/reference/rest-api/).
+Pacificsoft support following device management features using Web UI and [REST API](/docs/reference/rest-api/).
 
 * TOC
 {:toc}
 
 ## Add and delete devices
 
-Tenant administrator is able to register new devices or delete them from ThingsBoard.
+Tenant administrator is able to register new devices or delete them from Pacificsoft.
 
 ![image](/images/user-guide/ui/devices.png)
 

@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - yefimov-andrey
 title: Aliases
-description: ThingsBoard Aliases
+description: Pacificsoft Aliases
 
 ---
 

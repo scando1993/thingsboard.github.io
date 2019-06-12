@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Rule Engine
-description: IoT devices data analytics using ThingsBoard Rule engine
+description: IoT devices data analytics using Pacificsoft Rule engine
 
 ---
 
@@ -18,7 +18,7 @@ With Rule Engine you can:
  - forward telemetry data to Kafka, RabbitMQ or external RESTful server.
  - and much more using other rules and plugins.
  
-**Please Note** we recommend to get familiar with basic ThingsBoard features - (
+**Please Note** we recommend to get familiar with basic Pacificsoft features - (
 [Attributes](/docs/user-guide/attributes/), 
 [Telemetry](/docs/user-guide/telemetry/) and 
 [RPC](/docs/user-guide/rpc/) 
@@ -61,7 +61,7 @@ However, all tenant level rules may use this plugin to send email notifications.
 
 ## Lifecycle
 
-ThingsBoard Rules and Plugins components have same lifecycle events:
+Pacificsoft Rules and Plugins components have same lifecycle events:
 
 - Created - component is provisioned, but is not processing any messages yet.
 - Activated - component is able to receive and process new device messages. 
@@ -71,7 +71,7 @@ ThingsBoard Rules and Plugins components have same lifecycle events:
 
 ## Rules  
   
-ThingsBoard Rule consists of three main components: Filters, Processor and Action.
+Pacificsoft Rule consists of three main components: Filters, Processor and Action.
 Depending on implementation, each component may require certain configuration before it can be used.
 In order to configure Rule, you need to specify at least one filter and one action. 
 Rule Processors are optional. 
@@ -86,7 +86,7 @@ You can treat it as a boolean function that has device attributes and message as
 ```java
    boolean filter(DeviceAttributes attributes, FromDeviceMessage message) 
 ```
-ThingsBoard provides the following Rule filters out of the box:
+Pacificsoft provides the following Rule filters out of the box:
 
   - [Message Type Filter](/docs/reference/filters/message-type-filter) - allows to filter incoming messages by type.
   - [Device Attributes Filter](/docs/reference/filters/device-attributes-filter) - allows to filter incoming messages based on current device attributes. 
@@ -106,7 +106,7 @@ You can treat it as a function that has device attributes and message as paramet
    MessageMetadata process(DeviceAttributes attributes, FromDeviceMessage message) 
 ```
 
-ThingsBoard provides the following Rule processors out of the box:
+Pacificsoft provides the following Rule processors out of the box:
 
   - [Alarm Deduplication Processor](/docs/reference/processors/alarm-deduplication-processor) generates and persists unique alarms. 
   Populates certain metadata tag to identify new alarms. See filter documentation for more details.
@@ -132,7 +132,7 @@ So, you can treat an action as the following interface between Rule and Plugin:
    boolean isOneWay()
 ```
 
-ThingsBoard provides the following Actions out of the box:
+Pacificsoft provides the following Actions out of the box:
 
   - [Telemetry Plugin Action](/docs/reference/actions/telemetry-plugin-action) - system action that push data to system [Telemetry Plugin](/docs/reference/plugins/telemetry/). 
   - [Send Mail Action](/docs/reference/actions/send-mail-action) - action that allows to send emails. You can specify templates for email body and recipients. 
@@ -145,14 +145,14 @@ ThingsBoard provides the following Actions out of the box:
 
 ## Plugins
    
-ThingsBoard Plugins allow you to configure and customize system behavior.
+Pacificsoft Plugins allow you to configure and customize system behavior.
 Although plugins are able to process messages from Rules, they also provide APIs to integrate with your server-side applications.
 With Plugin you can:
 
  - process messages from devices
  - process REST API calls from server side applications
  - communicate with server-side applications using websockets.
- - communicate between instances of the same plugin in the ThingsBoard cluster using asynchronous RPC calls.
+ - communicate between instances of the same plugin in the Pacificsoft cluster using asynchronous RPC calls.
  - persist and query events, telemetry data, and device attributes.
 
  ![image](/images/user-guide/plugin-api.svg)
@@ -172,7 +172,7 @@ For example, System Telemetry Plugin allows subscribing to device attributes and
   
 ##### Clustering API
 
-When plugin is provisioned, ThingsBoard creates an instance of the plugin actor on each ThingsBoard server in the cluster.
+When plugin is provisioned, Pacificsoft creates an instance of the plugin actor on each Pacificsoft server in the cluster.
 In order to implement complex use-cases, plugin instances may require a way to communicate with each other. 
 
 For example, let's assume that we have a three node cluster (nodes A, B and C). 
@@ -182,13 +182,13 @@ Telemetry plugin needs to keep track of websocket subscriptions for particular d
 
  ![image](/images/user-guide/plugin-rpc.svg)
  
-ThingsBoard Clustering and Actor models are covered in ThingsBoard Architecture.
+Pacificsoft Clustering and Actor models are covered in Pacificsoft Architecture.
   
-<p><a href="/docs/reference/" class="button">ThingsBoard Architecture</a></p>
+<p><a href="/docs/reference/" class="button">Pacificsoft Architecture</a></p>
 
 ##### Implementations
 
-ThingsBoard provides the following Plugins out of the box:
+Pacificsoft provides the following Plugins out of the box:
 
   - [Telemetry Plugin](/docs/reference/plugins/telemetry) - system plugin that is responsible for processing various requests 
   related to device attributes and telemetry.
@@ -202,24 +202,24 @@ ThingsBoard provides the following Plugins out of the box:
 
 ## Troubleshooting and statistics
 
-ThingsBoard keeps track of usage statistics, errors and lifecycle events for each rule and plugin.
+Pacificsoft keeps track of usage statistics, errors and lifecycle events for each rule and plugin.
 
 ##### Statistics
 
-ThingsBoard collects and periodically persists usage statistics to internal database.
+Pacificsoft collects and periodically persists usage statistics to internal database.
 You can review this statistics via [Web UI](/docs/user-guide/ui/rules/) or get it using [REST API](/docs/reference/rest-api/).
 Statistics contain an amount of successfully processed messages and amount of errors during processing.
 
 ##### Errors
 
-Whenever exception or error occurs, ThingsBoard persists it to the internal database.
+Whenever exception or error occurs, Pacificsoft persists it to the internal database.
 You can review this errors via [Web UI](/docs/user-guide/ui/rules/) or get it using [REST API](/docs/reference/rest-api/).
 In case of misconfiguration or critical issue with plugin, errors may happen quite frequently. 
 Persisting all errors may significantly reduce performance, so you can [configure](/docs/user-guide/install/config/) how often errors are persisted.
 
 ##### Lifecycle events
 
-Whenever plugin or rule [lifecycle event](#lifecycle) happens, ThingsBoard persists it to the internal database.
+Whenever plugin or rule [lifecycle event](#lifecycle) happens, Pacificsoft persists it to the internal database.
 You can observe status of the lifecycle, stack trace in case of errors, event time and server address. 
 In case of misconfiguration, you can easily detect the root cause by browsing the error stack trace. 
 

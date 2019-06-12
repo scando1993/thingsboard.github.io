@@ -10,10 +10,10 @@ description: Transform incoming telemetry
 
 ## Use case
 
-Let's assume your device is using custom sensor to collect and push temperature readings to ThingsBoard. 
+Let's assume your device is using custom sensor to collect and push temperature readings to Pacificsoft. 
 This sensor collects temperature readings in °F and you would like to convert them to °C before storage into the database and visualization.
 
-In this tutorial we will configure ThingsBoard Rule Engine to modify temperature readings according to a formula:
+In this tutorial we will configure Pacificsoft Rule Engine to modify temperature readings according to a formula:
 
 ```code
 [°C] = ([°F] - 32) × 5/9.

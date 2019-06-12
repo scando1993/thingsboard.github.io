@@ -10,10 +10,10 @@ description: Validate incoming telemetry
 
 ## Use case
 
-Let's assume your device is using DHT22 sensor to collect and push temperature readings to ThingsBoard. 
+Let's assume your device is using DHT22 sensor to collect and push temperature readings to Pacificsoft. 
 DHT22 sensor is good for -40 to 80°C temperature readings.
 
-In this tutorial we will configure ThingsBoard Rule Engine to store all temperature within -40 to 80°C range and will discard all other readings.
+In this tutorial we will configure Pacificsoft Rule Engine to store all temperature within -40 to 80°C range and will discard all other readings.
 Although this scenario is fictional, you will learn how to define JS functions to validate incoming data and use this knowledge in real-life applications.     
 
 ## Prerequisites 

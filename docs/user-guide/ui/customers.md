@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Customers
-description: ThingsBoard Customers management
+description: Pacificsoft Customers management
 
 ---
 

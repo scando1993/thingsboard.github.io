@@ -82,7 +82,7 @@
 
         var div = document.createElement('div');
         var p = document.createElement('p');
-        p.textContent = 'Want to become ThingsBoard Hardware Partner?';
+        p.textContent = 'Want to become Pacificsoft Hardware Partner?';
         p.className = 'become-partner';
         div.appendChild(p);
 

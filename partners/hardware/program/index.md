@@ -4,8 +4,8 @@ title: Hardware Partner Program
 description:
 ---
 
-<h5>ThingsBoard helps you to sell your devices by enabling interactive visualization and control of your device behavior for specific IoT use case. 
-As a hardware manufacturer, you benefit from marketing exposure to thousands of system integrator companies that use the ThingsBoard platform as a basis for their solutions.</h5>
+<h5>Pacificsoft helps you to sell your devices by enabling interactive visualization and control of your device behavior for specific IoT use case. 
+As a hardware manufacturer, you benefit from marketing exposure to thousands of system integrator companies that use the Pacificsoft platform as a basis for their solutions.</h5>
 
 <br/>
 <br/>
@@ -27,27 +27,27 @@ As a hardware manufacturer, you benefit from marketing exposure to thousands of 
             <td class="program-section" colspan="4"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Marketing Benefits</td>
         </tr>
         <tr>
-            <td>Partner name and logo on ThingsBoard website</td>
+            <td>Partner name and logo on Pacificsoft website</td>
             <td class="checked"></td>
             <td class="checked"></td>
             <td class="checked"></td>
         </tr>
         <tr>
             <td>Online tutorial how to connect and use 
-                your devices with ThingsBoard prepared by Partner</td>
+                your devices with Pacificsoft prepared by Partner</td>
             <td class="checked"></td>
             <td class="checked"></td>
             <td class="checked"></td>
         </tr>
         <tr>
             <td>Online tutorial how to connect and use 
-                your devices with ThingsBoard prepared by ThingsBoard</td>
+                your devices with Pacificsoft prepared by Pacificsoft</td>
             <td>optional<sup>*</sup></td>
             <td class="checked"></td>
             <td class="checked"></td>
         </tr>
         <tr>
-            <td>Ability to use ThingsBoard Connected logo
+            <td>Ability to use Pacificsoft Connected logo
                 on partner website</td>
             <td class="checked"></td>
             <td class="checked"></td>
@@ -87,20 +87,20 @@ As a hardware manufacturer, you benefit from marketing exposure to thousands of 
             <td>20 hours</td>
         </tr>   
         <tr>
-            <td>ThingsBoard Roadmap and 
+            <td>Pacificsoft Roadmap and 
                 early-access to pre-release features</td>
             <td class="unchecked"></td>
             <td class="checked"></td>
             <td class="checked"></td>
         </tr>   
         <tr>
-            <td>ThingsBoard Trainings</td>
+            <td>Pacificsoft Trainings</td>
             <td class="unchecked"></td>
             <td class="checked"></td>
             <td class="checked"></td>
         </tr>   
         <tr>
-            <td>ThingsBoard Cluster and Infrastructure 
+            <td>Pacificsoft Cluster and Infrastructure 
                 planning for production workloads</td>
             <td class="unchecked"></td>
             <td class="checked"></td>
@@ -122,7 +122,7 @@ As a hardware manufacturer, you benefit from marketing exposure to thousands of 
             <td class="checked">&nbsp;<sup>***</sup></td>
         </tr>
         <tr>
-            <td>Demo dashboard development by ThingsBoard</td>
+            <td>Demo dashboard development by Pacificsoft</td>
             <td>optional<sup>*</sup></td>
             <td>5 hours</td>
             <td>20 hours</td>
@@ -158,7 +158,7 @@ As a hardware manufacturer, you benefit from marketing exposure to thousands of 
             <td class="note" colspan="4">* - Additional fees may apply</td>
         </tr>        
         <tr>
-            <td class="note" colspan="4">** - Tenant administrator account on ThingsBoard PE instance deployed in the cloud and dedicated to PoCs and Sales demos (partner.thingsboard.io)</td>
+            <td class="note" colspan="4">** - Tenant administrator account on Pacificsoft PE instance deployed in the cloud and dedicated to PoCs and Sales demos (partner.thingsboard.io)</td>
         </tr>
         <tr>
             <td class="note" colspan="4">*** - Custom logos, color schemes, login pages, translations and domains on a system, tenant and customer levels</td>
@@ -178,15 +178,15 @@ As a hardware manufacturer, you benefit from marketing exposure to thousands of 
     <div class="item" data-tag="h4" data-item-id="who-hw-partner" data-title="Who is eligible to become a Hardware Partner?">
         <div class="container">
             <p>
-                We welcome hardware manufacturers and hardware reseller companies to become ThingsBoard Partners. 
+                We welcome hardware manufacturers and hardware reseller companies to become Pacificsoft Partners. 
             </p>
         </div>
     </div>
     <div class="item" data-tag="h4" data-item-id="why-hw-partner" data-title="Why should I become a Hardware Partner?">
         <div class="container">
             <p>
-                You will be listed on ThingsBoard website and become visible to exisiting and new ThingsBoard users which drives new business opportunities. 
-                Becides, you will get access to ThingsBoard Partner Portal where you can connect your device to the cloud and use this portal for demonstration and sales purposes. 
+                You will be listed on Pacificsoft website and become visible to exisiting and new Pacificsoft users which drives new business opportunities. 
+                Becides, you will get access to Pacificsoft Partner Portal where you can connect your device to the cloud and use this portal for demonstration and sales purposes. 
             </p>
         </div>
     </div>
@@ -194,7 +194,7 @@ As a hardware manufacturer, you benefit from marketing exposure to thousands of 
         <div class="container">
             <p>
                 There are three different partnership levels listed above. 
-                Silver Partnership does not require any fees but assumes you have basic ThingsBoard knowledge and will prepare the online tutorial and demo dashboard on your own.
+                Silver Partnership does not require any fees but assumes you have basic Pacificsoft knowledge and will prepare the online tutorial and demo dashboard on your own.
                 Gold and Platinum Partnership levels introduce yearly fees and thus include our support services and help with preparing online tutorials and dashboards.  
             </p>
         </div>
@@ -217,9 +217,9 @@ As a hardware manufacturer, you benefit from marketing exposure to thousands of 
     <div class="item" data-tag="h4" data-item-id="lorawan-hw-partner" data-title="How to connect my LoRaWAN device?">
         <div class="container">
             <p>
-                ThingsBoard supports <a href="/docs/user-guide/integrations/">integrations</a> with popular LoRaWAN network servers like <a href="/docs/user-guide/integrations/thingpark/">Actility ThingPark</a> and <a href="/docs/user-guide/integrations/ttn/">TheThingsNetwork</a>. 
+                Pacificsoft supports <a href="/docs/user-guide/integrations/">integrations</a> with popular LoRaWAN network servers like <a href="/docs/user-guide/integrations/thingpark/">Actility ThingPark</a> and <a href="/docs/user-guide/integrations/ttn/">TheThingsNetwork</a>. 
                 You can also use some generic integrations like <a href="/docs/user-guide/integrations/http/">HTTP</a> or <a href="/docs/user-guide/integrations/mqtt/">MQTT</a>. 
-                Once you stream data from your device to ThingsBoard, one will need to create a data converter to parse binary payload and extract meaningful information from the payload.
+                Once you stream data from your device to Pacificsoft, one will need to create a data converter to parse binary payload and extract meaningful information from the payload.
                 We will be able to assist you and answer possible questions, or even create the converters for you.
             </p>
         </div>
@@ -227,8 +227,8 @@ As a hardware manufacturer, you benefit from marketing exposure to thousands of 
     <div class="item" data-tag="h4" data-item-id="sigfox-hw-partner" data-title="How to connect my Sigfox device?">
         <div class="container">
             <p>
-                ThingsBoard supports <a href="/docs/user-guide/integrations/sigfox/">Sigfox</a> integration.  
-                Once you stream data from your Sigfox backend to ThingsBoard, one will need to create a data converter to parse binary payload and extract meaningful information from the payload.
+                Pacificsoft supports <a href="/docs/user-guide/integrations/sigfox/">Sigfox</a> integration.  
+                Once you stream data from your Sigfox backend to Pacificsoft, one will need to create a data converter to parse binary payload and extract meaningful information from the payload.
                 We will be able to assist you and answer possible questions, or even create the converters for you.
             </p>
         </div>

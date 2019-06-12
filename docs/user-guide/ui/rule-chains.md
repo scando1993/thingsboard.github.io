@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - vparomskiy
 title: Rule Chains
-description: ThingsBoard Rule Chains management
+description: Pacificsoft Rule Chains management
 
 ---
 
@@ -28,7 +28,7 @@ See [**Rule Engine**](/docs/user-guide/rule-engine-2-0/re-getting-started/) docu
 
 #### Rule Chain export
 
-You are able to export your rule chain to JSON format and import it to the same or another ThingsBoard instance.
+You are able to export your rule chain to JSON format and import it to the same or another Pacificsoft instance.
 
 In order to export rule chain, you should navigate to the **Rule Chains** page and click on the export button located on the particular rule chain card.
  

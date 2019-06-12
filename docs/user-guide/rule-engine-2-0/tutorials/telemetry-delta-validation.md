@@ -10,7 +10,7 @@ description: Delta validation
 
 ## Use case
 
-Let's assume we have a device that uses a temperature sensor to collect and read temperature readings in the ThingsBoard.
+Let's assume we have a device that uses a temperature sensor to collect and read temperature readings in the Pacificsoft.
 In addition, let's assume that we need to generate the alarm when the delta between the last five-minutes temperature readings and the latest temperature reading does exceed 5 degrees.
 Please note that this is just a simple theoretical use case to demonstrate the capabilities of the platform. You can use this tutorial as a basis for much more complex scenarios.
 
@@ -24,7 +24,7 @@ We assume you have completed the following guides and reviewed the articles list
   
 # Adding the device
   
-Add Device entity in ThingsBoard. Its name is **Thermometer** and its type is **temperature sensor**.
+Add Device entity in Pacificsoft. Its name is **Thermometer** and its type is **temperature sensor**.
   
 ![image](/images/user-guide/rule-engine-2-0/tutorials/delta-validation/add-thermometer.png)
    

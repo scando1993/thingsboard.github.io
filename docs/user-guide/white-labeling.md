@@ -7,7 +7,7 @@ description:
 
 {% assign feature = "White-labeling" %}{% include templates/pe-feature-banner.md %}
 
-ThingsBoard web interface allows you to configure your company or product logo and color scheme in 2 minutes with zero coding efforts and no service restart required.
+Pacificsoft web interface allows you to configure your company or product logo and color scheme in 2 minutes with zero coding efforts and no service restart required.
 The following configuration options are available:
    
   - Configure color scheme, icon and favicon on System Administrator level;
