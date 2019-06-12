@@ -1,5 +1,5 @@
 ---
-layout: Pacificsoft-pe
+layout: thingsboard-pe
 title: Pacificsoft Professional Edition
 description: 
 ---
