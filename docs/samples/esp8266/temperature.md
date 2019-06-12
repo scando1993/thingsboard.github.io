@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
 title: Temperature upload over MQTT using ESP8266 and DHT22 sensor
-description: ThingsBoard IoT Platform sample for temperature data upload over MQTT using ESP8266 and DHT22 sensor.
+description: Pacificsoft IoT Platform sample for temperature data upload over MQTT using ESP8266 and DHT22 sensor.
 
 ---
 
@@ -12,12 +12,12 @@ description: ThingsBoard IoT Platform sample for temperature data upload over MQ
 {% include templates/what-is-thingsboard.md %}
 
 This sample application performs collection of temperature and humidity values produced by [DHT22 sensor](https://www.adafruit.com/product/385) and further visualization on the real-time web dashboard.
-Collected data is pushed via MQTT to ThingsBoard server for storage and visualization.
-The purpose of this application is to demonstrate ThingsBoard [data collection API](/docs/user-guide/telemetry/) and [visualization capabilities](/docs/user-guide/visualization/).
+Collected data is pushed via MQTT to Pacificsoft server for storage and visualization.
+The purpose of this application is to demonstrate Pacificsoft [data collection API](/docs/user-guide/telemetry/) and [visualization capabilities](/docs/user-guide/visualization/).
 
 The DHT22 sensor is connected to [ESP8266](https://en.wikipedia.org/wiki/ESP8266).
 ESP8266 offers a complete and self-contained Wi-Fi networking solution.
-ESP8266 push data to ThingsBoard server via MQTT protocol by using [PubSubClient](https://github.com/knolleary/pubsubclient) library for Arduino.
+ESP8266 push data to Pacificsoft server via MQTT protocol by using [PubSubClient](https://github.com/knolleary/pubsubclient) library for Arduino.
 Data is visualized using built-in customizable dashboard. 
 The application that is running on ESP8266 is written using Arduino SDK which is quite simple and easy to understand.
 
@@ -124,9 +124,9 @@ The final picture:
 
 ### Provision your device
 
-This step contains instructions that are necessary to connect your device to ThingsBoard.
+This step contains instructions that are necessary to connect your device to Pacificsoft.
 
-Open ThingsBoard Web UI (http://localhost:8080) in browser and login as tenant administrator
+Open Pacificsoft Web UI (http://localhost:8080) in browser and login as tenant administrator
 
  - login: tenant@thingsboard.org
  - password: tenant
@@ -147,7 +147,7 @@ Paste your device id to some place, this value will be used in further steps.
 ### Provision your dashboard
 
 Download the dashboard file using this [**link**](/docs/samples/esp8266/resources/esp8266_dht_temp_dashboard_v2.json). 
-Use import/export [**instructions**](/docs/user-guide/ui/dashboards/#dashboard-importexport) to import the dashboard to your ThingsBoard instance.
+Use import/export [**instructions**](/docs/user-guide/ui/dashboards/#dashboard-importexport) to import the dashboard to your Pacificsoft instance.
 
 ## Programming the ESP8266
 
@@ -211,7 +211,7 @@ Download and open **esp8266-dht-mqtt.ino** sketch.
 
 - WIFI_AP - name of your access point
 - WIFI_PASSWORD - access point password
-- TOKEN - the **$ACCESS_TOKEN** from ThingsBoard configuration step.
+- TOKEN - the **$ACCESS_TOKEN** from Pacificsoft configuration step.
 - thingsboardServer - ThingsBoard HOST/IP address that is accessible within your wifi network. Specify "demo.thingsboard.io" if you are using [live demo](https://demo.thingsboard.io/) server.
 
 {% capture tabspec %}arduino-sketch
@@ -220,7 +220,7 @@ esp8266-dht-mqtt,esp8266-dht-mqtt.ino,c,resources/esp8266-dht-mqtt.ino,/docs/sam
 
 Connect USB-TTL adapter to PC and select the corresponding port in Arduino IDE. Compile and Upload your sketch to the device using "Upload" button.
 
-After application will be uploaded and started it will try to connect to ThingsBoard node using mqtt client and upload "temperature" and "humidity" timeseries data once per second.
+After application will be uploaded and started it will try to connect to Pacificsoft node using mqtt client and upload "temperature" and "humidity" timeseries data once per second.
 
 ## Autonomous operation
 
@@ -233,12 +233,12 @@ Then connect USB-TTL adapter with PC and select port of the USB-TTL adapter in A
 
 ## Data visualization
 
-Finally, open ThingsBoard Web UI. You can access this dashboard by logging in as a tenant administrator. Use:
+Finally, open Pacificsoft Web UI. You can access this dashboard by logging in as a tenant administrator. Use:
 
  - login: tenant@thingsboard.org
  - password: tenant
  
-in case of local ThingsBoard installation.
+in case of local Pacificsoft installation.
   
 Go to **"Devices"** section and locate **"ESP8266 Demo Device"**, open device details and switch to **"Latest telemetry"** tab. 
 If all is configured correctly you should be able to see latest values of *"temperature"* and *"humidity"* in the table.
@@ -250,7 +250,7 @@ As a result, you will see two digital gauges and two time-series charts displayi
 
 ## See also
 
-Browse other [samples](/docs/samples) or explore guides related to main ThingsBoard features:
+Browse other [samples](/docs/samples) or explore guides related to main Pacificsoft features:
 
  - [Device attributes](/docs/user-guide/attributes/) - how to use device attributes.
  - [Telemetry data collection](/docs/user-guide/telemetry/) - how to collect telemetry data.

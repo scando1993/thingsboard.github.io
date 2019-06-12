@@ -1,15 +1,15 @@
 ---
 layout: docwithnav
-title: ThingsBoard Architecture
-description: ThingsBoard IoT Platform architecture
+title: Pacificsoft Architecture
+description: Pacificsoft IoT Platform architecture
 
 ---
 
 * TOC
 {:toc}
 
-ThingsBoard is designed to distribute workload across multiple nodes without a single point of failure.
-Each ThingsBoard node is identical and can handle request from both device and server-side applications.
+Pacificsoft is designed to distribute workload across multiple nodes without a single point of failure.
+Each Pacificsoft node is identical and can handle request from both device and server-side applications.
  
 ## High-level overview
 
@@ -17,16 +17,16 @@ Each ThingsBoard node is identical and can handle request from both device and s
 
 #### Device Connectivity
 
-ThingsBoard supports [**MQTT**](/docs/reference/mqtt-api/), [**CoAP**](/docs/reference/coap-api/) and [**HTTP**](/docs/reference/http-api/) protocols for device connectivity.
+Pacificsoft supports [**MQTT**](/docs/reference/mqtt-api/), [**CoAP**](/docs/reference/coap-api/) and [**HTTP**](/docs/reference/http-api/) protocols for device connectivity.
 It is possible to plugin support of different protocols or customize existing implementations.
 
 #### Rule Engine
 
-ThingsBoard [Rule Engine](/docs/user-guide/rule-engine/) allows to process messages from devices and trigger configurable processing modules called Plugins.
+Pacificsoft [Rule Engine](/docs/user-guide/rule-engine/) allows to process messages from devices and trigger configurable processing modules called Plugins.
 
 #### Core Services
 
-ThingsBoard contains set of core services that allow managing the following entities:
+Pacificsoft contains set of core services that allow managing the following entities:
 
  * Devices and their credentials
  * Rule Chains and Rule Nodes
@@ -38,15 +38,15 @@ Rules are able to invoke a certain subset of this APIs. For example, a rule can 
 
 #### Server-side API Gateway
 
-Every ThingsBoard server provides REST API for registered users. 
+Every Pacificsoft server provides REST API for registered users. 
 System Telemetry service allows to manage attributes and fetch timeseries data using websockets and REST API.
 System RPC service provides REST API to push custom commands to devices.
-Learn more about ThingsBoard REST APIs [here](/docs/reference/rest-api/)
+Learn more about Pacificsoft REST APIs [here](/docs/reference/rest-api/)
 
 ## Actor model
 
 [Actor model](https://en.wikipedia.org/wiki/Actor_model) enables high performance concurrent processing of messages from devices as long as server-side API calls.
-ThingsBoard uses [Akka](http://akka.io/) as an actor system implementation with following actor hierarchies.
+Pacificsoft uses [Akka](http://akka.io/) as an actor system implementation with following actor hierarchies.
 
  ![image](/images/reference/actor-system-hierarchies.svg)
 
@@ -66,24 +66,24 @@ The brief description of each actor's functionality is listed below:
  
  * **Device Session Manager Actor** - responsible for management of device session actors. 
  Creates session actors on a first message with the corresponding session id. Closes session actors when the corresponding session is closed. 
- * **Session Actor** - represents a communication session between a device and ThingsBoard server.
+ * **Session Actor** - represents a communication session between a device and Pacificsoft server.
  Sessions may be synchronous (HTTP, CoAP) and asynchronous (MQTT, CoAP with Observe option).
  
  * **RPC Session Manager Actor** - responsible for management of cluster RPC session actors.
  Creates session actor when a new server is up. Closes session actor when server is down.
- * **RPC Session Actor** - represents a communication session between two ThingsBoard servers in the cluster mode.
+ * **RPC Session Actor** - represents a communication session between two Pacificsoft servers in the cluster mode.
  Communication is done using HTTP/2 based on [gRPC](http://www.grpc.io/). 
 
 ## Clustering mode
 
 ###### Service Discovery
 
-ThingsBoard uses Zookeeper for service discovery.
-All ThingsBoard nodes are identical and registered as ephemeral in Zookeeper. Apache Curator [path cache receipt](http://curator.apache.org/curator-recipes/path-cache.html) is used to keep track of all available sibling nodes.
+Pacificsoft uses Zookeeper for service discovery.
+All Pacificsoft nodes are identical and registered as ephemeral in Zookeeper. Apache Curator [path cache receipt](http://curator.apache.org/curator-recipes/path-cache.html) is used to keep track of all available sibling nodes.
 
 ###### Consistent Hashing
 
-ThingsBoard adopts [consistent hashing](https://dzone.com/articles/simple-magic-consistent) to ensure scalability and availability.
+Pacificsoft adopts [consistent hashing](https://dzone.com/articles/simple-magic-consistent) to ensure scalability and availability.
 Message from Device A that is received on a particular node may be forwarded to the other node based on the hash of the device ID.
 Although this introduces certain networking overhead, it allows to process all messages from a particular device using corresponding device actor on a determined server, which introduces the following advantages:
 
@@ -91,7 +91,7 @@ Although this introduces certain networking overhead, it allows to process all m
  * avoid race conditions. All messages for a particular device are processed on a determined server.
  * allows targeting server-side api calls based on the device id.
    
-The illustration below demonstrates how ThingsBoard handles RPC request to Device D1.
+The illustration below demonstrates how Pacificsoft handles RPC request to Device D1.
 In this case, the request arrives at Server A, but D1 is connected using MQTT to Server C. 
 In the worst-case scenario, D1 Device Actor will be located on another server B that obviously does not match either A or C.
 
@@ -101,18 +101,18 @@ In the worst-case scenario, D1 Device Actor will be located on another server B 
 
 ### Transport encryption
 
-As a system administrator, you are able to configure ThingsBoard to use secure sockets layer for HTTP(s) and MQTT transports.
+As a system administrator, you are able to configure Pacificsoft to use secure sockets layer for HTTP(s) and MQTT transports.
 DTLS for CoAP is not supported yet.
 
 ### Device authentication
 
-ThingsBoard is designed to support many types of device credentials.
+Pacificsoft is designed to support many types of device credentials.
 Current release provides support of token based credentials for all [protocols](/docs/reference/protocols/) 
 and support of X.509 certificate based credentials for MQTT protocol. See [MQTT over SSL](/docs/user-guide/mqtt-over-ssl/) guide for more details.
 
 ## Third-party tools
 
-ThingsBoard uses following main third-party projects:
+Pacificsoft uses following main third-party projects:
  
  * Akka - for actor system implementation
  * Zookeeper - for services coordination

@@ -9,7 +9,7 @@ description: SigFox integration guide
 
 ## Overview
 
-Sigfox Integration allows to stream data from Sigfox Backend to ThingsBoard and converts binary device payloads to the ThingsBoard format.
+Sigfox Integration allows to stream data from Sigfox Backend to Pacificsoft and converts binary device payloads to the Pacificsoft format.
 
  ![image](/images/user-guide/integrations/sigfox-integration.svg)
  

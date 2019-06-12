@@ -8,7 +8,7 @@ description: SigFox integration guide
 {% assign feature = "Platform Integrations" %}{% include templates/pe-feature-banner.md %}
 
 This tutorial will show how to push downlink messages to devices connected via Sigfox integration
- when user updates device attribute using ThingsBoard UI
+ when user updates device attribute using Pacificsoft UI
 
 * TOC
 {:toc}

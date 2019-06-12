@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
-title: Raspberry Pi GPIO control over MQTT using ThingsBoard
-description: ThingsBoard IoT Platform sample for Raspberry Pi GPIO control over MQTT
+title: Raspberry Pi GPIO control over MQTT using Pacificsoft
+description: Pacificsoft IoT Platform sample for Raspberry Pi GPIO control over MQTT
 
 ---
 
@@ -11,10 +11,10 @@ description: ThingsBoard IoT Platform sample for Raspberry Pi GPIO control over 
 ## Introduction
 {% include templates/what-is-thingsboard.md %}
 
-This sample application will allow you to control GPIO of your Raspberry Pi device using ThingsBoard web UI. We will observe GPIO control using Led connected to one of the pins.
-The purpose of this application is to demonstrate ThingsBoard [RPC capabilities](/docs/user-guide/rpc/).
+This sample application will allow you to control GPIO of your Raspberry Pi device using Pacificsoft web UI. We will observe GPIO control using Led connected to one of the pins.
+The purpose of this application is to demonstrate Pacificsoft [RPC capabilities](/docs/user-guide/rpc/).
 
-Raspberry Pi will use simple application written in Python that will connect to ThingsBoard server via [MQTT](https://en.wikipedia.org/wiki/MQTT) and listen to RPC commands.
+Raspberry Pi will use simple application written in Python that will connect to Pacificsoft server via [MQTT](https://en.wikipedia.org/wiki/MQTT) and listen to RPC commands.
 Current GPIO state and GPIO control widget is visualized using built-in customizable dashboard. 
 
 The video below demonstrates the final result of this tutorial.
@@ -84,7 +84,7 @@ You can access this dashboard by logging in as a tenant administrator. Use
  - login: tenant@thingsboard.org
  - password: tenant
  
-in case of local ThingsBoard installation.
+in case of local Pacificsoft installation.
  
 Once logged in, open **Dashboards->Raspberry PI GPIO Demo Dashboard** page. You should observe demo dashboard with GPIO control and status panel for your device. 
 Now you can switch status of GPIOs using control panel. As a result, you will see LEDs status change on the device and on the status panel.
@@ -95,7 +95,7 @@ Below is the screenshot of the "Raspberry PI GPIO Demo Dashboard".
  
 ## See Also
 
-Browse other [samples](/docs/samples) or explore guides related to main ThingsBoard features:
+Browse other [samples](/docs/samples) or explore guides related to main Pacificsoft features:
 
  - [Device attributes](/docs/user-guide/attributes/) - how to use device attributes.
  - [Telemetry data collection](/docs/user-guide/telemetry/) - how to collect telemetry data.

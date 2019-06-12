@@ -1,13 +1,13 @@
 ---
 layout: docwithnav
-title: Installing ThingsBoard PE from AWS Marketplace
-description: Installing ThingsBoard PE from AWS Marketplace
+title: Installing Pacificsoft PE from AWS Marketplace
+description: Installing Pacificsoft PE from AWS Marketplace
 
 ---
 
-This guide describes how to install ThingsBoard Professional Edition from AWS Marketplace. 
+This guide describes how to install Pacificsoft Professional Edition from AWS Marketplace. 
 
-With this option you pay for Thingsboard Professional Edition on hourly basis.
+With this option you pay for Pacificsoft Professional Edition on hourly basis.
  
 
 * TOC
@@ -17,14 +17,14 @@ With this option you pay for Thingsboard Professional Edition on hourly basis.
 
 - Active [Amazon AWS](https://aws.amazon.com/){:target="_blank"} account
 
-##### Step 1. Select ThingsBoard PE Instance Type
+##### Step 1. Select Pacificsoft PE Instance Type
 
 Select one of the available AWS Marketplace Subscriptions:
-- [AWS Marketplace: ThingsBoard PE Maker](https://aws.amazon.com/marketplace/pp/B07MLRVF3Q){:target="_blank"}
-- [AWS Marketplace: ThingsBoard PE Prototype](https://aws.amazon.com/marketplace/pp/B07MLS5VMB){:target="_blank"}
-- [AWS Marketplace: ThingsBoard PE Startup](https://aws.amazon.com/marketplace/pp/B07MQ1G36K){:target="_blank"}
-- [AWS Marketplace: ThingsBoard PE Business](https://aws.amazon.com/marketplace/pp/B07MLRWV22){:target="_blank"}
-- [AWS Marketplace: ThingsBoard PE Enterprise](https://aws.amazon.com/marketplace/pp/B07MBYZSFQ){:target="_blank"}
+- [AWS Marketplace: Pacificsoft PE Maker](https://aws.amazon.com/marketplace/pp/B07MLRVF3Q){:target="_blank"}
+- [AWS Marketplace: Pacificsoft PE Prototype](https://aws.amazon.com/marketplace/pp/B07MLS5VMB){:target="_blank"}
+- [AWS Marketplace: Pacificsoft PE Startup](https://aws.amazon.com/marketplace/pp/B07MQ1G36K){:target="_blank"}
+- [AWS Marketplace: Pacificsoft PE Business](https://aws.amazon.com/marketplace/pp/B07MLRWV22){:target="_blank"}
+- [AWS Marketplace: Pacificsoft PE Enterprise](https://aws.amazon.com/marketplace/pp/B07MBYZSFQ){:target="_blank"}
 
 ##### Step 2. Subscribe to Selected Instance Type
 
@@ -96,7 +96,7 @@ Instance ID
 
 - **i-03d850e6a818328e4**
 
-##### Step 11. Connect to Thingsboard UI
+##### Step 11. Connect to Pacificsoft UI
 
 Now you can open this link in your browser:
 

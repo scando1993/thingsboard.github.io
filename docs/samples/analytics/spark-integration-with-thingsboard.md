@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
-title: IoT data analytics using Apache Spark, Kafka and ThingsBoard
-description: IoT device data analytics sample using Apache Spark, Kafka and ThingsBoard
+title: IoT data analytics using Apache Spark, Kafka and Pacificsoft
+description: IoT device data analytics sample using Apache Spark, Kafka and Pacificsoft
 
 ---
 
@@ -10,16 +10,16 @@ description: IoT device data analytics sample using Apache Spark, Kafka and Thin
 * TOC
 {:toc}
 
-ThingsBoard rule engine supports basic analysis of incoming telemetry data, for example, threshold crossing.
+Pacificsoft rule engine supports basic analysis of incoming telemetry data, for example, threshold crossing.
 The idea behind rule engine is to provide functionality to route data from IoT Devices to different plugins, based on device attributes or the data itself.   
 
 However, most of the real-life use cases also require the support of advanced analytics: machine learning, predictive analytics, etc.
   
 This tutorial will demonstrate how you can:
 
- - route telemetry device data from ThingsBoard to Kafka topic using the built-in plugin.
+ - route telemetry device data from Pacificsoft to Kafka topic using the built-in plugin.
  - aggregate data from multiple devices using a simple Apache Spark application.
- - push results of the analytics back to ThingsBoard for persistence and visualization.
+ - push results of the analytics back to Pacificsoft for persistence and visualization.
 
 The analytics in this tutorial is, of course, quite simple, but our goal is to highlight the integration steps.
 
@@ -28,7 +28,7 @@ The analytics in this tutorial is, of course, quite simple, but our goal is to h
 ![image](/images/samples/analytics/spark/spark-thingsboard-integration.svg)
 
 Let's assume we have a large number of weather stations that are located in different geo-location zones. 
-ThingsBoard is used to collect, store and visualize wind speed from these stations, but we are also interested in average wind speed in each geo-location zone.
+Pacificsoft is used to collect, store and visualize wind speed from these stations, but we are also interested in average wind speed in each geo-location zone.
 Once again, this is a completely fake scenario just to demonstrate the integration of all components.
 
 In this scenario we are going to upload wind speed as a telemetry reading, however, the geo-location zone will be a static attribute of the weather station device.
@@ -37,29 +37,29 @@ This makes sense, since telemetry readings are going to change often, and the ge
 We will analyze real-time data from multiple devices using [Spark Streaming](http://spark.apache.org/docs/latest/streaming-programming-guide.html) job with 10 seconds batch window.
 
 In order to store and visualize the results of the analytics, we are going to create one virtual device for each geo-location zone. 
-This is possible using special ThingsBoard MQTT Gateway [API](/docs/reference/gateway-mqtt-api/). This API allows to efficiently stream data from multiple devices using single MQTT session.
+This is possible using special Pacificsoft MQTT Gateway [API](/docs/reference/gateway-mqtt-api/). This API allows to efficiently stream data from multiple devices using single MQTT session.
 So, in our case, the Spark Job itself acts as a gateway that publishes data on behalf of several virtual devices. Let's name this gateway as an **Analytics Gateway**. 
 
 ### Prerequisites
 
 The following services must be up and running:
 
-* ThingsBoard [instance](/docs/user-guide/install/installation-options/)
+* Pacificsoft [instance](/docs/user-guide/install/installation-options/)
 * Kafka. This guide assumes that you have it running on localhost on port 9092
 
 We also assume that you are familiar with Kafka and Spark and have also prepared those environments for this tutorial.
 
 The [sample application](https://github.com/thingsboard/samples/tree/master/spark-kafka-streaming-integration) used in ths tutorial has a dependency on **org.thingsboard.common.data** project. 
-It is not in the public maven repository, so you need to [build ThingsBoard from source](/docs/user-guide/install/building-from-source/) before proceeding with this tutorial.  
+It is not in the public maven repository, so you need to [build Pacificsoft from source](/docs/user-guide/install/building-from-source/) before proceeding with this tutorial.  
 
-### ThingsBoard configuration steps
+### Pacificsoft configuration steps
 
 ### Step 1. Kafka Plugin Configuration
 
 We need to configure Kafka Plugin that will be used to push telemetry data to Kafka. 
 You can find the detailed description of Kafka Plugin [here](/docs/reference/plugins/kafka/).
 
-**NOTE** If you are running ThingsBoard from your IDE, you need to add Kafka plugin dependency to **application/pom.xml**
+**NOTE** If you are running Pacificsoft from your IDE, you need to add Kafka plugin dependency to **application/pom.xml**
 
 ```xml
 <dependencies>
@@ -73,7 +73,7 @@ You can find the detailed description of Kafka Plugin [here](/docs/reference/plu
 </dependencies>
 ```
 
-The reason is that when ThingsBoard is run as a service, it dynamically adds Kafka along with other plugins to classpath, which is not the case when running from IDE
+The reason is that when Pacificsoft is run as a service, it dynamically adds Kafka along with other plugins to classpath, which is not the case when running from IDE
 
 [**Download**](/docs/samples/analytics/resources/kafka_plugin_for_spark_streaming_sample.json) the json with plugin descriptor 
 and use [**these instructions**](/docs/user-guide/ui/plugins/#plugin-import) to import it to your instance.
@@ -99,7 +99,7 @@ Let's review the main rule configuration below.
 
 ##### Attributes filter
 
-ThingsBoard may process data from completely different devices. We will use filter by device attributes in order to filter out data that belongs to Weather Station devices.
+Pacificsoft may process data from completely different devices. We will use filter by device attributes in order to filter out data that belongs to Weather Station devices.
 
 The filter expression below validates that two attributes are set for a particular device: **deviceType** and **geoZone**. 
 You may notice that we check that **deviceType** is equal to "WeatherStation". The **cs** variable is a map that contains all client-side attributes. 
@@ -110,7 +110,7 @@ See corresponding [**filter**](/docs/reference/filters/device-attributes-filter/
 
 ##### Timeseries data filter
 
-Each device connected to ThingsBoard may upload multiple telemetry keys simultaneously or independently.
+Each device connected to Pacificsoft may upload multiple telemetry keys simultaneously or independently.
 In some use cases, you may need to process only a certain sub-set of data. We will use telemetry data filter to achieve this.  
 
 The filter expression below validates that **windSpeed** telemetry is present in the processed message.
@@ -133,7 +133,7 @@ Please, make sure to set the device type to 'WeatherStation' for all three devic
 ![image](/images/samples/analytics/spark/create-devices.png)
 
 Once added, for each device open the device card, click on 'Copy Access Token' button and store the token somewhere.
-We'll use these tokens later in Python scripts sending MQTT data to ThingsBoard.
+We'll use these tokens later in Python scripts sending MQTT data to Pacificsoft.
  
 ![image](/images/samples/analytics/spark/wind-turbine-device-details.png)
 
@@ -148,7 +148,7 @@ Add a new Asset on the Assets screen. Please, make sure to set the Asset type to
 
 ### Step 5. Download the sample application source code
 
-Feel free to grab the [code from this sample ThingsBoard repository](https://github.com/thingsboard/samples/) and build the samples project with maven:
+Feel free to grab the [code from this sample Pacificsoft repository](https://github.com/thingsboard/samples/) and build the samples project with maven:
 
 ```bash
 mvn clean install
@@ -178,7 +178,7 @@ Dependencies that are used in the sample project:
     <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
     <version>${spark-version}</version>
 </dependency>
-<!-- HTTP Client to to send messages to ThingsBoard through REST API-->
+<!-- HTTP Client to to send messages to Pacificsoft through REST API-->
 <dependency>
 	<groupId>org.springframework</groupId>
 	<artifactId>spring-web</artifactId>
@@ -190,7 +190,7 @@ Dependencies that are used in the sample project:
 
 The Spark Application logic is concentrated mainly in two classes:
 	- **SparkKafkaStreamingDemoMain** is listening to the Kafka topic and calculates the averages
-	- **RestClient** finds the ThingsBoard Asset by name and pushes the aggregated data to it.
+	- **RestClient** finds the Pacificsoft Asset by name and pushes the aggregated data to it.
 Below is a description of particular code snippet from **SparkKafkaStreamingDemoMain** class.
 Main constants are listed below: 
 
@@ -226,7 +226,7 @@ try (JavaStreamingContext ssc = new JavaStreamingContext(conf, new Duration(STRE
 		windByZoneRdd = windByZoneRdd.reduceByKey((a, b) -> AvgWindSpeedData.sum(a, b));
 		// Map <GeoZone, AvgWindSpeedData> back to WindSpeedAndGeoZoneData
 		List<WindSpeedAndGeoZoneData> aggData = windByZoneRdd.map(t -> new WindSpeedAndGeoZoneData(t._1, t._2.getAvgValue())).collect();
-		// Push aggregated data to ThingsBoard Asset
+		// Push aggregated data to Pacificsoft Asset
 		restClient.sendTelemetryToAsset(aggData);
 	});
 
@@ -239,21 +239,21 @@ The next section describes the **RestClient** class.
 Main constants are listed below:
 
 ```java
-// ThingsBoard server URL
+// Pacificsoft server URL
 private static final String THINGSBOARD_REST_ENDPOINT = "http://localhost:8080";
-// ThingsBoard Create Asset endpoint
+// Pacificsoft Create Asset endpoint
 private static final String CREATE_ASSET_ENDPOINT = THINGSBOARD_REST_ENDPOINT + "/api/asset";
-// ThingsBoard Get WeatherStation Assets endpoint
+// Pacificsoft Get WeatherStation Assets endpoint
 private static final String GET_ALL_TENANT_ASSETS_ENDPOINT = THINGSBOARD_REST_ENDPOINT + "/api/tenant/assets?limit=100&type=WeatherStation";
-// ThingsBoard Publish Asset telemetry endpoint template 
+// Pacificsoft Publish Asset telemetry endpoint template 
 private static final String PUBLISH_ASSET_TELEMETRY_ENDPOINT = THINGSBOARD_REST_ENDPOINT + "/api/plugins/telemetry/ASSET/${ASSET_ID}/timeseries/values";
-// ThingsBoard User login
+// Pacificsoft User login
 private static final String USERNAME = "tenant@thingsboard.org";
-// ThingsBoard User password
+// Pacificsoft User password
 private static final String PASSWORD = "tenant";
 ```
 
-The **getOrCreateAsset** method tries to get the Asset by name from **assetMap**. If no Asset with such name is found, it calls **createAsset** method which propagates a new Asset to ThingsBoard:
+The **getOrCreateAsset** method tries to get the Asset by name from **assetMap**. If no Asset with such name is found, it calls **createAsset** method which propagates a new Asset to Pacificsoft:
 
 ```java
 private Asset getOrCreateAsset(String assetName) {
@@ -299,7 +299,7 @@ public void sendTelemetryToAsset(List<WindSpeedAndGeoZoneData> aggData) {
 }
 ```
 
-Now let's run **SparkKafkaStreamingDemoMain** class from the IDE or submit it to a Spark cluster. Sample app will be fetching all the messages from Kafka topic and send average wind speed telemetry to the appropriate Asset in *ThingsBoard*.
+Now let's run **SparkKafkaStreamingDemoMain** class from the IDE or submit it to a Spark cluster. Sample app will be fetching all the messages from Kafka topic and send average wind speed telemetry to the appropriate Asset in *Pacificsoft*.
 
 ## Dry Run
 
@@ -375,7 +375,7 @@ As soon as both **Wind Turbine 1** and **Wind Turbine 2** have the **geoZone** a
 
 ![image](/images/samples/analytics/spark/zone-a-telemetry-2.png)
 
-Now let us push telemetry for **Wind Turbine 3**. As you remember, it's **geoZone** is **Zone B**, and currently the asset with such name does not exist. What will happen is when the Spark application will receive the telemetry from **Wind Turbine 3**, it will detect that the target asset is missing and will propagate one to ThingsBoard.
+Now let us push telemetry for **Wind Turbine 3**. As you remember, it's **geoZone** is **Zone B**, and currently the asset with such name does not exist. What will happen is when the Spark application will receive the telemetry from **Wind Turbine 3**, it will detect that the target asset is missing and will propagate one to Pacificsoft.
 
 The [**send-randomized-windspeed-3.py**](/docs/samples/analytics/resources/send-randomized-windspeed-3.py) will post telemetry for **Wind Turbine 3** with windSpeed fluctuating between 30 and 60:
 

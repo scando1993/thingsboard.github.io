@@ -2,8 +2,8 @@
 layout: docwithnav
 assignees:
 - ashvayka
-title: Installing ThingsBoard using Docker (Linux or Mac OS)
-description: Installing ThingsBoard IoT Platform using Docker (Linux or Mac OS)
+title: Installing Pacificsoft using Docker (Linux or Mac OS)
+description: Installing Pacificsoft IoT Platform using Docker (Linux or Mac OS)
 
 ---
 
@@ -12,7 +12,7 @@ description: Installing ThingsBoard IoT Platform using Docker (Linux or Mac OS)
 * TOC
 {:toc}
 
-This guide will help you to install and start ThingsBoard using Docker on Linux or Mac OS.
+This guide will help you to install and start Pacificsoft using Docker on Linux or Mac OS.
 
 
 ## Prerequisites
@@ -21,15 +21,15 @@ This guide will help you to install and start ThingsBoard using Docker on Linux 
 
 ## Running
 
-Depending on the database used there are three type of ThingsBoard single instance docker images:
+Depending on the database used there are three type of Pacificsoft single instance docker images:
 
-* [thingsboard/tb-cassandra](https://hub.docker.com/r/thingsboard/tb-cassandra/) - single instance of ThingsBoard with Cassandra database. 
+* [thingsboard/tb-cassandra](https://hub.docker.com/r/thingsboard/tb-cassandra/) - single instance of Pacificsoft with Cassandra database. 
     
     The most performant and recommended option but requires at least 4GB of RAM. 8GB is recommended.  
-* [thingsboard/tb-postgres](https://hub.docker.com/r/thingsboard/tb-postgres/) - single instance of ThingsBoard with PostgreSQL database.
+* [thingsboard/tb-postgres](https://hub.docker.com/r/thingsboard/tb-postgres/) - single instance of Pacificsoft with PostgreSQL database.
     
     Recommended option for small servers with at least 1GB of RAM and minimum load (few messages per second). 2-4GB is recommended.
-* [thingsboard/tb](https://hub.docker.com/r/thingsboard/tb/) - single instance of ThingsBoard with embedded HSQLDB database. 
+* [thingsboard/tb](https://hub.docker.com/r/thingsboard/tb/) - single instance of Pacificsoft with embedded HSQLDB database. 
     
     **Note:** Not recommended for any evaluation or production usage and is used only for development purposes and automatic tests. 
 
@@ -43,17 +43,17 @@ $ docker run -it -p 9090:9090 -p 1883:1883 -p 5683:5683/udp -v ~/.mytb-data:/dat
 Where: 
     
 - `docker run`              - run this container
-- `-it`                     - attach a terminal session with current ThingsBoard process output
+- `-it`                     - attach a terminal session with current Pacificsoft process output
 - `-p 9090:9090`            - connect local port 9090 to exposed internal HTTP port 9090
 - `-p 1883:1883`            - connect local port 1883 to exposed internal MQTT port 1883    
 - `-p 5683:5683`            - connect local port 5683 to exposed internal COAP port 5683 
-- `-v ~/.mytb-data:/data`   - mounts the host's dir `~/.mytb-data` to ThingsBoard DataBase data directory
-- `-v ~/.mytb-logs:/var/log/thingsboard`   - mounts the host's dir `~/.mytb-logs` to ThingsBoard logs directory
+- `-v ~/.mytb-data:/data`   - mounts the host's dir `~/.mytb-data` to Pacificsoft DataBase data directory
+- `-v ~/.mytb-logs:/var/log/thingsboard`   - mounts the host's dir `~/.mytb-logs` to Pacificsoft logs directory
 - `--name mytb`             - friendly local name of this machine
-- `--restart always`        - automatically start ThingsBoard in case of system reboot and restart in case of failure.
+- `--restart always`        - automatically start Pacificsoft in case of system reboot and restart in case of failure.
 - `thingsboard/tb-cassandra`          - docker image, can be also `thingsboard/tb-postgres` or `thingsboard/tb`
     
-After executing this command you can open `http://{your-host-ip}:9090` in you browser (for ex. `http://localhost:9090`). You should see ThingsBoard login page.
+After executing this command you can open `http://{your-host-ip}:9090` in you browser (for ex. `http://localhost:9090`). You should see Pacificsoft login page.
 Use the following default credentials:
 
 - **Systen Administrator**: sysadmin@thingsboard.org / sysadmin
@@ -66,7 +66,7 @@ You can always change passwords for each account in account profile page.
 
 You can detach from session terminal with `Ctrl-p` `Ctrl-q` - the container will keep running in the background.
 
-To reattach to the terminal (to see ThingsBoard logs) run:
+To reattach to the terminal (to see Pacificsoft logs) run:
 
 ```
 $ docker attach mytb

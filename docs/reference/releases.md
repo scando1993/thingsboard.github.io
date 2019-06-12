@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
-title: ThingsBoard Release Notes
-description: ThingsBoard architecture
+title: Pacificsoft Release Notes
+description: Pacificsoft architecture
 
 ---
 
@@ -10,14 +10,14 @@ description: ThingsBoard architecture
 
 ## v2.3.1 (April 3, 2019)
 
-### ThingsBoard CE
+### Pacificsoft CE
 
 Minor release with the following improvements.
 
 Main features:
 
 - Migrate to Spring Boot 2.1.0 and Spring 5.1.2;
-- [Kubernetes scripts](https://github.com/thingsboard/thingsboard/tree/master/k8s) for ThingsBoard Microservices;
+- [Kubernetes scripts](https://github.com/thingsboard/thingsboard/tree/master/k8s) for Pacificsoft Microservices;
 - UI: New Trip Animation Widget;
 - UI: New Date Range Navigator Widget;
 - UI: New [Entities Hierarchy Widget](https://www.youtube.com/watch?v=bc07ys-azqw);
@@ -53,7 +53,7 @@ Bug fixes:
 - UI: fixed individual tooltip content in Flot widget;
 - added prefix to device credentials cache keys.
 
-### ThingsBoard PE
+### Pacificsoft PE
 
 Everything from TB CE v2.3.1 with the following improvements.
 
@@ -80,7 +80,7 @@ Bug fixes:
 
 ## v2.3 (February 7, 2019)
 
-### ThingsBoard CE
+### Pacificsoft CE
 
 Minor release with the following improvements.
 
@@ -127,7 +127,7 @@ Bug fixes:
 - UI: Flot timeseries widgets: fixed issue with tooltip vertical position;
 - UI: Fixed [issue #1427](https://github.com/thingsboard/thingsboard/issues/1427): Boolean input widgets were saving wrong value; 
 
-### ThingsBoard PE
+### Pacificsoft PE
 
 Everything from TB CE v2.3+ the following improvements.
 
@@ -151,7 +151,7 @@ Bug fixes:
 
 ## v2.2 (November 30, 2018)
 
-### ThingsBoard CE
+### Pacificsoft CE
 
 Minor release with the following improvements.
 
@@ -159,16 +159,16 @@ Main features:
 
  - Introduced support of a **microservices** architecture and deployment options. 
    See [microservices](/docs/reference/msa/) architecture page and [deployment](https://github.com/thingsboard/thingsboard/blob/master/docker/README.md) tips for more details;
- - Improved **docker images** to be able to launch ThingsBoard with a single command. 
+ - Improved **docker images** to be able to launch Pacificsoft with a single command. 
    See [Linux or MacOS](/docs/user-guide/install/docker/) and [Windows](/docs/user-guide/install/docker-windows/) installation pages; 
  - Added [**Entity Views**](/docs/user-guide/entity-views/) feature to allow to 
  limit the degree of exposure of the Device or Asset telemetry and attributes to the Customers;
- - Added ThingsBoard [**JavaScript Executor**](/docs/reference/msa/#javascript-executor-microservices) microservice to isolate execution of rule engine scripts from the main rule engine components and flow;
- - Added ThingsBoard [**Web UI**](/docs/reference/msa/#web-ui-microservices) microservice to isolate static content hosting from the REST and Websocket APIs;
- - Added ThingsBoard [**MQTT, HTTP and CoAP**](/docs/reference/msa/#transport-microservices) transport microservices to isolate communication with devices from the main ThingsBoard services;
- - Added support of [Kafka](/docs/reference/msa/#kafka) to store device telemetry before it is processed with ThingsBoard Rule Engine;
+ - Added Pacificsoft [**JavaScript Executor**](/docs/reference/msa/#javascript-executor-microservices) microservice to isolate execution of rule engine scripts from the main rule engine components and flow;
+ - Added Pacificsoft [**Web UI**](/docs/reference/msa/#web-ui-microservices) microservice to isolate static content hosting from the REST and Websocket APIs;
+ - Added Pacificsoft [**MQTT, HTTP and CoAP**](/docs/reference/msa/#transport-microservices) transport microservices to isolate communication with devices from the main Pacificsoft services;
+ - Added support of [Kafka](/docs/reference/msa/#kafka) to store device telemetry before it is processed with Pacificsoft Rule Engine;
  - Introduced [Rate Limits](/docs/user-guide/api-limits/) for REST, Websocket and Device APIsl
- - Framework for [**black-box testing**](https://github.com/thingsboard/thingsboard/tree/master/msa/black-box-tests) of ThingsBoard by automatically launching ThingsBoard cluster using docker-compose and running API tests;
+ - Framework for [**black-box testing**](https://github.com/thingsboard/thingsboard/tree/master/msa/black-box-tests) of Pacificsoft by automatically launching Pacificsoft cluster using docker-compose and running API tests;
  - Added input widgets bundle. 
 
 Additional features:
@@ -216,7 +216,7 @@ Bug fixes:
  - UI. Hide fixed table header in entity attributes table when in widget selection mode.
  - UI. Fix deprecated maps settings. 
 
-### ThingsBoard PE
+### Pacificsoft PE
 
 Everything from TB CE v2.2+ the following improvements.
 

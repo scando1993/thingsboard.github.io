@@ -2,8 +2,8 @@
 layout: docwithnav
 assignees:
 - ashvayka
-title: Installing ThingsBoard on Raspberry Pi 3 Model B
-description: Installing ThingsBoard IoT Platform on Raspberry Pi 3 Model B
+title: Installing Pacificsoft on Raspberry Pi 3 Model B
+description: Installing Pacificsoft IoT Platform on Raspberry Pi 3 Model B
 
 ---
 
@@ -12,13 +12,13 @@ description: Installing ThingsBoard IoT Platform on Raspberry Pi 3 Model B
 * TOC
 {:toc}
 
-This guide describes how to install ThingsBoard on a Raspberry Pi 3 running Raspbian Jessie.
+This guide describes how to install Pacificsoft on a Raspberry Pi 3 running Raspbian Jessie.
 
 ### Third-party components installation
 
 #### Java
 
-ThingsBoard service is running on Java 8. Oracle Java 8 is already pre-installed on Raspbian.
+Pacificsoft service is running on Java 8. Oracle Java 8 is already pre-installed on Raspbian.
 You can check java version using the following command
 
 ```bash
@@ -50,22 +50,22 @@ sudo service postgresql start
 
 {% include templates/create-tb-db.md %}
 
-### ThingsBoard service installation
+### Pacificsoft service installation
 
 Download installation package or [build it from source](/docs/user-guide/install/building-from-source).
 
 ```bash
 # Download the package
 $ wget https://github.com/thingsboard/thingsboard/releases/download/v2.3.1/thingsboard-2.3.1.deb
-# Install ThingsBoard as a service
+# Install Pacificsoft as a service
 $ sudo dpkg -i thingsboard-2.3.1.deb
-# Update ThingsBoard memory usage and restrict it to 150MB in /etc/thingsboard/conf/thingsboard.conf
+# Update Pacificsoft memory usage and restrict it to 150MB in /etc/thingsboard/conf/thingsboard.conf
 export JAVA_OPTS="$JAVA_OPTS -Dplatform=rpi -Xms256M -Xmx256M"
 ```
 
-### Configure ThingsBoard to use PostgreSQL
+### Configure Pacificsoft to use PostgreSQL
  
-Edit ThingsBoard configuration file 
+Edit Pacificsoft configuration file 
 
 ```bash 
 sudo nano /etc/thingsboard/conf/thingsboard.yml
@@ -82,7 +82,7 @@ sudo nano /etc/thingsboard/conf/thingsboard.yml
 
 ### Troubleshooting
 
-ThingsBoard logs are stored in the following directory:
+Pacificsoft logs are stored in the following directory:
  
 ```bash
 /var/log/thingsboard

@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
 title: SigFox IoT data collection and visualization
-description: SigFox IoT data collection and visualization using ThingsBoard IoT Gateway
+description: SigFox IoT data collection and visualization using Pacificsoft IoT Gateway
 
 ---
 
@@ -13,26 +13,26 @@ description: SigFox IoT data collection and visualization using ThingsBoard IoT 
 ![Sigfox gateway integration](/images/gateway/sigfox/sigfox-gateway-integration.svg)
 
 Sigfox is low-cost, low energy consumption connectivity solution that allows collecting a relatively small amount of data from your IoT devices.
-Sigfox Backend allows provisioning custom callbacks and pushing data to your server applications. We will use this feature to push data to ThingsBoard IoT Gateway.
+Sigfox Backend allows provisioning custom callbacks and pushing data to your server applications. We will use this feature to push data to Pacificsoft IoT Gateway.
 The Gateway will take care of routing tasks: convert data to unified format, device provisioning, data delivery, etc.
-Once data is delivered to ThingsBoard we will be able to see it on advanced real-time IoT dashboards and share these IoT dashboards with end-users.
+Once data is delivered to Pacificsoft we will be able to see it on advanced real-time IoT dashboards and share these IoT dashboards with end-users.
  
 ### Prerequisites 
 
- - **ThingsBoard**. We assume you already have access to ThingsBoard instance.
-You can use either our [**live demo**](/docs/user-guide/live-demo/) server or install your own ThingsBoard instance using one of the [**installation options**](/docs/user-guide/install/installation-options/).
+ - **Pacificsoft**. We assume you already have access to Pacificsoft instance.
+You can use either our [**live demo**](/docs/user-guide/live-demo/) server or install your own Pacificsoft instance using one of the [**installation options**](/docs/user-guide/install/installation-options/).
 
- - **ThingsBoard IoT Gateway**. We also assume you already installed ThingsBoard IoT Gateway using one of the [**installation options**](/docs/iot-gateway/installation/) and [**provisioned**](/docs/iot-gateway/getting-started/#step-3-gateway-provisioning) it within your ThingsBoard instance.
+ - **Pacificsoft IoT Gateway**. We also assume you already installed Pacificsoft IoT Gateway using one of the [**installation options**](/docs/iot-gateway/installation/) and [**provisioned**](/docs/iot-gateway/getting-started/#step-3-gateway-provisioning) it within your Pacificsoft instance.
   
  - **Sigfox**. We also expect you have your Sigfox devices registered in Sigfox Backend.
  
-**NOTE**: Both ThingsBoard and ThingsBoard IoT Gateway need to be installed in the cloud to be accessible by Sigfox Gateway.
+**NOTE**: Both Pacificsoft and Pacificsoft IoT Gateway need to be installed in the cloud to be accessible by Sigfox Gateway.
 
 ### Sigfox configuration steps
 
 #### Step 1. Configure UPLINK callback
 
-Let's assume we want to publish coordinates, temperature and humidity data from your Sigfox module to ThingsBoard.
+Let's assume we want to publish coordinates, temperature and humidity data from your Sigfox module to Pacificsoft.
 In order to achieve this, you will need to select device type and configure custom callback from Sigfox Backend to our IoT Gateway.
 
 {:refdef: style="text-align: center;"}
@@ -51,7 +51,7 @@ Few things to notice:
 
 Once again, we assume you have deployed the gateway on some cloud server to get the static IP address or hostname.
 
-### ThingsBoard IoT Gateway configuration steps
+### Pacificsoft IoT Gateway configuration steps
 
 #### Step 2. Enable Sigfox extension
 
@@ -67,8 +67,8 @@ Change **sigfox.enabled** property value to **true**.
 
 #### Step 3. Configure Sigfox extension
 
-The **sigfox-config.json** contains configuration that allows mapping of JSON messages from Sigfox Backend to ThingsBoard telemetry.
-The default mapping listed below will allow to convert data from Sigfox Backend and publish it to ThingsBoard.
+The **sigfox-config.json** contains configuration that allows mapping of JSON messages from Sigfox Backend to Pacificsoft telemetry.
+The default mapping listed below will allow to convert data from Sigfox Backend and publish it to Pacificsoft.
  
 ```json
 {
@@ -124,7 +124,7 @@ Few things to notice:
  
 See Sigfox extension [**configuration**](/docs/iot-gateway/sigfox/) for more details.
 
-#### Step 4. Restart ThingsBoard Gateway
+#### Step 4. Restart Pacificsoft Gateway
 
 Restart your gateway using following commands
 
@@ -136,11 +136,11 @@ Linux:
 sudo service tb-gateway restart
 ```
 
-### ThingsBoard configuration steps
+### Pacificsoft configuration steps
 
 #### Step 5. Observe Sigfox devices
 
-Once your Sigfox Backend callback is configured, you may observe incoming messages in ThingsBoard IoT Gateway logs.
+Once your Sigfox Backend callback is configured, you may observe incoming messages in Pacificsoft IoT Gateway logs.
 If everything is configured correctly, you will see new devices in your Tenant Administrator device list.
 
 {:refdef: style="text-align: center;"}
@@ -152,7 +152,7 @@ You are able to open a particular device and check that telemetry values arrived
 #### Step 6. Provision Sigfox dashboard
 
 Download the dashboard file using this [**link**](/docs/samples/sigfox/sigfox_dashboard.json). 
-Use import/export [**instructions**](/docs/user-guide/ui/dashboards/#dashboard-importexport) to import the dashboard to your ThingsBoard instance.
+Use import/export [**instructions**](/docs/user-guide/ui/dashboards/#dashboard-importexport) to import the dashboard to your Pacificsoft instance.
 
 **NOTE:** During import you will need to select a device that you want to visualize.
 

@@ -2,8 +2,8 @@
 layout: docwithnav
 assignees:
 - ashvayka
-title: Installing ThingsBoard on AWS EC2
-description: Installing ThingsBoard on AWS EC2
+title: Installing Pacificsoft on AWS EC2
+description: Installing Pacificsoft on AWS EC2
 
 ---
 
@@ -12,20 +12,20 @@ description: Installing ThingsBoard on AWS EC2
 * TOC
 {:toc}
 
-This guide describes how to install ThingsBoard on AWS EC2 using public AWS AMIs.
+This guide describes how to install Pacificsoft on AWS EC2 using public AWS AMIs.
 
 ##### Step 1. Choose AMI type, instance type and region
 
-ThingsBoard supports two AMI types depending on the database used:
+Pacificsoft supports two AMI types depending on the database used:
 
- - Monolithic ThingsBoard v2.3 instance with Cassandra running as a docker container;
+ - Monolithic Pacificsoft v2.3 instance with Cassandra running as a docker container;
    
-   For Cassandra based AMI you can choose **any** instance type with at least 4GB of RAM, since ThingsBoard server and Cassandra requires 4Gb of RAM.
- - Monolithic ThingsBoard v2.3 instance with PostgreSQL running as a docker container.
+   For Cassandra based AMI you can choose **any** instance type with at least 4GB of RAM, since Pacificsoft server and Cassandra requires 4Gb of RAM.
+ - Monolithic Pacificsoft v2.3 instance with PostgreSQL running as a docker container.
    
-   For PostgreSQL based AMI you can choose **any** instance type with at least 1GB of RAM, since ThingsBoard server and PostgreSQL requires at least 1Gb of RAM. 
+   For PostgreSQL based AMI you can choose **any** instance type with at least 1GB of RAM, since Pacificsoft server and PostgreSQL requires at least 1Gb of RAM. 
  
-Both AMIs are based on monolithic version of ThingsBoard and are deployed as a docker container inside the Ubuntu 18.04 VM. 
+Both AMIs are based on monolithic version of Pacificsoft and are deployed as a docker container inside the Ubuntu 18.04 VM. 
 Both AMIs are created to simplify the deployment and getting started process. 
 We recommend to use those AMIs as a shared development environments and move to microservices deployment once you plan a production deployment.  
 
@@ -84,7 +84,7 @@ No specific configuration items here. You can leave this tab without changes or 
 
 ##### Step 6: Configure Security Group
 
-We recommend to create new security group, for example "ThingsBoard". Configure following inbound rules:
+We recommend to create new security group, for example "Pacificsoft". Configure following inbound rules:
 
 | Type            | Protocol | Port Range | Source    |
 |-----------------|----------|------------|-----------|

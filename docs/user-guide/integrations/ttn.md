@@ -13,7 +13,7 @@ description: TheThingsNetwork Integration Guide
 
 ## Overview
 TheThingsNetwork is LoRaWAN network designed for connecting your devices using LoRaWAN stack. 
-After integrating TheThingsNetwork with the Thingsboard, you can connect, communicate, process and visualize data from devices in the Thingsboard IoT platform.
+After integrating TheThingsNetwork with the Pacificsoft, you can connect, communicate, process and visualize data from devices in the Pacificsoft IoT platform.
 
 
 ## TheThingsNetwork setup
@@ -33,10 +33,10 @@ Handler registration - used to identify region where application will be registe
 ##### Payload Decoder
 Our device submits data in binary format. We have 2 options where to decode this data:
 
-- **TheThingsNetwork decoder** - data will be decoded before entering the Thingsboard
-- **Thingsboard converters** - uplink/downlink converters will be used to decode data from binary format into JSON
+- **TheThingsNetwork decoder** - data will be decoded before entering the Pacificsoft
+- **Pacificsoft converters** - uplink/downlink converters will be used to decode data from binary format into JSON
 
-In this tutorial, we will make an initial transformation into JSON with TTN decoder and then use Thingsboard converters for correct data processing.
+In this tutorial, we will make an initial transformation into JSON with TTN decoder and then use Pacificsoft converters for correct data processing.
 In real life scenario, it is up to you where to decode/encode data, because it is possible to do this on any side.
 
 After application registered in TTN, go to **payload_formats**, select decoder function. We will take the first byte as a temperature value from a device 
@@ -72,10 +72,10 @@ Next step is a Device creation in the TTN. Open **Devices** page and press **reg
 Press **Register** button.
 
 
-## Integration with the Thingsboard
-In the TheThingsNetwork, we already make all required configuration (register device, decoder function, and register application). Now we can start configuring the Thingsboard.
+## Integration with the Pacificsoft
+In the TheThingsNetwork, we already make all required configuration (register device, decoder function, and register application). Now we can start configuring the Pacificsoft.
 
-##### Thingsboard Uplink Data Converter
+##### Pacificsoft Uplink Data Converter
 
 First, we need to create Uplink Data converter that will be used for receiving messaged from the TTN. The converter should transform incoming payload into the required message format.
 Message must contains **deviceName** and **deviceType**. Those fields are used for submitting data to the correct device. If a device was not found then new device will be created.
@@ -129,8 +129,8 @@ return result;
 ![image](/images/user-guide/integrations/ttn/tb-converter.png)
 
 
-##### Thingsboard Downlink Data Converter
-For sending Downlink messages from the Thingsboard to the device inside TTN, we need to define downlink Converter.
+##### Pacificsoft Downlink Data Converter
+For sending Downlink messages from the Pacificsoft to the device inside TTN, we need to define downlink Converter.
 In general, output from Downlink converter should have the following structure:
 {% highlight json %}
 {
@@ -173,7 +173,7 @@ This converter will take **version** field from the incoming message and add it 
 
 ##### TTN Integration
 
-Next we will create Integration with TheThingsNetwork inside the Thingsboard. Open **Integrations** section and add new Integration with type
+Next we will create Integration with TheThingsNetwork inside the Pacificsoft. Open **Integrations** section and add new Integration with type
 **TheThingsNetwork**
 
 - Name: ttn_integration
@@ -196,7 +196,7 @@ Our device will publish temperature **0F** (15). So enter **0F** into payload fi
 
 Go to **Device Group** -> **All** -> **thermostat_a** - you can see that 
 
-- new device was registered in the thingsboard
+- new device was registered in the Pacificsoft
 - In the **Latest Telemetry** section you will see that last submitted temperature = 15.
 
 ![image](/images/user-guide/integrations/ttn/tb-device-telemetry.png)

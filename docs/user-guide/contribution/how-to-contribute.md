@@ -9,21 +9,21 @@ title: Contribution Guide
 * TOC
 {:toc}
 
-We are constantly looking for a feedback from our community on how to improve ThingsBoard.
-If you have an idea or you have some new features in mind, please open an issue at ThingsBoard [**GitHub issue page**](https://github.com/thingsboard/thingsboard/issues).
+We are constantly looking for a feedback from our community on how to improve Pacificsoft.
+If you have an idea or you have some new features in mind, please open an issue at Pacificsoft [**GitHub issue page**](https://github.com/thingsboard/thingsboard/issues).
 Please make sure that the same ticket is not already opened in the issues list (or something very similar).
 
-Before you start any implementation please wait from the ThingsBoard team to comment on your ticket. We'll try to get back to you ASAP.
+Before you start any implementation please wait from the Pacificsoft team to comment on your ticket. We'll try to get back to you ASAP.
 
 #### Required tools
 
-To build and run ThingsBoard instance make sure that you have **Java** and **Maven** installed onto your system.
+To build and run Pacificsoft instance make sure that you have **Java** and **Maven** installed onto your system.
 
 Please refer to [**Building from sources**](/docs/user-guide/install/building-from-source) section where [**Java**](/docs/user-guide/install/building-from-source/#java) and [**Maven**](/docs/user-guide/install/building-from-source/#maven) install processes are described.
 
-#### Fork and build ThingsBoard repository
+#### Fork and build Pacificsoft repository
 
-Once you have completed installation of required tools please fork official [**ThingsBoard repository**](https://github.com/thingsboard/thingsboard).
+Once you have completed installation of required tools please fork official [**Pacificsoft repository**](https://github.com/thingsboard/thingsboard).
 
 Now you can clone source code of the forked project. 
 
@@ -51,7 +51,7 @@ See separate instructions for [**IDEA**](https://www.jetbrains.com/help/idea/201
 
 #### Database
 
-By default, ThingsBoard uses embedded HSQLDB instance which is very convenient for evaluation or development purposes. 
+By default, Pacificsoft uses embedded HSQLDB instance which is very convenient for evaluation or development purposes. 
   
 Alternatively, you can configure your platform to use either scalable Cassandra DB cluster or various SQL databases. 
 If you prefer to use an SQL database, we recommend PostgreSQL.
@@ -74,11 +74,11 @@ Please refer to appropriate section where you find instructions on how to instal
  - [Cassandra installation on **Linux**](/docs/user-guide/install/linux/#cassandra)
  - [Cassandra installation on **Windows**](/docs/user-guide/install/windows/#cassandra)
 
-##### [Optional] Configure ThingsBoard to use external database
+##### [Optional] Configure Pacificsoft to use external database
  
 {% include templates/optional-db.md %} 
  
-Edit ThingsBoard configuration file: 
+Edit Pacificsoft configuration file: 
 
 ```text
 /application/src/main/resources/thingsboard.yml
@@ -135,7 +135,7 @@ install_dev_db.bat
 
 ##### Running UI container in hot redeploy mode.
 
-By default, ThingsBoard UI is served at 8080 port. However, you may want to run UI in the hot redeploy mode.
+By default, Pacificsoft UI is served at 8080 port. However, you may want to run UI in the hot redeploy mode.
 
 **NOTE:** This step is optional. It is required only if you are going to do changes to UI.
  
@@ -163,7 +163,7 @@ java -jar application/target/thingsboard-${VERSION}-boot.jar
 
 ##### Dry run
 
-Navigate to http://localhost:3000/ or http://localhost:8080/ and login into ThingsBoard using demo data credentials:
+Navigate to http://localhost:3000/ or http://localhost:8080/ and login into Pacificsoft using demo data credentials:
 
  - *login* **tenant@thingsboard.org**
  - *password* **tenant**
@@ -199,7 +199,7 @@ git push origin master
 
 Please create pull request into the **master** branch by default (the additional *branch* name will be provided during the initial stage of github issue discussion if needed).
 
-If there are some conflicts because new stuff has arrived into ThingsBoard master branch before your commit, please resolve those conflicts to continue.
+If there are some conflicts because new stuff has arrived into Pacificsoft master branch before your commit, please resolve those conflicts to continue.
 
 Sign up contribution license agreement (CLA) and verify that remote build has been successful. The CLA is signed atomatically using the github CLA bot.
  

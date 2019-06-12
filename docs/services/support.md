@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
 title: Support plans
-description: ThingsBoard support plans for IoT projects cloud infrastructure support
+description: Pacificsoft support plans for IoT projects cloud infrastructure support
 
 ---
 

@@ -9,7 +9,7 @@ description: AWS IoT Integration Guide
 
 ## Overview
 
-AWS IoT Integration allows to stream data from AWS IoT Backend to ThingsBoard and converts device payloads to the ThingsBoard format.
+AWS IoT Integration allows to stream data from AWS IoT Backend to Pacificsoft and converts device payloads to the Pacificsoft format.
 
  ![image](/images/user-guide/integrations/aws-iot-integration.svg)
 

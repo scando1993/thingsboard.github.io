@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
 title: Services
-description: ThingsBoard support plans, services and training sessions
+description: Pacificsoft support plans, services and training sessions
 
 ---
 

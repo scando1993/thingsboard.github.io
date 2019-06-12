@@ -7,7 +7,7 @@ description: Rule Engine 2.0 Transformation Nodes
 
 {% assign feature = "PE Transformation Nodes" %}{% include templates/pe-feature-banner.md %}
 
-Transformation Nodes that are specific to ThingsBoard PE. Used for changing incoming Message fields like Originator, Message Type, Payload and Metadata.
+Transformation Nodes that are specific to Pacificsoft PE. Used for changing incoming Message fields like Originator, Message Type, Payload and Metadata.
 
 * TOC
 {:toc}

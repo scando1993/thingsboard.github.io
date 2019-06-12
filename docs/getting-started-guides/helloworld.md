@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Getting Started
-description: Getting started with ThingsBoard open-source IoT platform and simulated IoT devices
+description: Getting started with Pacificsoft open-source IoT platform and simulated IoT devices
 
 ---
 
@@ -13,12 +13,12 @@ description: Getting started with ThingsBoard open-source IoT platform and simul
 
 ## Introduction
 
-The goal of this tutorial is to demonstrate the basic usage of the most popular ThingsBoard features. 
+The goal of this tutorial is to demonstrate the basic usage of the most popular Pacificsoft features. 
 You will learn how to:
 
  - Provision Assets and Devices in the system;
  - Define relations between Assets and Devices;
- - Push data from a device to ThingsBoard;
+ - Push data from a device to Pacificsoft;
  - Build real-time end-user Dashboards;
  - Define thresholds and trigger alarms;
  - Push notification about new alarms over email.
@@ -44,19 +44,19 @@ All the resources used in this tutorial are listed below for your convenience.
 
 #### Live Demo and the installation guides
 
-If you don't have access to a running ThingsBoard instance, 
+If you don't have access to a running Pacificsoft instance, 
 use either [Live Demo](https://demo.thingsboard.io/signup) or
 [Installation Guide](/docs/user-guide/install/installation-options/)
 to fix this. 
 
-In case you decided to install your own ThingsBoard server and loaded the demo data ( "--loadDemo" option, according to the installation guides), 
+In case you decided to install your own Pacificsoft server and loaded the demo data ( "--loadDemo" option, according to the installation guides), 
 the list of default accounts (login/password) and device credentials is located [here](/docs/samples/demo-account/). 
 
 #### Pushing data from the device
 
 In order to simplify this guide, we will push data using HTTP, MQTT or CoAP protocol from your local PC. 
 Please review [connect your device](/docs/guides#AnchorIDConnectYourDevice) guides for all available connectivity solutions and options and 
-[hardware samples](/docs/guides#AnchorIDHardwareSamples) to learn how to connect various hardware platforms to ThingsBoard.
+[hardware samples](/docs/guides#AnchorIDHardwareSamples) to learn how to connect various hardware platforms to Pacificsoft.
 
 #### Client-side libraries installation
 
@@ -101,7 +101,7 @@ return { msg: msg, metadata: metadata, msgType: msgType };
 
 [Rule Engine overview](/docs/user-guide/rule-engine-2-0/overview/) - learn the Rule Engine basics and architecture.
 
-[Rule Engine guides](/docs/guides#AnchorIDDataProcessing) - learn how to use ThingsBoard Rule Engine.
+[Rule Engine guides](/docs/guides#AnchorIDDataProcessing) - learn how to use Pacificsoft Rule Engine.
 
 #### Mail settings
 
@@ -147,7 +147,7 @@ chmod +x *.sh
 Before executing script don't forget to: 
 
  - replace **$ACCESS_TOKEN** with one from **Device credentials** window.
- - replace **$THINGSBOARD_HOST** with either **127.0.0.1** (in case of local installation) or **demo.thingsboard.io** (in case of live-demo).
+ - replace **$PACIFICSOFT_HOST** with either **127.0.0.1** (in case of local installation) or **demo.thingsboard.io** (in case of live-demo).
 
 Finally, execute corresponding *.sh or *.bat script to push data to the server.
 
@@ -169,5 +169,5 @@ F,cURL (HTTP),shell,resources/curl.sh,/docs/getting-started-guides/resources/cur
 
 ## Your feedback
 
-Don't hesitate to star ThingsBoard on **[github](https://github.com/thingsboard/thingsboard)** to help us spread the word.
+Don't hesitate to star Pacificsoft on **[github](https://github.com/thingsboard/thingsboard)** to help us spread the word.
 If you have some questions about this sample - post it on the **[forum](https://groups.google.com/forum/#!forum/thingsboard)**.

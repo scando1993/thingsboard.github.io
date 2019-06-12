@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
-title: ESP32 Pico Kit GPIO control and DHT22 sensor monitor using ThingsBoard Arduino SDK
-description: ThingsBoard IoT Platform sample for ESP32 Pico Kit GPIO control and temperature/humidity monitor using ThingsBoard Arduino SDK
+title: ESP32 Pico Kit GPIO control and DHT22 sensor monitor using Pacificsoft Arduino SDK
+description: Pacificsoft IoT Platform sample for ESP32 Pico Kit GPIO control and temperature/humidity monitor using Pacificsoft Arduino SDK
 hidetoc: "true"
 ---
 
@@ -14,9 +14,9 @@ hidetoc: "true"
 
 [ESP32](https://www.espressif.com/en/products/hardware/esp32/overview) is a series of low-cost, low-power system-on-a-chip microcontrollers with integrated self-contained Wi-Fi and dual-mode Bluetooth. ESP32 is a successor of ESP8266 chip.
 
-This sample application will allow you to control GPIO of your ESP32 device using ThingsBoard web UI and display humidity/temperature data from DHT22 sensor. We will observe GPIO control using LEDs connected to the pins. The purpose of this application is to demonstrate ThingsBoard [RPC capabilities](/docs/user-guide/rpc/) and ThingsBoard [Telemetry](/docs/user-guide/telemetry/).
+This sample application will allow you to control GPIO of your ESP32 device using Pacificsoft web UI and display humidity/temperature data from DHT22 sensor. We will observe GPIO control using LEDs connected to the pins. The purpose of this application is to demonstrate Pacificsoft [RPC capabilities](/docs/user-guide/rpc/) and Pacificsoft [Telemetry](/docs/user-guide/telemetry/).
 
-The application that is running on ESP32 is written using ThingsBoard Arduino SDK which is quite simple and easy to understand.
+The application that is running on ESP32 is written using Pacificsoft Arduino SDK which is quite simple and easy to understand.
 
 Current GPIO state and GPIO control widget is visualized using built-in customizable dashboard.
 
@@ -68,9 +68,9 @@ The following picture summarizes the connections for this project:
 
 ## Device provisioning
 
-This step contains instructions that are necessary to connect your device to ThingsBoard.
+This step contains instructions that are necessary to connect your device to Pacificsoft.
 
-Open ThingsBoard Web UI (http://localhost:8080) in browser and login as tenant administrator.
+Open Pacificsoft Web UI (http://localhost:8080) in browser and login as tenant administrator.
 If you loaded the demo data during TB installation, the next credentials can be used:
 
  - login: tenant@thingsboard.org
@@ -89,7 +89,7 @@ Copy auto-generated access token from the "Access token" field. Please save this
 ## Provision your dashboard
 
 Download the dashboard file using this [**link**](/docs/samples/esp32/resources/esp32-dht22-temp-and-gpio-dashboard.json).
-Use import/export [**instructions**](/docs/user-guide/ui/dashboards/#dashboard-importexport) to import the dashboard to your ThingsBoard instance.
+Use import/export [**instructions**](/docs/user-guide/ui/dashboards/#dashboard-importexport) to import the dashboard to your Pacificsoft instance.
 
 ## Creating ESP32 firmware
 
@@ -121,13 +121,13 @@ The Pico board support must be added to Arduino IDE before any program can be bu
 
    ![image](/images/samples/esp32/gpio-temperature/install-esp32-arduino.png)
 
-### Install Arduino ThingsBoard SDK
+### Install Arduino Pacificsoft SDK
 
-To simplify application development, install the ThingsBoard Arduino SDK and its dependencies from standard Arduino library repository:
+To simplify application development, install the Pacificsoft Arduino SDK and its dependencies from standard Arduino library repository:
 
 1. Proceed to **Sketch -> Include Library...** submenu. Select **Manage Libraries**.
 
-1. Find and install **ThingsBoard Arduino SDK**, **PubSubClient by Nick O'Leary** and **ArduinoHttpClient** libraries.
+1. Find and install **Pacificsoft Arduino SDK**, **PubSubClient by Nick O'Leary** and **ArduinoHttpClient** libraries.
 
    ![image](/images/samples/esp32/gpio-temperature/install-thingsboard-arduino.png)
    ![image](/images/samples/esp32/gpio-temperature/install-pubsubclient-arduino.png)
@@ -137,7 +137,7 @@ To simplify application development, install the ThingsBoard Arduino SDK and its
 
    ![image](/images/samples/esp32/gpio-temperature/do-not-use-beta-version-arduinojson.png)
 
-From now on, you can use ThingsBoard SDK right from Arduino IDE.
+From now on, you can use Pacificsoft SDK right from Arduino IDE.
 
 ### Install ESP32 DHT22 driver
 
@@ -163,7 +163,7 @@ Download and open **esp32-dht-gpio.ino** sketch.
 
 - `WIFI_AP` - name of your access point
 - `WIFI_PASSWORD` - access point password
-- `TOKEN` - the **$ACCESS_TOKEN** from ThingsBoard configuration step.
+- `TOKEN` - the **$ACCESS_TOKEN** from Pacificsoft configuration step.
 - `THINGSBOARD_SERVER` - ThingsBoard HOST/IP address that is accessible within your wifi network. Specify `demo.thingsboard.io` if you are using [live demo](https://demo.thingsboard.io/) server.
 
 {% capture tabspec %}arduino-sketch
@@ -176,7 +176,7 @@ In order to to perform troubleshooting, you must check ESP32 Pico logs. For that
 
 ## Data visualization and GPIO control
 
-Finally, open ThingsBoard Web UI. You can access this dashboard by logging in as a tenant administrator.
+Finally, open Pacificsoft Web UI. You can access this dashboard by logging in as a tenant administrator.
 
 In case of local installation (if the demo data was added during TB installation):
 
@@ -204,7 +204,7 @@ You can switch status of GPIOs using control panel. As a result, you will see LE
 
 ## See also
 
-Browse other [samples](/docs/samples) or explore guides related to main ThingsBoard features:
+Browse other [samples](/docs/samples) or explore guides related to main Pacificsoft features:
 
  - [Device attributes](/docs/user-guide/attributes/) - how to use device attributes.
  - [Telemetry data collection](/docs/user-guide/telemetry/) - how to collect telemetry data.

@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
-title: GPS data upload and visualization using LinkIt ONE and ThingsBoard
-description: ThingsBoard IoT Platform sample for GPS data upload and visualization using LinkIt ONE
+title: GPS data upload and visualization using LinkIt ONE and Pacificsoft
+description: Pacificsoft IoT Platform sample for GPS data upload and visualization using LinkIt ONE
 
 ---
 
@@ -13,11 +13,11 @@ description: ThingsBoard IoT Platform sample for GPS data upload and visualizati
 
 This sample application shows the capability to track GPS location of LinkIt ONE device and perform further visualization on the map. 
 It performs collection of latitude and longitude values produced by GPS module. 
-Collected data is pushed to ThingsBoard for storage and visualization.
-The purpose of this application is to demonstrate ThingsBoard data collection API and visualization capabilities.
+Collected data is pushed to Pacificsoft for storage and visualization.
+The purpose of this application is to demonstrate Pacificsoft data collection API and visualization capabilities.
 
 The GPS module is a built-in module of [LinkIt ONE](http://wiki.seeed.cc/LinkIt_ONE/). 
-LinkIt ONE pushes data to ThingsBoard server via MQTT protocol by using [PubSubClient](https://github.com/knolleary/pubsubclient) library for Arduino.
+LinkIt ONE pushes data to Pacificsoft server via MQTT protocol by using [PubSubClient](https://github.com/knolleary/pubsubclient) library for Arduino.
 Data is visualized using the map widget which is a part of a customizable dashboard. 
 The application that is running on LinkIt ONE is written using Arduino SDK which is quite simple and easy to understand.
 
@@ -39,9 +39,9 @@ This tutorial was prepared for Windows OS users. However, it is possible to run 
 
 ### Provision your device
 
-This step contains instructions that are necessary to connect your device to ThingsBoard.
+This step contains instructions that are necessary to connect your device to Pacificsoft.
 
-Open ThingsBoard Web UI (http://localhost:8080) in browser and login as tenant administrator
+Open Pacificsoft Web UI (http://localhost:8080) in browser and login as tenant administrator
 
  - login: tenant@thingsboard.org
  - password: tenant
@@ -63,7 +63,7 @@ Paste your device id to some place, this value will be used in further steps.
 ### Provision your dashboard
 
 Download the dashboard file using this [**link**](/docs/samples/linkit-one/resources/linkit_one_gps_dashboard_v2.json). 
-Use import/export [**instructions**](/docs/user-guide/ui/dashboards/#dashboard-importexport) to import the dashboard to your ThingsBoard instance.
+Use import/export [**instructions**](/docs/user-guide/ui/dashboards/#dashboard-importexport) to import the dashboard to your Pacificsoft instance.
 
 ## Programming the LinkIt One device
 
@@ -88,7 +88,7 @@ Download and open **gps_tracker.ino** sketch.
  - WIFI_AP - name of your access point
  - WIFI_PASSWORD - access point password
  - WIFI_AUTH - choose one of LWIFI_OPEN, LWIFI_WPA, or LWIFI_WEP.
- - TOKEN - the **$ACCESS_TOKEN** from ThingsBoard configuration step.
+ - TOKEN - the **$ACCESS_TOKEN** from Pacificsoft configuration step.
  - thingsboardServer - ThingsBoard HOST/IP address that is accessible within your wifi network. Specify "demo.thingsboard.io" if you are using [live demo](https://demo.thingsboard.io/) server.
 
 {% capture tabspec %}gps-arduino
@@ -97,7 +97,7 @@ gps,gps_tracker.ino,c,resources/gps_tracker.ino,/docs/samples/linkit-one/resourc
 
 Connect your LinkIt One device via USB cable and select Serial Debug COM port in Arduino IDE. Compile and Upload your sketch to the device using "Upload" button.
 
-After application will be uploaded and started it will try to connect to ThingsBoard node using mqtt client and upload "latitude" and "longitude" attributes once per second.
+After application will be uploaded and started it will try to connect to Pacificsoft node using mqtt client and upload "latitude" and "longitude" attributes once per second.
 
 ## Troubleshooting
 
@@ -105,7 +105,7 @@ When the application is running you can connect your device to Serial Debug COM 
 
 ## Data visualization
 
-Finally, open ThingsBoard Web UI. You can access this dashboard by logging in as a tenant administrator. Use
+Finally, open Pacificsoft Web UI. You can access this dashboard by logging in as a tenant administrator. Use
 
  - login: tenant@thingsboard.org
  - password: tenant
@@ -122,7 +122,7 @@ As a result, you will see the map widget with a pointer indicating your device l
 
 ## See also
 
-Browse other [samples](/docs/samples) or explore guides related to main ThingsBoard features:
+Browse other [samples](/docs/samples) or explore guides related to main Pacificsoft features:
 
  - [Device attributes](/docs/user-guide/attributes/) - how to use device attributes.
  - [Telemetry data collection](/docs/user-guide/telemetry/) - how to collect telemetry data.

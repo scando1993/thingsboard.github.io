@@ -7,7 +7,7 @@ description: Rule Engine 2.0 Analytics Nodes
 
 {% assign feature = "PE Analytics Nodes" %}{% include templates/pe-feature-banner.md %}
 
-Analytics Nodes that are specific to ThingsBoard PE. Used for analysis of streamed or persisted data.
+Analytics Nodes that are specific to Pacificsoft PE. Used for analysis of streamed or persisted data.
 
 * TOC
 {:toc}

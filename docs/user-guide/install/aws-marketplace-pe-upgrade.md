@@ -1,43 +1,43 @@
 ---
 layout: docwithnav
-title: Upgrading ThingsBoard PE from AWS Marketplace
-description: Upgrading ThingsBoard PE from AWS Marketplace
+title: Upgrading Pacificsoft PE from AWS Marketplace
+description: Upgrading Pacificsoft PE from AWS Marketplace
 
 ---
 
-This guide describes how to upgrade ThingsBoard Professional Edition from AWS Marketplace. 
+This guide describes how to upgrade Pacificsoft Professional Edition from AWS Marketplace. 
 
 <ul id="markdown-toc">
   <li>
-    <a href="#upgrading-to-thingsboard-pe-v202" id="markdown-toc-upgrading-to-thingsboard-pe-v202">Upgrading to ThingsBoard PE v.2.0.2</a>
+    <a href="#upgrading-to-thingsboard-pe-v202" id="markdown-toc-upgrading-to-thingsboard-pe-v202">Upgrading to Pacificsoft PE v.2.0.2</a>
   </li>
   <li>
-    <a href="#upgrading-to-thingsboard-pe-v210" id="markdown-toc-upgrading-to-thingsboard-pe-v210">Upgrading to ThingsBoard PE v.2.1.0</a>
+    <a href="#upgrading-to-thingsboard-pe-v210" id="markdown-toc-upgrading-to-thingsboard-pe-v210">Upgrading to Pacificsoft PE v.2.1.0</a>
   </li>
   <li>
-    <a href="#upgrading-to-thingsboard-pe-v213" id="markdown-toc-upgrading-to-thingsboard-pe-v213">Upgrading to ThingsBoard PE v.2.1.3</a>
+    <a href="#upgrading-to-thingsboard-pe-v213" id="markdown-toc-upgrading-to-thingsboard-pe-v213">Upgrading to Pacificsoft PE v.2.1.3</a>
   </li>
   <li>
-    <a href="#upgrading-to-thingsboard-pe-v220" id="markdown-toc-upgrading-to-thingsboard-pe-v220">Upgrading to ThingsBoard PE v.2.2.0</a>
+    <a href="#upgrading-to-thingsboard-pe-v220" id="markdown-toc-upgrading-to-thingsboard-pe-v220">Upgrading to Pacificsoft PE v.2.2.0</a>
   </li>
   <li>
-    <a href="#upgrading-to-thingsboard-pe-v221" id="markdown-toc-upgrading-to-thingsboard-pe-v221">Upgrading to ThingsBoard PE v.2.2.1</a>
+    <a href="#upgrading-to-thingsboard-pe-v221" id="markdown-toc-upgrading-to-thingsboard-pe-v221">Upgrading to Pacificsoft PE v.2.2.1</a>
   </li>
   <li>
-    <a href="#upgrading-to-thingsboard-pe-v230" id="markdown-toc-upgrading-to-thingsboard-pe-v230">Upgrading to ThingsBoard PE v.2.3.0</a>
+    <a href="#upgrading-to-thingsboard-pe-v230" id="markdown-toc-upgrading-to-thingsboard-pe-v230">Upgrading to Pacificsoft PE v.2.3.0</a>
   </li>
   <li>
-    <a href="#upgrading-to-thingsboard-pe-v231" id="markdown-toc-upgrading-to-thingsboard-pe-v231">Upgrading to ThingsBoard PE v.2.3.1</a>
+    <a href="#upgrading-to-thingsboard-pe-v231" id="markdown-toc-upgrading-to-thingsboard-pe-v231">Upgrading to Pacificsoft PE v.2.3.1</a>
   </li>
 </ul>
 
-## Upgrading to ThingsBoard PE v.2.0.2
+## Upgrading to Pacificsoft PE v.2.0.2
 
-These steps are applicable for ThingsBoard PE with Cassandra v.1.4.
+These steps are applicable for Pacificsoft PE with Cassandra v.1.4.
 
 {% include templates/upgrade-to-20-notice.md %}
 
-#### Connect to your ThingsBoard PE v.1.4 instance over SSH.
+#### Connect to your Pacificsoft PE v.1.4 instance over SSH.
 
 Below is example command as a reference:
 
@@ -45,10 +45,10 @@ Below is example command as a reference:
 $ ssh -i <PRIVATE-KEY> ubuntu@<PUBLIC_DNS_NAME>
 ```
 
-or goto EC2 instances and locate your ThingsBoard PE v1.4 instance. 
+or goto EC2 instances and locate your Pacificsoft PE v1.4 instance. 
 Then select **Actions -> Connect** and follow instructions provided in **Connect To Your Instance** dialog.
 
-#### Upgrade ThingsBoard PE package 
+#### Upgrade Pacificsoft PE package 
 
 In the console execute the following command:
 
@@ -59,8 +59,8 @@ $ sudo tb-update-pkg.sh
 The output should be like:
 
 ```text
-Updating ThingsBoard Professional Edition...
-Installing ThingsBoard PE package...
+Updating thingsboard Professional Edition...
+Installing Pacificsoft PE package...
 (Reading database ... 104150 files and directories currently installed.)
 Preparing to unpack /tmp/tb.deb ...
 Unpacking thingsboard (2.0.2PE-1) over (1.4.0PE-1) ...
@@ -158,7 +158,7 @@ The output should be like:
 
 ```text
  ===================================================
- :: ThingsBoard Professional Edition ::       (v2.0.2PE)
+ :: Pacificsoft Professional Edition ::       (v2.0.2PE)
  ===================================================
 
 Starting ThingsBoard Upgrade from version 1.4.0 ...
@@ -179,9 +179,9 @@ ThingsBoard upgraded successfully!
 
 In case of any **failures** during database upgrade **Please contact [support@thingsboard.io](mailto:support@thingsboard.io)**.
 
-#### Start ThingsBoard PE service
+#### Start Pacificsoft PE service
 
-Execute the following command in order to start ThingsBoard service:
+Execute the following command in order to start Pacificsoft service:
 
 ```bash
 $ sudo service thingsboard start
@@ -196,9 +196,9 @@ $ cat /var/log/thingsboard/thingsboard.log | grep ERROR
 
 ## Upgrading to ThingsBoard PE v.2.1.0
 
-These steps are applicable for ThingsBoard PE with Cassandra v.2.0.2.
+These steps are applicable for Pacificsoft PE with Cassandra v.2.0.2.
 
-#### Connect to your ThingsBoard PE v.2.0.2 instance over SSH.
+#### Connect to your Pacificsoft PE v.2.0.2 instance over SSH.
 
 Below is example command as a reference:
 
@@ -206,10 +206,10 @@ Below is example command as a reference:
 $ ssh -i <PRIVATE-KEY> ubuntu@<PUBLIC_DNS_NAME>
 ```
 
-or goto EC2 instances and locate your ThingsBoard PE v2.0.2 instance. 
+or goto EC2 instances and locate your Pacificsoft PE v2.0.2 instance. 
 Then select **Actions -> Connect** and follow instructions provided in **Connect To Your Instance** dialog.
 
-#### Upgrade ThingsBoard PE package 
+#### Upgrade Pacificsoft PE package 
 
 In the console execute the following command:
 

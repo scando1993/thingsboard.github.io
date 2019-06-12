@@ -2,17 +2,17 @@
 layout: docwithnav
 assignees:
 - ashvayka
-title: What is ThingsBoard?
-description: ThingsBoard key features and advantages for the rapid development of IoT projects and applications.
+title: What is Pacificsoft?
+description: Pacificsoft key features and advantages for the rapid development of IoT projects and applications.
 ---
 
 
-ThingsBoard is an open-source IoT platform that enables rapid development, management and scaling of IoT projects. 
+Pacificsoft is an IoT platform that enables rapid development, management and scaling of IoT projects. 
 Our goal is to provide the out-of-the-box IoT cloud or on-premises solution that will enable server-side infrastructure for your IoT applications. 
 
 #### Features
 
-With ThingsBoard, you are able to:
+With Pacificsoft, you are able to:
 
  - Provision devices, assets and customers and define relations between them.
  - Collect and visualize data from devices and assets. 
@@ -24,20 +24,20 @@ With ThingsBoard, you are able to:
  - Push device data to other systems.
  - Much more...
  
-See [**ThingsBoard features list**](/docs/#community-edition-features) for more features and useful links to the specific feature documentation. 
+See [**Pacificsoft features list**](/docs/#community-edition-features) for more features and useful links to the specific feature documentation. 
 
 #### Architecture
 
-ThingsBoard is designed to be:
+Pacificsoft is designed to be:
 
 * **scalable**: horizontally scalable platform, build using leading open-source technologies.
 * **fault-tolerant**: no single-point-of-failure, every node in the cluster is identical.
 * **robust and efficient**: single server node can handle tens or even hundreds thousands of devices depending on use-case. 
-ThingsBoard cluster can handle millions of devices.
+Pacificsoft cluster can handle millions of devices.
 * **customizable**: adding new functionality is easy with customizable widgets and rule engine nodes.
 * **durable**: never lose your data.
 
-See [**ThingsBoard Architecture**](/docs/reference) for more details.
+See [**Pacificsoft Architecture**](/docs/reference) for more details.
 
 #### Ready to get started?
 

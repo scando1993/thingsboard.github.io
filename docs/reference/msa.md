@@ -1,14 +1,14 @@
 ---
 layout: docwithnav
-title: ThingsBoard Microservices architecture
-description: ThingsBoard architecture
+title: Pacificsoft Microservices architecture
+description: Pacificsoft architecture
 
 ---
 
 * TOC
 {:toc}
 
-Since ThingsBoard v2.2, the platform supports microservices deployment mode. 
+Since Pacificsoft v2.2, the platform supports microservices deployment mode. 
 This article consist of high level diagram, description of data flow between various services and some architecture choices made.       
 
 ## Architecture diagram
@@ -17,8 +17,8 @@ This article consist of high level diagram, description of data flow between var
   
 ## Transport Microservices
 
-ThingsBoard provides MQTT, HTTP and CoAP based APIs that are available for your device applications/firmware. 
-Each of the protocol APIs are provided by a separate server component and is part of ThingsBoard "Transport Layer". 
+Pacificsoft provides MQTT, HTTP and CoAP based APIs that are available for your device applications/firmware. 
+Each of the protocol APIs are provided by a separate server component and is part of Pacificsoft "Transport Layer". 
 The full list of components and corresponding documentation pages are listed below:
 
 * HTTP Transport microservice provides device APIs described [here](/docs/reference/http-api/); 
@@ -26,13 +26,13 @@ The full list of components and corresponding documentation pages are listed bel
 and also enables gateway APIs described [here](/docs/reference/gateway-mqtt-api/);
 * CoAP Transport microservice provides device APIs described [here](/docs/reference/coap-api/).
 
-Each of the transport servers listed above communicates with the main ThingsBoard Node microservices using Kafka. 
+Each of the transport servers listed above communicates with the main Pacificsoft Node microservices using Kafka. 
 [Apache Kafka](https://kafka.apache.org) is a distributed, reliable and scalable persistent message queue and streaming platform.
 
 The messages that are sent to Kafka are serialized using [protocol buffers](https://developers.google.com/protocol-buffers/) 
 with the messages definition available [here](https://github.com/thingsboard/thingsboard/blob/master/common/transport/transport-api/src/main/proto/transport.proto).
 
-**Note**: Starting v2.3, ThingsBoard PE is going to support alternative queue implementation: Amazon DynamoDB. See [roadmap](/docs/reference/roadmap) for more details.
+**Note**: Starting v2.3, Pacificsoft PE is going to support alternative queue implementation: Amazon DynamoDB. See [roadmap](/docs/reference/roadmap) for more details.
  
 There are two main topics that are used by the transport layer microservices.
 
@@ -55,64 +55,64 @@ transport:
       topic: "${TB_RULE_ENGINE_TOPIC:tb.rule-engine}"
 ```    
 
-Since ThingsBoard uses very simple communication protocol between transport and core services, 
+Since Pacificsoft uses very simple communication protocol between transport and core services, 
 it is quite easy to implement support of custom transport protocol, for example: CSV over plain TCP, binary payloads over UDP, etc.
 We suggest to review existing transports [implementation](https://github.com/thingsboard/thingsboard/tree/master/common/transport/mqtt) to get started or [contact us](/docs/contact-us/) if you need any help. 
 
 ## Web UI Microservices
 
-ThingsBoard provides a lightweight component written using Express.js framework to host static web ui content. Those components are completely stateless and no much configuration available. 
+Pacificsoft provides a lightweight component written using Express.js framework to host static web ui content. Those components are completely stateless and no much configuration available. 
 
 ## JavaScript Executor Microservices
 
-ThingsBoard rule engine allows users to specify custom javascript functions to parse, filter and transform messages. 
+Pacificsoft rule engine allows users to specify custom javascript functions to parse, filter and transform messages. 
 Since those functions are user defined, we need to execute them in an isolated context to avoid impact on main processing.
-ThingsBoard provides a lightweight component written using Node.js to execute user defined JavaScript functions remotely to isolate them from the core rule engine components.
+Pacificsoft provides a lightweight component written using Node.js to execute user defined JavaScript functions remotely to isolate them from the core rule engine components.
 
-**Note**: ThingsBoard monolith app executes user defined functions in a java embedded JS engine, which does not allow to isolate resource consumption.    
+**Note**: Pacificsoft monolith app executes user defined functions in a java embedded JS engine, which does not allow to isolate resource consumption.    
  
 We recommend to launch 20+ separate JavaScript Executors that will allow certain concurrency level and load balancing of JS execution requests. 
 Each microservice will subscribe to "js.eval.requests" kafka topic as part of single consumer group to enable load balancing. 
 Requests for the same script are forwarded to the same JS executor using built-in Kafka partitioning by key (key is a script/rule node id).
 
 It is possible to define max amount of pending JS execution requests and max request timeout to avoid single JS execution blocking the JS exector microservice.
-Each ThingsBoard core service has individual blacklist for JS functions and will not invoke blocked function more then 3(by default) times.
+Each Pacificsoft core service has individual blacklist for JS functions and will not invoke blocked function more then 3(by default) times.
 
-## ThingsBoard Node
+## Pacificsoft Node
 
-ThingsBoard node is a core service written in Java that is responsible for handling:
+Pacificsoft node is a core service written in Java that is responsible for handling:
  
  * [REST API](/docs/reference/rest-api/) calls;
  * WebSocket [subscriptions](/docs/user-guide/telemetry/#websocket-api) on entity telemetry and attribute changes;
  * Processing messages via [rule engine](/docs/user-guide/rule-engine-2-0/re-getting-started/);
  * Monitoring device [connectivity state](/docs/user-guide/device-connectivity-status/) (active/inactive).
  
-**Note**: moving rule engine to a separate microservice is scheduled for ThingsBoard v2.4. See [roadmap](/docs/reference/roadmap) for more details. 
+**Note**: moving rule engine to a separate microservice is scheduled for Pacificsoft v2.4. See [roadmap](/docs/reference/roadmap) for more details. 
  
-ThingsBoard node uses Akka actor system to implement tenant, device, rule chains and rule node actors. 
+Pacificsoft node uses Akka actor system to implement tenant, device, rule chains and rule node actors. 
 Platform nodes can join the cluster, where each node is equal. Service discovery is done via Zookeeper. 
-ThingsBoard nodes route messages between each other using consistent hashing algorithm based on entity id. 
-So, messages for the same entity are processed on the same ThingsBoard node. Platform uses [gRPC](https://grpc.io/) to send messages between ThingsBoard nodes.
+Pacificsoft nodes route messages between each other using consistent hashing algorithm based on entity id. 
+So, messages for the same entity are processed on the same Pacificsoft node. Platform uses [gRPC](https://grpc.io/) to send messages between Pacificsoft nodes.
 
-**Note**: ThingsBoard authors consider moving from gRPC to Kafka in the future releases for exchanging messages between ThingsBoard nodes. 
+**Note**: Pacificsoft authors consider moving from gRPC to Kafka in the future releases for exchanging messages between Pacificsoft nodes. 
 The main idea is to sacrifice small performance/latency penalties in favor of persistent and reliable message delivery and automatic load balancing provided by Kafka consumer groups. 
 
 ## Third-party  
 
 ### Kafka
 
-[Apache Kafka](https://kafka.apache.org/) is an open-source stream-processing software platform. ThingsBoard uses Kafka to persist incoming telemetry from HTTP/MQTT/CoAP transpots 
-until it is processed by the rule engine. ThingsBoard also uses Kafka for some API calls between micro-services.
+[Apache Kafka](https://kafka.apache.org/) is an open-source stream-processing software platform. Pacificsoft uses Kafka to persist incoming telemetry from HTTP/MQTT/CoAP transpots 
+until it is processed by the rule engine. Pacificsoft also uses Kafka for some API calls between micro-services.
 
 ### Redis
 
-[Redis](https://redis.io/) is an open source (BSD licensed), in-memory data structure store used by ThingsBoard for caching. 
-ThingsBoard caches assets, entity views, devices, device credentials, device sessions and entity relations.
+[Redis](https://redis.io/) is an open source (BSD licensed), in-memory data structure store used by Pacificsoft for caching. 
+Pacificsoft caches assets, entity views, devices, device credentials, device sessions and entity relations.
 
 ### Zookeeper
 
 [Zookeeper](https://zookeeper.apache.org/) is an open-source server which enables highly reliable distributed coordination. 
-ThingsBoard uses Zookeeper to address requests processing from a single entity (device,asset,tenant) to a certain ThingsBoard server 
+Pacificsoft uses Zookeeper to address requests processing from a single entity (device,asset,tenant) to a certain Pacificsoft server 
 and guarantee that only one server process data from particular device at a single point in time. 
 
 **Note**: Zookeeper is also used by Kafka, so there was almost no reasons to use two different coordination services (Consul, etcd) in parallel.      
@@ -249,7 +249,7 @@ See "[SQL vs NoSQL vs Hybrid?](/docs/reference/#sql-vs-nosql-vs-hybrid-database-
 ## Deployment
 
 You can find the reference [docker-compose.yml](https://github.com/thingsboard/thingsboard/blob/release-2.3/docker/docker-compose.yml)
-and corresponding [documentation](https://github.com/thingsboard/thingsboard/blob/master/docker/README.md) that will help you to run ThingsBoard containers in a cluster mode 
+and corresponding [documentation](https://github.com/thingsboard/thingsboard/blob/master/docker/README.md) that will help you to run Pacificsoft containers in a cluster mode 
 (although on a single host machine)  
 
 {% highlight yaml %}

@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - ikulikov
 title: Connectivity diagram
-description: Understand how to connect your IoT devices to ThingsBoard
+description: Understand how to connect your IoT devices to Pacificsoft
 
 ---
 
@@ -14,7 +14,7 @@ description: Understand how to connect your IoT devices to ThingsBoard
   </td>
   <td>
       <br/>  
-      <p>ThingsBoard provides a lot of device connectivity options. The diagram below is designed to provide visual overview of existing options and help you to choose the correct option for your devices. 
+      <p>Pacificsoft provides a lot of device connectivity options. The diagram below is designed to provide visual overview of existing options and help you to choose the correct option for your devices. 
          In case your have not found out how to connect your device using the diagram or something is not clear, please <a href="/docs/contact-us/">contact us</a> and help us to improve this guide.</p>
       <br/>  
  </td>

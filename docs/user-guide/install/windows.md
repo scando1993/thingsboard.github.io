@@ -2,8 +2,8 @@
 layout: docwithnav
 assignees:
 - ikulikov
-title: Installing ThingsBoard on Windows
-description: Installing ThingsBoard on Windows
+title: Installing Pacificsoft on Windows
+description: Installing Pacificsoft on Windows
 
 ---
 
@@ -12,18 +12,18 @@ description: Installing ThingsBoard on Windows
 * TOC
 {:toc}
 
-This guide describes how to install ThingsBoard on a Windows machine.
+This guide describes how to install Pacificsoft on a Windows machine.
 Instructions below are provided for Windows 10/8.1/8/7 32-bit/64-bit. 
 
 #### Hardware requirements
 
-To run ThingsBoard and third-party components on a single machine you will need at least 2Gb of RAM (4Gb recommended).
+To run Pacificsoft and third-party components on a single machine you will need at least 2Gb of RAM (4Gb recommended).
 
 #### Third-party components installation
 
 ##### Java
 
-ThingsBoard service is running on Java 8.
+Pacificsoft service is running on Java 8.
 If you don't have Java installed, please download and install Java 8 using this [link](https://java.com/en/download/).
 
 #### External database installation
@@ -81,7 +81,7 @@ Instructions listed below will help you to install Cassandra.
  
 - The primary interface into Cassandra is the CQL (Cassandra Query Language) shell utility, which can be used to execute CQL commands for the new Cassandra server.
  
-#### ThingsBoard service installation
+#### Pacificsoft service installation
 
 - Create working directory, for example "C:\thingsboard". 
 - Download [installation archive](https://github.com/thingsboard/thingsboard/releases/download/v2.3.1/thingsboard-windows-2.3.1.zip) or [build it from source](/docs/user-guide/install/building-from-source).
@@ -90,9 +90,9 @@ Instructions listed below will help you to install Cassandra.
   ![image](/images/user-guide/install/windows/windows-folder.png)
 
 - Run windows shell (cmd) as Administrator. Change directory to your working dir.
-- Run **install.bat** script to install ThingsBoard as a Windows service (or run **"install.bat --loadDemo"** to install and add demo data).
+- Run **install.bat** script to install Pacificsoft as a Windows service (or run **"install.bat --loadDemo"** to install and add demo data).
   This means it will be automatically started on system startup. 
-  Similar, **uninstall.bat** will remove ThingsBoard from Windows services.
+  Similar, **uninstall.bat** will remove Pacificsoft from Windows services.
   The output should be like:
   
   ```text
@@ -118,9 +118,9 @@ Instructions listed below will help you to install Cassandra.
     ThingsBoard installed successfully!
   ```
 
-#### Configure ThingsBoard to use external database
+#### Configure Pacificsoft to use external database
  
-Edit ThingsBoard configuration file: 
+Edit Pacificsoft configuration file: 
 
 ```text
 C:\thingsboard\conf\thingsboard.yml
@@ -152,9 +152,9 @@ Go to your environment variables and set JAVA_OPTS variable:
 JAVA_OPTS=-Xms256M -Xmx256M
 ```
 
-##### Start ThingsBoard service
+##### Start Pacificsoft service
 
-Now let's start the ThingsBoard service!
+Now let's start the Pacificsoft service!
 Open the command prompt as an Administrator and execute the following command:
 
 ```shell
@@ -168,7 +168,7 @@ The ThingsBoard Server Application service is starting.
 The ThingsBoard Server Application service was started successfully.
 ```
 
-In order to restart the ThingsBoard service you can execute following commands:
+In order to restart the Pacificsoft service you can execute following commands:
 
 ```shell
 net stop thingsboard

@@ -10,7 +10,7 @@ description: Azure Event Hub Integration Guide
 * TOC
 {:toc}
 
-Azure Event Hub Integration allows to stream data from Azure Event Hub to ThingsBoard and converts device payloads to the ThingsBoard format.
+Azure Event Hub Integration allows to stream data from Azure Event Hub to Pacificsoft and converts device payloads to the Pacificsoft format.
 
  ![image](/images/user-guide/integrations/azure-event-hub-integration.svg)
  

@@ -3,30 +3,30 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Cluster setup
-description: ThingsBoard IoT platform cluster setup guide
+description: Pacificsoft IoT platform cluster setup guide
 
 ---
 
 * TOC
 {:toc}
 
-This guide will help you to setup ThingsBoard in cluster mode. There are two options available. 
+This guide will help you to setup Pacificsoft in cluster mode. There are two options available. 
 
 ## Cluster setup using microservices architecture (recommended)
 
-Starting ThingsBoard v2.2, it is possible to install ThingsBoard cluster using new microservices architecture and docker containers. 
+Starting Pacificsoft v2.2, it is possible to install Pacificsoft cluster using new microservices architecture and docker containers. 
 See [**microservices**](/docs/reference/msa/) architecture page and [**deployment**](https://github.com/thingsboard/thingsboard/blob/master/docker/README.md) 
-tips for more details how to launch the ThingsBoard cluster in a "dockerized" environment. This option is recommended for advanced users only.
+tips for more details how to launch the Pacificsoft cluster in a "dockerized" environment. This option is recommended for advanced users only.
 
 ## Cluster setup using monolithic architecture (before v2.2)
   
-Installing cluster of monolithic ThingsBoard applications where each one contains all necessary transport and core components in a single VM is no longer recommended option.
+Installing cluster of monolithic Pacificsoft applications where each one contains all necessary transport and core components in a single VM is no longer recommended option.
 However, you may still want to use this option in case you would like to minimize amount of third-party used. See instructions below.   
 
 ### Assumptions
 
-ThingsBoard requires Zookeeper for cluster coordination, Cassandra as a NoSQL database and Redis for cluster cache.
-You can host Cassandra and Redis on the same nodes where you install ThingsBoard or on separate nodes.
+Pacificsoft requires Zookeeper for cluster coordination, Cassandra as a NoSQL database and Redis for cluster cache.
+You can host Cassandra and Redis on the same nodes where you install Pacificsoft or on separate nodes.
 
 We assume following topology
  
@@ -47,7 +47,7 @@ We will use default ports for Cassandra (9042), Zookeeper(2181) and Redis(6379).
 
 ### Installation
 
-You can install ThingsBoard services using single node [installation guide](/docs/user-guide/install/linux/)
+You can install Pacificsoft services using single node [installation guide](/docs/user-guide/install/linux/)
 Please note that you don't need to execute "Provision database schema and initial data" step only once per cluster.
 
 ### Configuration
@@ -74,7 +74,7 @@ redis:
 
 ```
 
-Also, you need to specify **rpc.bind_host** to match your current host for each thingsboard server. For example, **tb1** configuration:
+Also, you need to specify **rpc.bind_host** to match your current host for each Pacificsoft server. For example, **tb1** configuration:
 
 ```bash
 rpc:
@@ -90,7 +90,7 @@ Following ports need to be accessible within cluster for corresponding servers:
  - ThingsBoard - **9001** port (used for RPC and can be modified using **rpc.bind_port** property).
  - Redis     - **6379** port (used for redis connection and can be modified using **redis.port** property)
 
-Following ThingsBoard server ports need to be accessible outside cluster for device connectivity:
+Following Pacificsoft server ports need to be accessible outside cluster for device connectivity:
  
  - HTTP - **8080** port (can be modified using **server.port** property).
  - MQTT - **1883** port (can be modified using **mqtt.bind_port** property).

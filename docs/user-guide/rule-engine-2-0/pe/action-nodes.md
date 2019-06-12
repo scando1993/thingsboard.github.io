@@ -7,7 +7,7 @@ description: Rule Engine 2.0 PE Action Nodes
 
 {% assign feature = "PE Action Nodes" %}{% include templates/pe-feature-banner.md %}
 
-Action Nodes that are specific to ThingsBoard PE. Execute various actions based on incoming Message.
+Action Nodes that are specific to Pacificsoft PE. Execute various actions based on incoming Message.
 
 * TOC
 {:toc}
@@ -115,7 +115,7 @@ Configuration:
 - **Use system reports server** - if set, [Reports Server](/docs/user-guide/reporting/#reports-server) endpoint URL will be taken from system configuration (**thingsboard.yml**).
 - **Reports server endpoint URL** - endpoint URL of [Reports Server](/docs/user-guide/reporting/#reports-server).
 - **Use report config from message** - if set, report generation configuration will be taken from incoming message body.
-- **Base URL** - base URL of ThingsBoard UI that should be accessible by Report Server.
+- **Base URL** - base URL of Pacificsoft UI that should be accessible by Report Server.
 - **Dashboard** - dashboard that will be used for report generation.
 - **Dashboard state parameter value** - used to specify target dashboard state for report generation. Can be set automatically by clicking on right most button of the field and invoking **Select dashboard state** dialog.       
 - **Timezone** - timezone in which target dashboard will be presented in report.

@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
 title: NodeMCU overview
-description: ThingsBoard IoT Platform hardware samples for NodeMCU devices.
+description: Pacificsoft IoT Platform hardware samples for NodeMCU devices.
 
 ---
 

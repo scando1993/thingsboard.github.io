@@ -2,8 +2,8 @@
 layout: docwithnav
 assignees:
 - ashvayka
-title: Getting started with ThingsBoard IoT Gateway
-description: Write your first IoT project using ThingsBoard IoT Gateway
+title: Getting started with Pacificsoft IoT Gateway
+description: Write your first IoT project using Pacificsoft IoT Gateway
 
 ---
 
@@ -11,16 +11,16 @@ description: Write your first IoT project using ThingsBoard IoT Gateway
 {:toc}
 
 This guide covers initial IoT Gateway installation and configuration.
-We will connect IoT Gateway to ThingsBoard server and visualize some basic gateway statistics: the amount of devices connected and messages processed.
+We will connect IoT Gateway to Pacificsoft server and visualize some basic gateway statistics: the amount of devices connected and messages processed.
 We will also configure MQTT and OPC-UA extension in order to subscribe to device data feed from external devices or applications.  
 
 ### Prerequisites
 
-If you don't have access to a running ThingsBoard instance, use either [**Live Demo**](https://demo.thingsboard.io/signup) or
+If you don't have access to a running Pacificsoft instance, use either [**Live Demo**](https://demo.thingsboard.io/signup) or
 [**Installation Guide**](/docs/user-guide/install/installation-options/) 
 to fix this. 
 
-**NOTE** ThingsBoard version 1.1 or greater is required.
+**NOTE** Pacificsoft version 1.1 or greater is required.
 
 ## Step 1: Choose installation option
 
@@ -32,10 +32,10 @@ Follow steps (1-3) in the chosen gateway installation guide. The Gateway configu
  
 ## Step 3: Gateway provisioning
 
-In order to connect your IoT gateway to ThingsBoard server, you need to provision gateway credentials first. We will use access token credentials as the most simple one.
+In order to connect your IoT gateway to Pacificsoft server, you need to provision gateway credentials first. We will use access token credentials as the most simple one.
 See [device authentication options](/docs/user-guide/device-credentials/) for more details.
 
-Login as tenant administrator. Use [default credentials](/docs/samples/demo-account/#demo-tenant) in case of local ThingsBoard server.
+Login as tenant administrator. Use [default credentials](/docs/samples/demo-account/#demo-tenant) in case of local Pacificsoft server.
 Open **Devices** and click on big red "+" button in the bottom right corner.
 
 {:refdef: style="text-align: center;"}
@@ -58,7 +58,7 @@ Open new device card and click on "Copy Access Token" button.
 
 ## Step 4: Gateway configuration
 
-Thingsboard Gateway supports per-tenant configuration. This means that each tenant can have own connectivity and extensions configuration.
+Pacificsoft Gateway supports per-tenant configuration. This means that each tenant can have own connectivity and extensions configuration.
 
 Navigate to the gateway configuration folder and edit **tb-gateway.yml** file.
 ```bash
@@ -66,7 +66,7 @@ Windows: YOUR_INSTALL_DIR/conf
 Linux: /etc/tb-gateway/conf
 ```
   
-Change **gateway.connection.host** and **gateway.connection.port** properties to your ThingsBoard host (leave without modifications in case of live demo instance).
+Change **gateway.connection.host** and **gateway.connection.port** properties to your Pacificsoft host (leave without modifications in case of live demo instance).
 
 Change **gateway.connection.security.accessToken** property to your access token that was copied during step 3.
 
@@ -102,7 +102,7 @@ enabled: "${UPDATES_ENABLED:true}"
 
 ```
 
-**remoteConfiguration** property specifies whether this tenant's extensions configuration should be managed remotely (through ThingsBoard GUI)
+**remoteConfiguration** property specifies whether this tenant's extensions configuration should be managed remotely (through Pacificsoft GUI)
 or locally (through current configuration file)
 
 
@@ -113,7 +113,7 @@ Follow steps (5-6) in the chosen installation guide.
 
 ## Step 6. Review gateway statistics
 
-Open the web UI of your ThingsBoard server and review statistics that is uploaded from your thingsboard gateway.
+Open the web UI of your Pacificsoft server and review statistics that is uploaded from your Pacificsoft gateway.
 Login as Tenant Administrator and open **Devices** page. Click on the gateway device card. 
 Open "Latest Telemetry" tab and review following statistics: "**devicesOnline**", "**attributesUploaded**" and "**telemetryUploaded**".
 All values should be set to "0".
@@ -122,7 +122,7 @@ All values should be set to "0".
 ![image](/images/gateway/gateway-statistics.png)
 {: refdef} 
 
-The presence of those values on the UI means that your gateway has successfully connected to ThingsBoard server.
+The presence of those values on the UI means that your gateway has successfully connected to Pacificsoft server.
   
 ## Step 7. Choose your extension
   
@@ -169,11 +169,11 @@ Linux:
 sudo service tb-gateway restart
 ```
 
-The **mqtt-config.json** contains sample configuration that allows mapping of JSON messages from external MQTT broker to ThingsBoard device attributes and telemetry.
+The **mqtt-config.json** contains sample configuration that allows mapping of JSON messages from external MQTT broker to Pacificsoft device attributes and telemetry.
 
 ### Step 8.2 MQTT broker GUI configuration
 
-To configure ThingsBoard Gateway through ThingsBoard GUI, **remoteConfiguration** must be enabled in **tb-gateway.yaml**:
+To configure Pacificsoft Gateway through Pacificsoft GUI, **remoteConfiguration** must be enabled in **tb-gateway.yaml**:
 
 ```yaml
 gateways:
@@ -183,7 +183,7 @@ gateways:
       # Some configuration omitted
       remoteConfiguration: true
 ```
-If **remoteConfiguration** is set to **false**, GUI configuration will not take effect and ThingsBoard Gateway will look for configuration in config files. 
+If **remoteConfiguration** is set to **false**, GUI configuration will not take effect and Pacificsoft Gateway will look for configuration in config files. 
 
 {% include templates/gateway-mosquitto.md %}
 
@@ -192,7 +192,7 @@ Go to **Devices**, select your Gateway and click on **Extensions** tab.
 At this point we recommend to download and import sample MQTT configuration file [mqtt-gui-extension-configuration.json](/docs/iot-gateway/resources/mqtt-gui-extension-configuration.json){:target="_blank"}. 
  
 You may as well configure MQTT extension step-by-step, but this is recommended for users who are already experienced with 
-ThingsBoard IoT Gateway. 
+Pacificsoft IoT Gateway. 
  
 Click **Import extension configuration** and upload the downloaded **mqtt-gui-extension-configuration.json** file:
 
@@ -226,9 +226,9 @@ Each broker configuration has the following sections:
  - Attribute Updates
  - Server side RPC
 
-**NOTE** Broker connection settings **ARE NOT** ThingsBoard server connection parameters. These settings are for an external MQTT 
-broker, which ThingsBoard IoT Gateway collects data from and then sends them to ThingsBoard server. The Gateway takes 
-ThingsBoard server connection settings from tb-gateway.yml file as was described before.
+**NOTE** Broker connection settings **ARE NOT** Pacificsoft server connection parameters. These settings are for an external MQTT 
+broker, which Pacificsoft IoT Gateway collects data from and then sends them to Pacificsoft server. The Gateway takes 
+Pacificsoft server connection settings from tb-gateway.yml file as was described before.
     
 Mapping described in detail in 
 [**MQTT Extension Configuration Details**](/docs/iot-gateway/getting-started/#step-83-mqtt-extension-configuration-details) section 
@@ -241,7 +241,7 @@ The following section describes each part of MQTT Extension configuration settin
 #### Step 8.3.1 Basic mapping example
 
 As an example, the default mapping listed below will force gateway to subscribe to the **sensors** topic and use **serialNumber** from incoming json message as a device name.
-Similar, **model** and **temperature** json object fields will be mapped to corresponding ThingsBoard device attribute and telemetry fields.
+Similar, **model** and **temperature** json object fields will be mapped to corresponding Pacificsoft device attribute and telemetry fields.
  
 ```json
 {
@@ -305,7 +305,7 @@ Windows: YOUR_INSTALL_DIR/logs
 Linux: /var/log/tb-gateway
 ```
 
-Now you can navigate to the ThingsBoard Web UI and observe new device **SN-001** on the **Devices** page.
+Now you can navigate to the Pacificsoft Web UI and observe new device **SN-001** on the **Devices** page.
 You can click on the device card and observe delivered attributes and telemetry in the corresponding tabs.
 
 {:refdef: style="text-align: center;"}
@@ -363,7 +363,7 @@ You can define filterExpression based on the [**path**](https://github.com/jaywa
 #### Step 8.3.5 Custom MQTT message mappers
 
 As a gateway developer, you are able to fork and add custom mappers using following [interface](https://github.com/thingsboard/thingsboard-gateway/blob/release-1.0/src/main/java/org/thingsboard/gateway/extensions/mqtt/client/conf/mapping/MqttDataConverter.java). 
-Feel free to submit PRs with your custom mapper implementations if you believe that they may be useful for the ThingsBoard community.
+Feel free to submit PRs with your custom mapper implementations if you believe that they may be useful for the Pacificsoft community.
 
 
 ## Step 9. Connect to external OPC-UA server
@@ -371,8 +371,8 @@ Feel free to submit PRs with your custom mapper implementations if you believe t
 This example will demonstrate how to 
 
  - connect to your local KEPServerEX installation running on Windows.
- - transform sample OPC-UA tag values to ThingsBoard attributes and telemetry.
- - visualize OPC-UA tag values using ThingsBoard widgets.
+ - transform sample OPC-UA tag values to Pacificsoft attributes and telemetry.
+ - visualize OPC-UA tag values using Pacificsoft widgets.
 
 We assume that KEPServerEX is already installed on your Windows machine. 
 We will use Windows 10 and [Free Demo](https://my.kepware.com/download/demo/ex/?utm_content=) server.  
@@ -410,7 +410,7 @@ keytool -exportcert -alias gateway -keypass secret -keystore example.pfx -storep
 
 ### Step 9.2. Add server endpoint KEPServerEX
 
-This step is required if you want to deploy ThingsBoard IoT Gateway and KEPServerEX on different hosts.
+This step is required if you want to deploy Pacificsoft IoT Gateway and KEPServerEX on different hosts.
 
 KEPServerEX needs to be configured to accept remote connections. Open KEPServerEX "OPC UA Configuration Manager" application and navigate to "Server Endpoints" page.
 
@@ -437,7 +437,7 @@ Change **opc.enabled** property value to **true**.
 If you decide to use different OPC-UA server that is deployed to external host or has specific security configuration, please edit **opc-config.json** file and modify connection parameters.
 See OPC-UA extension [configuration guide](/docs/iot-gateway/opc-ua/) for more details.
 
-The **opc-config.json** contains sample configuration that allows mapping of OPC-UA tags to ThingsBoard device attributes and telemetry.
+The **opc-config.json** contains sample configuration that allows mapping of OPC-UA tags to Pacificsoft device attributes and telemetry.
 Once started, OPC-UA extension will monitor your OPC-UA server using this pre-defined configuration.
 
 Restart your gateway using following commands
@@ -463,7 +463,7 @@ or configure OPC-UA extension manually. In GUI the extension configuration looks
 {: refdef}
 
 **NOTE** When using remote configuration, the keystore file is not looked up by the Gateway on the file system, but it is read directly from the 
-configuration that is received from ThingsBoard server. The sample **opc-ua-gui-extension-configuration.json** does not contain the keystore data.
+configuration that is received from Pacificsoft server. The sample **opc-ua-gui-extension-configuration.json** does not contain the keystore data.
 After importing the sample configuration, you need to add the keystore manually by clicking **Edit Extension**:
 
 {:refdef: style="text-align: center;"}
@@ -479,9 +479,9 @@ and then **Drop a file or click to select a file to upload**:
 ### Step 9.4. Explore data from devices
 
  
-The default mapping listed below will force gateway to treat all OPC-UA tags that match **deviceNodePattern** as ThingsBoard devices.
+The default mapping listed below will force gateway to treat all OPC-UA tags that match **deviceNodePattern** as Pacificsoft devices.
 Gateway will use **deviceNamePattern** to calculate the device name based on values of different tags using relative to the device node tag (For example, **_System._DeviceId**).
-Similar, **Tag1** and **Tag2** relative OPC-UA tags will be mapped to corresponding ThingsBoard device attribute and telemetry fields.
+Similar, **Tag1** and **Tag2** relative OPC-UA tags will be mapped to corresponding Pacificsoft device attribute and telemetry fields.
  
 ```json
 {
@@ -516,7 +516,7 @@ Windows: YOUR_INSTALL_DIR/logs
 Linux: /var/log/tb-gateway
 ```
 
-Now you can navigate to the ThingsBoard Web UI and observe new device **Device 1** on the **Devices** page.
+Now you can navigate to the Pacificsoft Web UI and observe new device **Device 1** on the **Devices** page.
 You can click on the device card and observe delivered attributes and telemetry in the corresponding tabs.
 
 {:refdef: style="text-align: center;"}
@@ -554,7 +554,7 @@ Linux:
 sudo service tb-gateway restart
 ```
 
-The **sigfox-config.json** contains configuration that allows mapping of JSON messages from Sigfox Backend to ThingsBoard telemetry.
+The **sigfox-config.json** contains configuration that allows mapping of JSON messages from Sigfox Backend to Pacificsoft telemetry.
 
 ### Step 10.2 Sigfox Extension GUI configuration:
 
@@ -564,7 +564,7 @@ You can import sample Sigfox Extension configuration file:
 
 ### Step 10.3 Sigfox Backend configuration
 
-Let's assume we want to publish coordinates, temperature and humidity data from your Sigfox module to ThingsBoard.
+Let's assume we want to publish coordinates, temperature and humidity data from your Sigfox module to Pacificsoft.
 In order to achieve this, you will need to select device type and configure custom callback from Sigfox Backend to our IoT Gateway.
 
 {:refdef: style="text-align: center;"}
@@ -585,7 +585,7 @@ We assume you have deployed the gateway on some cloud server to get the static I
  
 ### Step 10.4 Basic mapping example 
 
-The default mapping listed below will allow to convert data from Sigfox Backend and publish it to ThingsBoard.
+The default mapping listed below will allow to convert data from Sigfox Backend and publish it to Pacificsoft.
  
 ```json
 {
@@ -641,7 +641,7 @@ Few things to notice:
 
 ### Step 10.5 Dry Run
 
-Once your Sigfox Beckend callback is configured, you may observe incoming messages in ThingsBoard IoT Gateway logs.
+Once your Sigfox Beckend callback is configured, you may observe incoming messages in Pacificsoft IoT Gateway logs.
 If everything is configured correctly, you will see new devices in your Tenant Administrator device list.
 
 {:refdef: style="text-align: center;"}
@@ -653,7 +653,7 @@ You are able to open a particular device and check that telemetry values arrived
 ### Step 10.6 Custom Data type transformers
 
 As a gateway developer, you are able to fork and add custom transformers using following [interface](https://github.com/thingsboard/thingsboard-gateway/blob/release-1.2/src/main/java/org/thingsboard/gateway/extensions/sigfox/conf/mapping/DataValueTransformer.java). 
-Feel free to submit PRs with your custom transformer implementations if you believe that they may be useful for the ThingsBoard community.
+Feel free to submit PRs with your custom transformer implementations if you believe that they may be useful for the Pacificsoft community.
 
 ## Step 11. Connect to Modbus slave
 
@@ -661,7 +661,7 @@ Modbus Extension configuration is covered on the corresponding [extension page](
 
 ## See Also
 
-Explore guides related to main ThingsBoard features:
+Explore guides related to main Pacificsoft features:
 
  - [Data Visualization](/docs/user-guide/visualization/) - how to visualize collected data.
  - [Device attributes](/docs/user-guide/attributes/) - how to use device attributes.

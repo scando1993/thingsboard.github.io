@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
 title: LinkIt ONE overview
-description: ThingsBoard IoT Platform hardware samples for LinkIt ONE devices.
+description: Pacificsoft IoT Platform hardware samples for LinkIt ONE devices.
 
 ---
 
@@ -15,7 +15,7 @@ The applications in this samples that are running on LinkIt ONE are developed us
 
 ## Samples
 
- - [GPS data upload and visualization using LinkIt ONE and ThingsBoard](/docs/samples/linkit-one/gps/)
+ - [GPS data upload and visualization using LinkIt ONE and Pacificsoft](/docs/samples/linkit-one/gps/)
 
 ## Documentation
 

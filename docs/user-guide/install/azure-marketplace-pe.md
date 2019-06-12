@@ -1,19 +1,19 @@
 ---
 layout: docwithnav
-title: Installing ThingsBoard PE from Azure Marketplace
-description: Installing ThingsBoard PE from Azure Marketplace
+title: Installing Pacificsoft PE from Azure Marketplace
+description: Installing Pacificsoft PE from Azure Marketplace
 
 ---
 
-This guide describes how to install ThingsBoard Professional Edition from Azure Marketplace. 
+This guide describes how to install Pacificsoft Professional Edition from Azure Marketplace. 
 
-With this option you pay for ThingsBoard Professional Edition on hourly basis. Software usage for the first month is free of charge.
+With this option you pay for Pacificsoft Professional Edition on hourly basis. Software usage for the first month is free of charge.
  
 
 * TOC
 {:toc}
 
-##### Connect to ThingsBoard UI
+##### Connect to Pacificsoft UI
 
 Once the image has been deployed:
 

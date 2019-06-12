@@ -1,17 +1,17 @@
 ---
 layout: docwithnav
-title: Upgrading HAProxy Load Balancer for ThingsBoard PE from AWS Marketplace
-description: Upgrading HAProxy Load Balancer for ThingsBoard PE from AWS Marketplace
+title: Upgrading HAProxy Load Balancer for Pacificsoft PE from AWS Marketplace
+description: Upgrading HAProxy Load Balancer for Pacificsoft PE from AWS Marketplace
 hidetoc: "true"
 ---
 
 This guide describes how to remove dockerized version of HAProxy Load Balancer and install HAProxy with Let's Encrypt
-as ubuntu service for ThingsBoard Professional Edition from AWS Marketplace.
+as ubuntu service for Pacificsoft Professional Edition from AWS Marketplace.
 
 * TOC
 {:toc}
 
-#### Connect to your ThingsBoard PE AWS instance over SSH
+#### Connect to your Pacificsoft PE AWS instance over SSH
 
 Below is example command as a reference:
 
@@ -19,7 +19,7 @@ Below is example command as a reference:
 $ ssh -i <PRIVATE-KEY> ubuntu@<PUBLIC_DNS_NAME>
 ```
 
-or goto EC2 instances and locate your ThingsBoard PE instance. 
+or goto EC2 instances and locate your Pacificsoft PE instance. 
 Then select **Actions -> Connect** and follow instructions provided in **Connect To Your Instance** dialog.
 
 #### Remove dockerized version of HAProxy Load Balancer

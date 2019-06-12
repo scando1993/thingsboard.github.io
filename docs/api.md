@@ -1,11 +1,11 @@
 ---
 layout: docwithnav
-title: ThingsBoard API reference
-description: ThingsBoard API reference and supported IoT Protocols
+title: Pacificsoft API reference
+description: Pacificsoft API reference and supported IoT Protocols
 
 ---
 
-ThingsBoard API consists of two main parts: device API and server-side API.
+Pacificsoft API consists of two main parts: device API and server-side API.
 
 Device API is grouped by supported communication protocols:
 
@@ -13,7 +13,7 @@ Device API is grouped by supported communication protocols:
 * [**CoAP API**](/docs/reference/coap-api)
 * [**HTTP API**](/docs/reference/http-api)
 
-[**Gateway MQTT API**](/docs/reference/gateway-mqtt-api) allows you to connect **existing** devices to the platform using **[ThingsBoard Gateway](/docs/iot-gateway/what-is-iot-gateway/)**
+[**Gateway MQTT API**](/docs/reference/gateway-mqtt-api) allows you to connect **existing** devices to the platform using **[Pacificsoft Gateway](/docs/iot-gateway/what-is-iot-gateway/)**
 or implement your own gateway.
 
 Server-side API is available as REST API:

@@ -3,14 +3,14 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Building from sources
-description: Building ThingsBoard IoT platform from sources
+description: Building Pacificsoft IoT platform from sources
 
 ---
 
 * TOC
 {:toc}
 
-This guide will help you to download and build ThingsBoard from sources. Instructions listed below are tested on Ubuntu 16.04 and CentOS 7.1
+This guide will help you to download and build Pacificsoft from sources. Instructions listed below are tested on Ubuntu 16.04 and CentOS 7.1
 
 #### Required tools
 
@@ -18,11 +18,11 @@ This section contains installation instructions for build tools.
 
 ##### Java
 
-ThingsBoard is build using Java 8. You can use [following instructions](/docs/user-guide/install/linux#java) to install Java 8.
+Pacificsoft is build using Java 8. You can use [following instructions](/docs/user-guide/install/linux#java) to install Java 8.
 
 ##### Maven
 
-ThingsBoard build requires Maven 3.1.0+.
+Pacificsoft build requires Maven 3.1.0+.
 
 {% capture tabspec %}maven-installation
 A,Ubuntu,shell,resources/maven-ubuntu-installation.sh,/docs/user-guide/install/resources/maven-ubuntu-installation.sh
@@ -44,7 +44,7 @@ git checkout release-2.3
 
 #### Build
 
-Run the following command from the thingsboard folder to build the project:
+Run the following command from the Pacificsoft folder to build the project:
 
 ```bash
 mvn clean install

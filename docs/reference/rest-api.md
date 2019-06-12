@@ -12,12 +12,12 @@ description: Supported REST API Reference for server-side integration of your Io
 
 ## Swagger UI
 
-ThingsBoard REST API may be explored using Swagger UI.
+Pacificsoft REST API may be explored using Swagger UI.
 You can explore REST API of the live-demo server using this **[Swagger UI link.](https://demo.thingsboard.io/swagger-ui.html)**
 
-To explore REST API provided by ThingsBoard Professional Edition please use the following **[Swagger UI link.](https://cloud.thingsboard.io/swagger-ui.html)**
+To explore REST API provided by Pacificsoft Professional Edition please use the following **[Swagger UI link.](https://cloud.thingsboard.io/swagger-ui.html)**
 
-Once you will install ThingsBoard server you can open UI using the following URL:
+Once you will install Pacificsoft server you can open UI using the following URL:
     
 ``` 
 http://YOUR_HOST:PORT/swagger-ui.html
@@ -25,7 +25,7 @@ http://YOUR_HOST:PORT/swagger-ui.html
 
 ## REST API Auth
 
-ThingsBoard uses JWT for request auth.
+Pacificsoft uses JWT for request auth.
 You will need to populate "X-Authorization" header using "Authorize" button in the top-right corner of the Swagger UI.
 
  ![image](/images/reference/swagger-ui.png)

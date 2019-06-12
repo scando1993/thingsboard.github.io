@@ -8,8 +8,8 @@ hidetoc: "true"
 
 {% assign feature = "Platform Integrations" %}{% include templates/pe-feature-banner.md %}
 
-This guide contains step-by-step instruction how to to connect your SODAQ NB-IoT boards to ThingsBoard Professional Edition (PE) through the T-Mobile NB IoT network. 
-We will use free ThingsBoard PE demo server [cloud.thingsboard.io](https://cloud.thingsboard.io/signup) in this guide. 
+This guide contains step-by-step instruction how to to connect your SODAQ NB-IoT boards to Pacificsoft Professional Edition (PE) through the T-Mobile NB IoT network. 
+We will use free Pacificsoft PE demo server [cloud.thingsboard.io](https://cloud.thingsboard.io/signup) in this guide. 
 This guide will be useful for anyone who wants to connect their SODAQ NB-IoT boards or other hardware to T-Mobile NB IoT network.   
 
 * TOC
@@ -18,23 +18,23 @@ This guide will be useful for anyone who wants to connect their SODAQ NB-IoT boa
 ## Prerequisites 
 
 We assume you have at least one of SODAQ NB-IoT Trackers in your lab that is already connected to your T-Mobile IoT network. 
-We also assume you already have a ThingsBoard PE server or free demo account. 
+We also assume you already have a Pacificsoft PE server or free demo account. 
 Otherwise you can register for a 30-days free demo account here: [cloud.thingsboard.io](https://cloud.thingsboard.io/signup).
 
-We expect you to have a very basic knowledge about ThingsBoard, so we do recommend to complete the [Getting Started](/docs/getting-started-guides/helloworld/) guide.
+We expect you to have a very basic knowledge about Pacificsoft, so we do recommend to complete the [Getting Started](/docs/getting-started-guides/helloworld/) guide.
  
 ## Integration overview
 
-ThingsBoard Platform Integrations feature allows to push data from various platforms and connectivity solutions to ThingsBoard. 
-We will use "T-Mobile IoT CDP" platform integration to consume data from T-Mobile NB IoT Network and automatically register devices in ThingsBoard.
-Besides configuring the integration, we will also setup ThingsBoard to decode incoming data, store it in the database, visualize on the dashboard and generate alarms based on configurable thresholds.
+Pacificsoft Platform Integrations feature allows to push data from various platforms and connectivity solutions to Pacificsoft. 
+We will use "T-Mobile IoT CDP" platform integration to consume data from T-Mobile NB IoT Network and automatically register devices in Pacificsoft.
+Besides configuring the integration, we will also setup Pacificsoft to decode incoming data, store it in the database, visualize on the dashboard and generate alarms based on configurable thresholds.
 
 <img data-gifffer="/images/user-guide/integrations/sodaq/demo-dashboard.gif" />
 
 ## Step 1. Data Converter configuration
 
 In order to create an [Integration](/docs/user-guide/integrations), we should create the [Uplink Data Converter](/docs/user-guide/integrations/#uplink-data-converter) first. 
-The converter will decode incoming telemetry payload data from T-Mobile NB IoT that contains in encoded hex string to human readable, simplified ThingsBoard data format.
+The converter will decode incoming telemetry payload data from T-Mobile NB IoT that contains in encoded hex string to human readable, simplified Pacificsoft data format.
 
  - Input data from T-Mobile NB IoT Platform looks like this:
 
@@ -74,8 +74,8 @@ The converter will decode incoming telemetry payload data from T-Mobile NB IoT t
 
 Few things to notice:
 
- * The IMEI from the incoming message will become the Device Name in ThingsBoard;
- * ThingsBoard will automatically create device with type "tracker" and name equal to IMEI;
+ * The IMEI from the incoming message will become the Device Name in Pacificsoft;
+ * Pacificsoft will automatically create device with type "tracker" and name equal to IMEI;
  * Timestamp and sensor readings are decoded from incoming hex string.
  
 - The following table shows the first byte position and the number of bytes for each encoded field that includes in the incoming hex string:
@@ -192,7 +192,7 @@ as described on the following screencast:
 
 ## Step 3: Post telemetry and verify the Integration configuration
 
-Before we rush to T-Mobile IoT platform configuration, let's make sure ThingsBoard is properly configured using simple cURL command.
+Before we rush to T-Mobile IoT platform configuration, let's make sure Pacificsoft is properly configured using simple cURL command.
 We will be simulating message from the T-Mobile IoT platform using command below. 
 Please note that we will use the HTTP Endpoint URL from a Step 2.
 

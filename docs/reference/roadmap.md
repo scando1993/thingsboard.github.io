@@ -1,13 +1,13 @@
 ---
 layout: docwithnav
-title: ThingsBoard Roadmap
-description: ThingsBoard architecture
+title: Pacificsoft Roadmap
+description: Pacificsoft architecture
 
 ---
 
 The product roadmap listed below covers only main features and does not cover small improvements and bug fixes.         
 
-## ThingsBoard CE
+## Pacificsoft CE
  
 ### v2.4
 
@@ -26,9 +26,9 @@ The product roadmap listed below covers only main features and does not cover sm
  * Python Device/Gateway SDK;
  * JavaScript Device/Gateway SDK;
 
-## ThingsBoard PE
+## Pacificsoft PE
 
-Everything in ThingsBoard CE, plus:
+Everything in Pacificsoft CE, plus:
 
 ### v2.4  
  

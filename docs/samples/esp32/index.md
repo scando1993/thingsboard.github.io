@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
 title: ESP32 overview
-description: ThingsBoard IoT Platform hardware samples for ESP32 devices.
+description: Pacificsoft IoT Platform hardware samples for ESP32 devices.
 
 ---
 
@@ -10,8 +10,8 @@ description: ThingsBoard IoT Platform hardware samples for ESP32 devices.
 
 ## Samples
 
- - [ESP32 Pico Kit GPIO control over MQTT and temperature monitor using ThingsBoard](/docs/samples/esp32/gpio-control-pico-kit-dht22-sensor/)
- - [ESP32 OTA update using ThingsBoard](/docs/samples/esp32/ota/)
+ - [ESP32 Pico Kit GPIO control over MQTT and temperature monitor using Pacificsoft](/docs/samples/esp32/gpio-control-pico-kit-dht22-sensor/)
+ - [ESP32 OTA update using Pacificsoft](/docs/samples/esp32/ota/)
 
 ## Documentation
 

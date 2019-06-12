@@ -1,7 +1,7 @@
 ---
 layout: docwithnav
 title: Arduino overview
-description: ThingsBoard IoT Platform hardware samples for Arduino devices.
+description: Pacificsoft IoT Platform hardware samples for Arduino devices.
 
 ---
 

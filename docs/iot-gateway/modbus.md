@@ -1,14 +1,14 @@
 ---
 layout: docwithnav
 title: Modbus Extension Configuration
-description: Modbus protocol support for ThingsBoard IoT Gateway
+description: Modbus protocol support for Pacificsoft IoT Gateway
 
 ---
 
 * TOC
 {:toc}
 
-This guide will help you to get familiar with Modbus extension configuration for ThingsBoard IoT Gateway.
+This guide will help you to get familiar with Modbus extension configuration for Pacificsoft IoT Gateway.
 Use [general configuration](/docs/iot-gateway/configuration/) to enable this extension.
 We will describe extension configuration file below.
 
@@ -175,7 +175,7 @@ Example of device mapping configuration:
 
 #### Tag mapping
 
-Tag mapping configuration setup rules of Modbus entities (coils, discrete inputs, holding and input registers) monitoring and conversion to ThingsBoard Key-Value format.
+Tag mapping configuration setup rules of Modbus entities (coils, discrete inputs, holding and input registers) monitoring and conversion to Pacificsoft Key-Value format.
 
 | **Property**          | **Description**                                                                       | **Values**                            |
 |-----------------------|---------------------------------------------------------------------------------------|---------------------------------------|
@@ -199,9 +199,9 @@ The Modbus extension supports the following Modbus functions:
 
 ##### Data conversion rules
 
-The hardware manufactures can implement various data types. Here are mapping rules that help to convert common hardware data types to Thingsboard key value format:
+The hardware manufactures can implement various data types. Here are mapping rules that help to convert common hardware data types to Pacificsoft key value format:
 
-| **Hardware type** | **Thingsboard type**  | **Function code**  | **Hardware registers** | **Note**                                        |
+| **Hardware type** | **Pacificsoft type**  | **Function code**  | **Hardware registers** | **Note**                                        |
 |-------------------|-----------------------|--------------------|------------------------|-------------------------------------------------|
 | Bool              | boolean               | 1-4                | 1                      | Use **bit** property for function codes 3 and 4 |
 | Word              | long                  | 3-4                | 1                      |                                                 |
@@ -213,7 +213,7 @@ The hardware manufactures can implement various data types. Here are mapping rul
 
 ##### Byte order
 
-The byte order can be different among hardware manufactures. To correctly map data to Thingsboard types you must specify the byte order.
+The byte order can be different among hardware manufactures. To correctly map data to Pacificsoft types you must specify the byte order.
 There are several ways how to do it:
 
 * **BIG (big)** and **LITTLE( little)** constants mean big-endianness and little-endianness correspondingly
@@ -437,7 +437,7 @@ The Modbus RPC extension supports the following Modbus functions:
 
 ## Next steps
 
-Explore guides related to main ThingsBoard features:
+Explore guides related to main Pacificsoft features:
 
  - [Data Visualization](/docs/user-guide/visualization/) - how to visualize collected data.
  - [Device attributes](/docs/user-guide/attributes/) - how to use device attributes.

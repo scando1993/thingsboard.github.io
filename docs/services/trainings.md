@@ -1,18 +1,18 @@
 ---
 layout: docwithnav
 title: Training sessions
-description: ThingsBoard training sessions
+description: Pacificsoft training sessions
 
 ---
 
-ThingsBoard training sessions are educational events that are delivered to your company’s engineers by ThingsBoard core team members. The primary goals of ThingsBoard education courses are:
+Pacificsoft training sessions are educational events that are delivered to your company’s engineers by Pacificsoft core team members. The primary goals of Pacificsoft education courses are:
 
-- Boosting your experience with the ThingsBoard platform.
+- Boosting your experience with the Pacificsoft platform.
 - Familiarizing you with platform features, APIs and integrations.
 - Addressing practical questions related to your use cases.
 - Minimizing time-to-market for your IoT product or solution.
 
-ThingsBoard training sessions are on-demand online events for up to 8 people. On-site training sessions are also available. [Contact us](/docs/contact-us/) for more details.
+Pacificsoft training sessions are on-demand online events for up to 8 people. On-site training sessions are also available. [Contact us](/docs/contact-us/) for more details.
 
 <br/>
 
@@ -21,11 +21,11 @@ ThingsBoard training sessions are on-demand online events for up to 8 people. On
 * TOC
 {:toc}
 
-### ThingsBoard Basics
+### Pacificsoft Basics
 
-Learn how ThingsBoard platform helps businesses to implement IoT use cases and support IoT solutions.
+Learn how Pacificsoft platform helps businesses to implement IoT use cases and support IoT solutions.
 
-This training session will provide you with the basic understanding of ThingsBoard features and how they can be used in your IoT product.
+This training session will provide you with the basic understanding of Pacificsoft features and how they can be used in your IoT product.
 
 **Agenda:**
 
@@ -34,15 +34,15 @@ This training session will provide you with the basic understanding of ThingsBoa
     - Discussion on your use case to highlight key points during the training session.
 - Platform installation
     - Review available installation options. Highlight security and configuration aspects.
-    - **Exercise:** setup ThingsBoard instance on AWS.
+    - **Exercise:** setup Pacificsoft instance on AWS.
 - Web UI
     - Explain basic web UI capabilities and main entities: Devices, Customers, Users, Dashboards.
     - Review available widget types and explain their basic configuration parameters.
-    - Explain ThingsBoard user roles and their permissions.
+    - Explain Pacificsoft user roles and their permissions.
     - **Exercise:** create Device and provision Device Credentials
     - **Exercise:** create Dashboard and assign it to the Customer.
-- ThingsBoard API
-    - Explain ThingsBoard API for device connectivity and integration with server-side applications.
+- Pacificsoft API
+    - Explain Pacificsoft API for device connectivity and integration with server-side applications.
     - **Exercise:** create device firmware to publish telemetry and attributes over MQTT.
     - **Exercise:** add widgets to the Dashboard to visualize data from the previous exercise.
 - Rule Engine
@@ -70,18 +70,18 @@ This training session will provide you with the basic understanding of ThingsBoa
     </tr>
 </table>
 
-### ThingsBoard Data Visualization
+### Pacificsoft Data Visualization
 
-Learn how ThingsBoard platform helps to collect and visualize IoT data and use this knowledge to improve customer experience.
+Learn how Pacificsoft platform helps to collect and visualize IoT data and use this knowledge to improve customer experience.
 
-This training session will provide you with the in-depth understanding of ThingsBoard visualization capabilities, widget customization, user roles, and permissions.
+This training session will provide you with the in-depth understanding of Pacificsoft visualization capabilities, widget customization, user roles, and permissions.
 
 
 **Agenda:**
 
 - Web UI
     - Explain web UI capabilities and main business entities: Devices, Customers, Users, and Dashboards.
-    - Explain ThingsBoard user roles and their permissions.
+    - Explain Pacificsoft user roles and their permissions.
     - **Exercise:** create Device and provision Device Credentials
 - Dashboards
     - Explain Dashboard features and capabilities
@@ -116,7 +116,7 @@ This training session will provide you with the in-depth understanding of Things
     </tr>
     <tr>
         <td>Prerequisite Knowledge</td>
-        <td colspan="2">basic concepts of ThingsBoard platform</td>
+        <td colspan="2">basic concepts of Pacificsoft platform</td>
     </tr>
     <tr>
         <td></td>
@@ -124,9 +124,9 @@ This training session will provide you with the in-depth understanding of Things
     </tr>
 </table>
 
-### Device connectivity and application development using ThingsBoard
+### Device connectivity and application development using Pacificsoft
 
-Learn how to use ThingsBoard platform APIs to build connected applications for your IoT devices.
+Learn how to use Pacificsoft platform APIs to build connected applications for your IoT devices.
 
 This training session will provide you with the in-depth understanding of supported network protocols and device APIs.
 
@@ -143,12 +143,12 @@ This training session will provide you with the in-depth understanding of suppor
     - **Exercise:** telemetry data upload using CoAP
 - Attributes API 
     - Use cases and feature overview
-    - **Exercise:** Reporting device attribute changes to ThingsBoard
+    - **Exercise:** Reporting device attribute changes to Pacificsoft
     - **Exercise:** Subscribe to server-side attribute updates
-    - **Exercise:** Save and restore application state using ThingsBoard server.
+    - **Exercise:** Save and restore application state using Pacificsoft server.
 - Timeseries API
     - Use cases and feature overview
-    - **Exercise:** Reporting time-series data to ThingsBoard
+    - **Exercise:** Reporting time-series data to Pacificsoft
 - RPC API	
     - Use cases and feature overview
     - **Exercise:** Send one-way RPC command to Device
@@ -172,7 +172,7 @@ This training session will provide you with the in-depth understanding of suppor
     </tr>
     <tr>
         <td>Prerequisite Knowledge</td>
-        <td colspan="2">basic concepts of ThingsBoard platform</td>
+        <td colspan="2">basic concepts of Pacificsoft platform</td>
     </tr>
     <tr>
         <td></td>
@@ -180,9 +180,9 @@ This training session will provide you with the in-depth understanding of suppor
     </tr>
 </table>
 
-### Server-side application development using ThingsBoard API
+### Server-side application development using Pacificsoft API
 
-Learn how to connect your cloud applications with your IoT devices using ThingsBoard platform APIs.
+Learn how to connect your cloud applications with your IoT devices using Pacificsoft platform APIs.
 
 This training session will provide you with in-depth understanding platform REST and websocket APIs, rule engine, data collection and analytics use cases.
 
@@ -226,7 +226,7 @@ This training session will provide you with in-depth understanding platform REST
     </tr>
     <tr>
         <td>Prerequisite Knowledge</td>
-        <td colspan="2">basic concepts of ThingsBoard platform</td>
+        <td colspan="2">basic concepts of Pacificsoft platform</td>
     </tr>
     <tr>
         <td></td>
@@ -234,9 +234,9 @@ This training session will provide you with in-depth understanding platform REST
     </tr>
 </table>
 
-### ThingsBoard Administration
+### Pacificsoft Administration
 
-Learn how to provision, monitor and scale your ThingsBoard cluster.
+Learn how to provision, monitor and scale your Pacificsoft cluster.
 
 This training session will provide you with in-depth understanding platform configuration, troubleshooting and scalability. We will also cover security and load balancing topics.
 
@@ -248,23 +248,23 @@ This training session will provide you with in-depth understanding platform conf
     - Discussion on your use case to highlight key points during the training session.
 - Single-node platform installation
     - Explain installation options. Highlight security and configuration aspects.
-    - **Exercise:** setup ThingsBoard instance on AWS using public AMIs.
-    - **Exercise:** setup ThingsBoard instance on CentOS.
-- ThingsBoard configuration
+    - **Exercise:** setup Pacificsoft instance on AWS using public AMIs.
+    - **Exercise:** setup Pacificsoft instance on CentOS.
+- Pacificsoft configuration
     - Explain main configuration files
     - **Exercise:** general system configuration
-- ThingsBoard troubleshooting
+- Pacificsoft troubleshooting
     - Review log files and their configuration
     - **Exercise:** changing log levels for particular components
-- ThingsBoard cluster installation
+- Pacificsoft cluster installation
     - Explain cluster deployment options and configuration
-    - **Exercise:** ThingsBoard cluster setup
-    - **Exercise:** ThingsBoard cluster setup troubleshooting
+    - **Exercise:** Pacificsoft cluster setup
+    - **Exercise:** Pacificsoft cluster setup troubleshooting
 - Load Balancing, Scalability, and Failover
     - Use cases and platform capabilities overview
-    - ThingsBoard architecture overview
+    - Pacificsoft architecture overview
     - **Exercise:** Tuning cluster performance
-    - **Exercise:** Scaling ThingsBoard cluster
+    - **Exercise:** Scaling Pacificsoft cluster
     - **Exercise:** Replacing Failed node
     - **Exercise:** Load balancing device connections
     - **Exercise:** Load balancing server-side API calls

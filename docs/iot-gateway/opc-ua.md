@@ -3,14 +3,14 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: OPC-UA Extension Configuration
-description: OPC-UA protocol support for ThingsBoard IoT Gateway
+description: OPC-UA protocol support for Pacificsoft IoT Gateway
 
 ---
 
 * TOC
 {:toc}
 
-This guide will help you to get familiar with OPC-UA extension configuration for ThingsBoard IoT Gateway.
+This guide will help you to get familiar with OPC-UA extension configuration for Pacificsoft IoT Gateway.
 Use [general configuration](/docs/iot-gateway/configuration/) to enable this extension.
 We will describe extension configuration file below.
 
@@ -23,7 +23,7 @@ The root JSON element should contain "servers" array. Each server in the array i
 
 | **Property**        | **Description**                                                                                                                                                                                                  | **Default Value**         |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| applicationName     | Name of the client application, used for OPC-UA connection.                                                                                                                                                      | ThingsBoard OPC-UA client |
+| applicationName     | Name of the client application, used for OPC-UA connection.                                                                                                                                                      | Pacificsoft OPC-UA client |
 | applicationUri      | URI of the client application, used for OPC-UA connection.                                                                                                                                                       |     |
 | host                | OPC-UA server host                                                                                                                                                                                               | localhost                 |
 | port                | OPC-UA server port                                                                                                                                                                                               | 49320                     |
@@ -37,8 +37,8 @@ For Example:
 {
   "servers": [
     {
-      "applicationName": "ThingsBoard OPC-UA client",
-      "applicationUri": "urn:thingsboard:client",
+      "applicationName": "Pacificsoft OPC-UA client",
+      "applicationUri": "urn:Pacificsoft:client",
       "host": "localhost",
       "port": 49320,
       "scanPeriodInSeconds": 10,
@@ -105,7 +105,7 @@ Example of keystore configuration:
 
 #### Mapping
 
-Mapping configuration setup rules of OPC-UA server monitoring and data conversion to ThingsBoard Key-Value format. For example:
+Mapping configuration setup rules of OPC-UA server monitoring and data conversion to Pacificsoft Key-Value format. For example:
 
 ```json
 {
@@ -132,7 +132,7 @@ Now mapping process will use **deviceNamePattern** to get device name value.
 You can use OPC-UA tags inside the pattern by specifying their relative (to device node) names. See example below. 
 Similar mapping rules are applied for **attributes** and **timeseries** values:
 
- - **key** - constant Attribute or Timeseries ThingsBoard key.
+ - **key** - constant Attribute or Timeseries Pacificsoft key.
  - **type** - either boolean, long, double or string.
  - **value** - expression based on relative tag values specified inside **${}** 
 
@@ -227,7 +227,7 @@ Explore examples:
  
  - [KEPServerEX connection example](/docs/iot-gateway/getting-started/#step-9-connect-to-external-opc-ua-server)
 
-Explore guides related to main ThingsBoard features:
+Explore guides related to main Pacificsoft features:
 
  - [Data Visualization](/docs/user-guide/visualization/) - how to visualize collected data.
  - [Device attributes](/docs/user-guide/attributes/) - how to use device attributes.

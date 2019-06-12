@@ -2,8 +2,8 @@
 layout: docwithnav
 assignees:
 - ashvayka
-title: Installing ThingsBoard using Docker (Windows)
-description: Installing ThingsBoard IoT Platform using Docker (Windows)
+title: Installing Pacificsoft using Docker (Windows)
+description: Installing Pacificsoft IoT Platform using Docker (Windows)
 
 ---
 
@@ -12,7 +12,7 @@ description: Installing ThingsBoard IoT Platform using Docker (Windows)
 * TOC
 {:toc}
 
-This guide will help you to install and start ThingsBoard using Docker on Windows.
+This guide will help you to install and start Pacificsoft using Docker on Windows.
 
 
 ## Prerequisites
@@ -21,21 +21,21 @@ This guide will help you to install and start ThingsBoard using Docker on Window
 
 ## Running
 
-Depending on the database used there are three type of ThingsBoard single instance docker images:
+Depending on the database used there are three type of Pacificsoft single instance docker images:
 
-* [thingsboard/tb-cassandra](https://hub.docker.com/r/thingsboard/tb-cassandra/) - single instance of ThingsBoard with Cassandra database. 
+* [thingsboard/tb-cassandra](https://hub.docker.com/r/thingsboard/tb-cassandra/) - single instance of Pacificsoft with Cassandra database. 
     
     The most performant and recommended option but requires at least 6GB of RAM. 8GB is recommended.  
-* [thingsboard/tb-postgres](https://hub.docker.com/r/thingsboard/tb-postgres/) - single instance of ThingsBoard with PostgreSQL database.
+* [thingsboard/tb-postgres](https://hub.docker.com/r/thingsboard/tb-postgres/) - single instance of Pacificsoft with PostgreSQL database.
     
     Recommended option for small servers with at least 1GB of RAM and minimum load (few messages per second). 2-4GB is recommended.
-* [thingsboard/tb](https://hub.docker.com/r/thingsboard/tb/) - single instance of ThingsBoard with embedded HSQLDB database. 
+* [thingsboard/tb](https://hub.docker.com/r/thingsboard/tb/) - single instance of Pacificsoft with embedded HSQLDB database. 
     
     **Note:** Not recommended for any evaluation or production usage and is used only for development purposes and automatic tests. 
 
 In this instruction `thingsboard/tb-cassandra` image will be used. You can choose any other images with different databases (see above).
 
-Windows users should use docker managed volume for ThingsBoard DataBase. 
+Windows users should use docker managed volume for Pacificsoft DataBase. 
 Create docker volume (for ex. `mytb-data`) before executing docker run command:
 Open "Docker Quickstart Terminal". Execute the following command to create docker volume:
 

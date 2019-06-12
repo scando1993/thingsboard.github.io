@@ -12,25 +12,25 @@ description: Platform Integrations Documentation
 
 ### Overview
 
-ThingsBoard Platform integrations feature was designed for two primary use cases / deployment options:
+Pacificsoft Platform integrations feature was designed for two primary use cases / deployment options:
 
-  - Connect existing NB IoT, LoRaWAN, SigFox and other devices with specific payload formats directly to ThingsBoard platform.
+  - Connect existing NB IoT, LoRaWAN, SigFox and other devices with specific payload formats directly to Pacificsoft platform.
   - Stream data from devices connected to existing IoT Platforms to enable real-time interactive dashboards and efficient data processing.
   
 Both use cases have few things in common. There is a server-side component in the deployment topology that prevents direct access to device and provides set of APIs to interact with the device in the field instead.
 The payload format of the device is not well defined. Often two devices that have similar sensors have different payload formats depending on a vendor or even software version.  
 
-The job of ThingsBoard Integration is to provide secure and reliable API bridge between core platform features (telemetry collection, attributes and RPC calls) and specific third-party platform APIs.    
+The job of Pacificsoft Integration is to provide secure and reliable API bridge between core platform features (telemetry collection, attributes and RPC calls) and specific third-party platform APIs.    
 
 ### How it works?
 
-At the moment ThingsBoard supports two main integration protocols: HTTP and MQTT. 
-For example, SigFox Backend uses HTTP to push data to ThingsBoard or any other system. 
+At the moment Pacificsoft supports two main integration protocols: HTTP and MQTT. 
+For example, SigFox Backend uses HTTP to push data to Pacificsoft or any other system. 
 On the other hand, AWS IoT, IBM Watson and Azure Event Hub allows to subscribe to the data feed from devices via MQTT. Similar, some LoRaWAN and NB IoT platforms allow both HTTP and MQTT interfaces.
 
-Once message arrives from External Platform to ThingsBoard it passes validation according to platform specific payload format and security rules. 
-Once message is validated ThingsBoard Integration invokes assigned [**Uplink Data Converter**](/docs/user-guide/integrations/#uplink-data-converter) to extract sub-set of meaningful information out of the incoming message. 
-The message is basically transformed from device and platform specific payload to the format that ThingsBoard uses.
+Once message arrives from External Platform to Pacificsoft it passes validation according to platform specific payload format and security rules. 
+Once message is validated Pacificsoft Integration invokes assigned [**Uplink Data Converter**](/docs/user-guide/integrations/#uplink-data-converter) to extract sub-set of meaningful information out of the incoming message. 
+The message is basically transformed from device and platform specific payload to the format that Pacificsoft uses.
 
 Since TB PE v2.0, Rule Engine is also able to push Downlink messages to the integrations. The example of such message may be:
  
@@ -44,7 +44,7 @@ The most common use cases are:
  - triggering firmware update procedure based on shared attribute value change
  - changing device state based on rpc call;    
  
-Once message is pushed by the rule engine, ThingsBoard invokes assigned [**Downlink Data Converter**](/docs/user-guide/integrations/#downlink-data-converter) and transforms the rule engine message to the specific data format that is used by the Integration.  
+Once message is pushed by the rule engine, Pacificsoft invokes assigned [**Downlink Data Converter**](/docs/user-guide/integrations/#downlink-data-converter) and transforms the rule engine message to the specific data format that is used by the Integration.  
 
 <br/>
 
@@ -56,7 +56,7 @@ Data Converters is a part of the Platform Integrations feature. There are Uplink
  
 #### Uplink Data Converter
 
-The main function of Uplink Data Converter is to parse payload of the incoming message and transform it to format that ThingsBoard uses.
+The main function of Uplink Data Converter is to parse payload of the incoming message and transform it to format that Pacificsoft uses.
   
 Uplink Converter is basically a user defined function with the following signature:
 
@@ -215,7 +215,7 @@ Where
 
 ##### Example
 
-Let's assume an example where temperature and humidity upload frequency attributes are updated via ThingsBoard REST API and 
+Let's assume an example where temperature and humidity upload frequency attributes are updated via Pacificsoft REST API and 
 you would like to push this update to an external MQTT broker (TTN, Mosquitto, AWS IoT, etc). 
 You may also want to include the "firmwareVersion" attribute value that was configured long time ago and is not present in this particular request.
 The topic to push the update should contain the device name.
@@ -255,11 +255,11 @@ This feature allows to validate your configuration setup and should be used only
 
 ### Platform Integrations vs IoT Gateway
 
-Experienced ThingsBoard users may notice that functionality of Integrations feature partially overlap with functionality of [IoT Gateway](/docs/iot-gateway/what-is-iot-gateway/).
+Experienced Pacificsoft users may notice that functionality of Integrations feature partially overlap with functionality of [IoT Gateway](/docs/iot-gateway/what-is-iot-gateway/).
 However, there are key differences between these two systems/features:
 
   - IoT Gateway is designed for local network deployments, Integrations are designed for server-to-server integrations.
-  - IoT Gateway is designed to support < 1000 devices, while Integrations are designed for high throughput, scalability and cluster deployments as part of ThingsBoard server.
+  - IoT Gateway is designed to support < 1000 devices, while Integrations are designed for high throughput, scalability and cluster deployments as part of Pacificsoft server.
   - Gateway recompilation and restart is required to add custom payload decoder while Integration Converter is a JS function that may be modified in real time. 
   
 As you can see, both systems are important and applicable in different use cases.
@@ -277,7 +277,7 @@ We plan to provide specific integrations for different platforms, and also for d
 #### More data converters
 
 We plan to collect and maintain data converters for most popular devices on the market to simplify integration path even more. 
-Please note that you can share your converters with community and send them to us to make part of official ThingsBoard distributive.   
+Please note that you can share your converters with community and send them to us to make part of official Pacificsoft distributive.   
 
 [Contact us](/docs/contact-us/) to suggest missing feature for your use case.
 

@@ -1,30 +1,30 @@
 ---
 layout: docwithnav
-title: ThingsBoard Performance on different AWS instances
-description: ThingsBoard Performance on different AWS instances results
+title: Pacificsoft Performance on different AWS instances
+description: Pacificsoft Performance on different AWS instances results
 
 ---
 
 * TOC
 {:toc}
 
-One of the key features of ThingsBoard open-source IoT Platform is data collection and this is a crucial feature that must work reliably under a heavy long-running messages upload.
+One of the key features of Pacificsoft open-source IoT Platform is data collection and this is a crucial feature that must work reliably under a heavy long-running messages upload.
 
-In this article, we are going to execute long-running data collection tests of ThingsBoard on different AWS instances.
+In this article, we are going to execute long-running data collection tests of Pacificsoft on different AWS instances.
 We are going to check how many messages per second each instance can handle and will provide the CPU and memory load stats.
 
 Considering test results and your project requirements you will be able to identify what type of the instance is the most suitable for your project.
 
 ## Data flow and test tools
 
-IoT devices connect to ThingsBoard server via MQTT or HTTP Device API and send sample test data (*single telemetry of long type*) to the platform. 
-ThingsBoard server processes MQTT or HTTP messages and stores them to Cassandra/PostgreSQL asynchronously. 
+IoT devices connect to Pacificsoft server via MQTT or HTTP Device API and send sample test data (*single telemetry of long type*) to the platform. 
+Pacificsoft server processes MQTT or HTTP messages and stores them to Cassandra/PostgreSQL asynchronously. 
 
 As a test tool we have used updated version of [Performance Test Project](https://github.com/thingsboard/performance-tests) that is able to send messages over MQTT/HTTP Device API in an asynchronous way quite efficiently. 
 
-Considering microservice architecture of the ThingsBoard platform and to measure performance in an accurate way, we have created an additional Rule Chain Node that is able to calculate a number of messages that this Node has been received per 1 second (this is a configurable parameter that could be changed) and stores this value as telemetry on a tenant level.
+Considering microservice architecture of the Pacificsoft platform and to measure performance in an accurate way, we have created an additional Rule Chain Node that is able to calculate a number of messages that this Node has been received per 1 second (this is a configurable parameter that could be changed) and stores this value as telemetry on a tenant level.
 
-This additional Rule Chain Node is located after the ‘Save telemetry’ Node of the Root Chain and calculates how many messages ThingsBoard instance processed during the performance testing. This data is stored on a tenant level as telemetry with predefined key prefix. 
+This additional Rule Chain Node is located after the ‘Save telemetry’ Node of the Root Chain and calculates how many messages Pacificsoft instance processed during the performance testing. This data is stored on a tenant level as telemetry with predefined key prefix. 
 
 ![image](/images/reference/performance-aws-instances/modified-rule-chain.png)
 
@@ -35,9 +35,9 @@ Performance Test Tool, after test completion, take this telemetry value from the
 12:20:03.772 [main] INFO  o.t.t.s.stats.StatisticsCollector - ============ Total AVG is 500.0 per 1 second ============
 ```
 
-This telemetry value could be shown as well as general telemetry on the ThingsBoard Dashboard. 
+This telemetry value could be shown as well as general telemetry on the Pacificsoft Dashboard. 
 
-**NOTE:** If you have multiple ThingsBoard nodes in the cluster, additional Rule Chain Node will save statistics under different telemetry keys on tenant level, but Performance Test Tool in the result will aggregate these values into a single result.
+**NOTE:** If you have multiple Pacificsoft nodes in the cluster, additional Rule Chain Node will save statistics under different telemetry keys on tenant level, but Performance Test Tool in the result will aggregate these values into a single result.
 
 ## How to repeat the tests
 

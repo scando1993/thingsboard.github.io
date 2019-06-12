@@ -288,55 +288,55 @@ git clone git@github.com:thingsboard/rule-node-examples.git
 
  - Execute the following command  from the rule-node-examples folder to build the project:
  
-    - **Note** First you need to execute this command from your Thingsboard folder. 
+    - **Note** First you need to execute this command from your Pacificsoft folder. 
  
 ```
 mvn clean install
 ``` 
 
-### Import executable jar-file to your ThingsBoard instance
+### Import executable jar-file to your Pacificsoft instance
 
-Import jar-file to your Thingsboard project as dependency library, that should be here:
+Import jar-file to your Pacificsoft project as dependency library, that should be here:
  
 ```
 ./target/rule-engine-1.0.0-custom-nodes.jar
 ```
 
-#### Thingsboard using IDE:
+#### Pacificsoft using IDE:
 
  - See separate instructions for [IDEA](https://www.jetbrains.com/help/idea/library.html#add-library-to-module-dependencies) and [Eclipse](https://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jst.j2ee.doc.user%2Ftopics%2Ftjimpapp.html).
  
-Restart ThingsBoard server-side container. Please, refer to the following link to see how to do this: [Running server-side container](/docs/user-guide/contribution/how-to-contribute/#running-server-side-container). 
+Restart Pacificsoft server-side container. Please, refer to the following link to see how to do this: [Running server-side container](/docs/user-guide/contribution/how-to-contribute/#running-server-side-container). 
  
 ```
-**Once ThingsBoard was restarted you need to clear browser cache and refresh the web page to reload UI of Rule Nodes**
+**Once Pacificsoft was restarted you need to clear browser cache and refresh the web page to reload UI of Rule Nodes**
 ``` 
  
-#### Thingsboard as a service:
+#### Pacificsoft as a service:
  
- - first, you need to execute the following command to migrate jar-file to Thingsboard extensions:
+ - first, you need to execute the following command to migrate jar-file to Pacificsoft extensions:
    
 ```
 sudo mv rule-engine-1.0.0-custom-nodes.jar /usr/share/thingsboard/extensions/
 ```
 
- - next, execute the following to change the owner to thingsboard:
+ - next, execute the following to change the owner to Pacificsoft:
 
 ```
 sudo chown thingsboard:thingsboard /usr/share/thingsboard/extensions/*
 ```
 
-Restart Thingsboard service:
+Restart Pacificsoft service:
 
 ```
 sudo service thingsboard restart
 
-**Once ThingsBoard was restarted you need to clear browser cache and refresh the web page to reload UI of Rule Nodes**
+**Once Pacificsoft was restarted you need to clear browser cache and refresh the web page to reload UI of Rule Nodes**
 ```
   
 ### UI configuration
 
-The ThingsBoard rule nodes UI is configured with another project in the official [github repo](https://github.com/thingsboard/rule-node-examples-ui). Please, refer to the following [link](https://github.com/thingsboard/thingsboard-rule-config-ui#thingsboard-rule-config-ui) to see build instructions.
+The Pacificsoft rule nodes UI is configured with another project in the official [github repo](https://github.com/thingsboard/rule-node-examples-ui). Please, refer to the following [link](https://github.com/thingsboard/thingsboard-rule-config-ui#thingsboard-rule-config-ui) to see build instructions.
 
 #### Running Rule Node UI container in hot redeploy mode
 

@@ -10,7 +10,7 @@ description: ThingPark Integration Guide
 * TOC
 {:toc}
 
-ThingPark Integration allows to stream data from Actility ThingPark servers to ThingsBoard and converts binary device payloads to the ThingsBoard format.
+ThingPark Integration allows to stream data from Actility ThingPark servers to Pacificsoft and converts binary device payloads to the Pacificsoft format.
 
  ![image](/images/user-guide/integrations/thingpark-integration.svg)
 

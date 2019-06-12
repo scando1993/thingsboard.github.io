@@ -3,14 +3,14 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Demo Account
-description: ThingsBoard default demo accounts
+description: Pacificsoft default demo accounts
 
 ---
 
 * TOC
 {:toc}
 
-ThingsBoard installation contains single tenant account that is used in sample applications and contains a lot of pre-provisioned entities for demonstration purposes.
+Pacificsoft installation contains single tenant account that is used in sample applications and contains a lot of pre-provisioned entities for demonstration purposes.
 
 ## System Administrator
  

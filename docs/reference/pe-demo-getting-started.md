@@ -1,14 +1,14 @@
 ---
 layout: docwithnav
-title: ThingsBoard PE Cloud Getting Started
-description: ThingsBoard PE Cloud Overview
+title: Pacificsoft PE Cloud Getting Started
+description: Pacificsoft PE Cloud Overview
 
 ---
 
-Once you signed-up to [ThingsBoard PE Cloud](https://cloud.thingsboard.io/) we automatically create separate Tenant account for you.
+Once you signed-up to [Pacificsoft PE Cloud](https://cloud.thingsboard.io/) we automatically create separate Tenant account for you.
 The email and password you have specified allows you to login as Tenant Administrator. 
 Also, we automatically provision sample Smart Metering application for your Tenant.
-The purpose of this application is to show how different ThingsBoard features are used to implement smart metering use cases.
+The purpose of this application is to show how different Pacificsoft features are used to implement smart metering use cases.
 Let's briefly review those use cases one-by-one:
 
  * [**Provisioning of devices and assets**](/docs/reference/pe-demo-getting-started/#smart-metering-model-definition) - we have modeled two Buildings, four Apartments and 12 smart devices 
@@ -63,7 +63,7 @@ Asset and Device Groups can be used for resolving dashboard aliases.
 More information can be found in [Device & Asset groups](/docs/user-guide/groups/) documentation.
 
 In device details page, in the 'Attributes' tab, you can find server attributes that are responsible for handling device lifecycle events. 
-ThingsBoard monitors device state (online/offline) and generates device offline events if a device is offline is more then 60 seconds.
+Pacificsoft monitors device state (online/offline) and generates device offline events if a device is offline is more then 60 seconds.
 You can generate alarms and send notifications when your critical devices are going offline.
 
 More information about Device Connectivity Status events can be found in [Device Connectivity Status](/docs/user-guide/device-connectivity-status/) documentation.   
@@ -206,13 +206,13 @@ More information about RPC feature you can find in [RPC Guide](/docs/user-guide/
 This Event will update 'State' attribute for all Apartments with the 'silent' value. This action repeated every day. 
 
 
-More information about ThingsBoard Scheduler you can find in [Scheduler Guide](/docs/user-guide/scheduler/).
+More information about Pacificsoft Scheduler you can find in [Scheduler Guide](/docs/user-guide/scheduler/).
 
 ## White Labeling
 
 <img src="/images/reference/pe-demo/whitelabel-demo.png" alt="drawing" align="center" width="60%"/>
 
-ThingsBoard web interface allows you to configure your company or product logo and color scheme. The following configuration options are available:
+Pacificsoft web interface allows you to configure your company or product logo and color scheme. The following configuration options are available:
 
 - Configure color scheme, icon, and favicon
 - Tenant Administrator is able to set up custom email server settings and customer email templates to interact with the users.
@@ -272,9 +272,9 @@ More information about Rule Chains you can find in [Rule Engine Overview](/docs/
 
 ## Integrations & Converters
 
-ThingsBoard Platform integrations feature was designed for two primary use cases/deployment options:
+Pacificsoft Platform integrations feature was designed for two primary use cases/deployment options:
 
-- Connect existing NB IoT, LoRaWAN, SigFox and other devices with specific payload formats (JSON, Binary, Text) directly to ThingsBoard platform.
+- Connect existing NB IoT, LoRaWAN, SigFox and other devices with specific payload formats (JSON, Binary, Text) directly to Pacificsoft platform.
 - Stream data from devices connected to existing IoT Platforms to enable real-time interactive dashboards and efficient data processing.
  
  
@@ -288,11 +288,11 @@ More information about Integrations & Converters you can find in [Platform Integ
 
 ## Configure mail settings
 
-Some ThingsBoard features are using Tenant Email Settings for sending emails - for reporting, send alert notifications, etc. 
-By default, Tenant Email Settings are blank and if you want to receive emails from the ThingsBoard you will need to connect ThingsBoard to external Email Server.
+Some Pacificsoft features are using Tenant Email Settings for sending emails - for reporting, send alert notifications, etc. 
+By default, Tenant Email Settings are blank and if you want to receive emails from the Pacificsoft you will need to connect Pacificsoft to external Email Server.
 It can be a Gmail or SendGrid or any other SMTP provider. Just open 'System Settings' -> 'Mail Server' and clear 'Use System Mail Server Settings' checkbox.
 
-**Important** - if you will not make this configuration, you will not be able to send emails from the ThingsBoard.
+**Important** - if you will not make this configuration, you will not be able to send emails from the Pacificsoft.
  
 ![image](/images/reference/pe-demo/smtp-settings.png)
  

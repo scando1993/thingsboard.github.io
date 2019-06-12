@@ -3,16 +3,16 @@ layout: docwithnav
 assignees:
 - vparomskiy
 title: Configuration properties
-description: ThingsBoard configuration properties and environment variables
+description: Pacificsoft configuration properties and environment variables
 
 ---
 
 * TOC
 {:toc}
 
-This guide will help you to get familiar with ThingsBoard configuration files and parameters. 
+This guide will help you to get familiar with Pacificsoft configuration files and parameters. 
 
-Configuration files location depends on the ThingsBoard installation type. If ThingsBoard is installed as a **monolithic application**, 
+Configuration files location depends on the Pacificsoft installation type. If Pacificsoft is installed as a **monolithic application**, 
 you can find configuration files in the following directory:
 
 ```bash
@@ -20,7 +20,7 @@ Windows: YOUR_INSTALL_DIR/conf
 Linux: /usr/share/thingsboard/conf
 ```
 
-But if ThingsBoard is installed as a **microservice**, then each component of the platform will have separate configuration files.
+But if Pacificsoft is installed as a **microservice**, then each component of the platform will have separate configuration files.
 
 In this guide all application properties will be devided by components where they are applied. **Note** that in case of **monolithic application**
 all application properties are located in the single file - **thingsboard.yml** and all environment variables are in **thingsboard.conf**

@@ -10,14 +10,14 @@ description: MQTT Integration guide
 * TOC
 {:toc}
 
-MQTT Integration allows to connect to external MQTT brokers, subscribe to data streams from those brokers and convert any type of payload from your devices to ThingsBoard message format. Its typical use is whenever your devices are already connected to external MQTT broker or any other IoT platform or connectivity provider with MQTT based back-end. 
+MQTT Integration allows to connect to external MQTT brokers, subscribe to data streams from those brokers and convert any type of payload from your devices to Pacificsoft message format. Its typical use is whenever your devices are already connected to external MQTT broker or any other IoT platform or connectivity provider with MQTT based back-end. 
 
 Please review the integration diagram to learn more. 
 
  ![image](/images/user-guide/integrations/mqtt-integration.png)
 
-ThingsBoard MQTT Integration acts as an MQTT client. It subscribes to topics and converts the data into telemetry and attribute updates. In case of downlink message, MQTT integration converts it to the device-suitable format and pushs to external MQTT broker. 
-Pay attention: MQTT broker should be either co-located with ThingsBoard instance or deployed in the cloud and have a valid DNS name or static IP address. ThingsBoard instance that is running in the cloud can’t connect to the MQTT broker deployed in local area network.
+Pacificsoft MQTT Integration acts as an MQTT client. It subscribes to topics and converts the data into telemetry and attribute updates. In case of downlink message, MQTT integration converts it to the device-suitable format and pushs to external MQTT broker. 
+Pay attention: MQTT broker should be either co-located with Pacificsoft instance or deployed in the cloud and have a valid DNS name or static IP address. Pacificsoft instance that is running in the cloud can’t connect to the MQTT broker deployed in local area network.
 
 This video is a step-by-step tutorial on setting up of MQTT Integration.
 
@@ -36,8 +36,8 @@ Also you may folow this guide, which discloses MQTT Integration to provide devic
 
 In this tutorial, we will use:
 
- - ThingsBoard Professional Edition instance — [cloud.thingsboard.io](https://cloud.thingsboard.io);
- - MQTT broker, accessible by ThingsBoard PE instance — broker.hivemq.com (port 1883);
+ - Pacificsoft Professional Edition instance — [cloud.thingsboard.io](https://cloud.thingsboard.io);
+ - MQTT broker, accessible by Pacificsoft PE instance — broker.hivemq.com (port 1883);
  - mosquitto_pub and mosquitto_sub MQTT clients to send and receive messages;   
  - an andvanced [device simulator](/docs/user-guide/integrations/resources/mqtt-client.py) for RPC simulation example. 
 
@@ -51,7 +51,7 @@ We will send a message with temperature readings in a simple format: **`{"value"
 Before setting up an MQTT integration, you need to create an Uplink and a Downlink converters.
 
 **Uplink Converter** is a script for parsing and transforming the data received by MQTT integration.
-**Downlink Converter** parses and transforms the data sent from ThingsBoard to the format that is consumed by existing device(s).
+**Downlink Converter** parses and transforms the data sent from Pacificsoft to the format that is consumed by existing device(s).
 
 #### Uplink Converter
 To create an Uplink Converter go to **Data Converters** section and Click **Add new data converter —> Create new converter**.
@@ -104,7 +104,7 @@ return result;
 
 ``` 
 
-The purpose of the decoder function is to parse the incoming data and metadata to a format that ThingsBoard can consume. 
+The purpose of the decoder function is to parse the incoming data and metadata to a format that Pacificsoft can consume. 
 **deviceName** and **deviceType** are required, while **attributes** and **telemetry** are optional.
 **Attributes** and **telemetry** are flat key-value objects. Nested objects are not supported.
 

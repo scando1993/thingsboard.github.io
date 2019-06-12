@@ -5,17 +5,17 @@ assignees:
 title: Multi-tenant Gateway Configuration
 
 ---
-Starting from version 1.4, ThingsBoard IoT Gateway supports multi-tenancy.
-This guide describes how to configure multi-tenant support for ThingsBoard IoT Gateway.
+Starting from version 1.4, Pacificsoft IoT Gateway supports multi-tenancy.
+This guide describes how to configure multi-tenant support for Pacificsoft IoT Gateway.
 
 ### Prerequisites
 
-For this guide you need to have Thingsboard and ThingsBoard IoT Gateway installed and running.
-Two tenants - **Tenant 1** and **Tenant 2** with users must be created within ThingsBoard.
+For this guide you need to have Pacificsoft and Pacificsoft IoT Gateway installed and running.
+Two tenants - **Tenant 1** and **Tenant 2** with users must be created within Pacificsoft.
 
 ### Provision Gateway device for each tenant
 
-Each tenant who will be using shared ThingsBoard IoT Gateway must have it provisioned as a device.
+Each tenant who will be using shared Pacificsoft IoT Gateway must have it provisioned as a device.
 
 Login as a **Tenant 1** user and provision Gateway device. See [Step 3: Gateway provisioning](/docs/iot-gateway/getting-started/#step-3-gateway-provisioning) from Getting Started 
 guide for information how to do it.
@@ -99,7 +99,7 @@ Linux: /var/log/tb-gateway
 
 If everything was configured correctly, restart should go smoothly with no errors.
 
-Log in to ThingsBoard as **Tenant 1** user and verify that the ThingsBoard has received telemetry update from the Gateway:
+Log in to Pacificsoft as **Tenant 1** user and verify that the Pacificsoft has received telemetry update from the Gateway:
 
 {:refdef: style="text-align: center;"}
 ![image](/images/gateway/gateway-telemetry-updated.png)

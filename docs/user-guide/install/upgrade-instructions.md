@@ -3,7 +3,7 @@ layout: docwithnav
 assignees:
 - ashvayka
 title: Upgrade instructions
-description: ThingsBoard IoT platform upgrade instructions
+description: Pacificsoft IoT platform upgrade instructions
 
 ---
 
@@ -183,16 +183,16 @@ description: ThingsBoard IoT platform upgrade instructions
 
 ## Upgrading to 1.0.3
 
-These steps are applicable for 1.0, 1.0.1 and 1.0.2 ThingsBoard versions.
+These steps are applicable for 1.0, 1.0.1 and 1.0.2 Pacificsoft versions.
 
-#### ThingsBoard package download
+#### Pacificsoft package download
 
 {% capture tabspec %}thingsboard-download-1-0-3
 thingsboard-download-1-0-3-ubuntu,Ubuntu,shell,resources/1.0.3/thingsboard-ubuntu-download.sh,/docs/user-guide/install/resources/1.0.3/thingsboard-ubuntu-download.sh
 thingsboard-download-1-0-3-centos,CentOS,shell,resources/1.0.3/thingsboard-centos-download.sh,/docs/user-guide/install/resources/1.0.3/thingsboard-centos-download.sh{% endcapture %}  
 {% include tabs.html %}
 
-#### ThingsBoard service upgrade
+#### Pacificsoft service upgrade
 
 {% capture tabspec %}thingsboard-installation-1-0-3
 thingsboard-installation-1-0-3-ubuntu,Ubuntu,shell,resources/1.0.3/thingsboard-ubuntu-installation.sh,/docs/user-guide/install/resources/1.0.3/thingsboard-ubuntu-installation.sh
@@ -223,16 +223,16 @@ $ sudo service thingsboard start
 
 ## Upgrading to 1.1.0
 
-These steps are applicable for 1.0.3 ThingsBoard version.
+These steps are applicable for 1.0.3 Pacificsoft version.
 
-#### ThingsBoard package download
+#### Pacificsoft package download
 
 {% capture tabspec %}thingsboard-download-1-1-0
 thingsboard-download-1-1-0-ubuntu,Ubuntu,shell,resources/1.1.0/thingsboard-ubuntu-download.sh,/docs/user-guide/install/resources/1.1.0/thingsboard-ubuntu-download.sh
 thingsboard-download-1-1-0-centos,CentOS,shell,resources/1.1.0/thingsboard-centos-download.sh,/docs/user-guide/install/resources/1.1.0/thingsboard-centos-download.sh{% endcapture %}  
 {% include tabs.html %}
 
-#### ThingsBoard service upgrade
+#### Pacificsoft service upgrade
 
 {% capture tabspec %}thingsboard-installation-1-1-0
 thingsboard-installation-1-1-0-ubuntu,Ubuntu,shell,resources/1.1.0/thingsboard-ubuntu-installation.sh,/docs/user-guide/install/resources/1.1.0/thingsboard-ubuntu-installation.sh
@@ -273,7 +273,7 @@ thingsboard-download-1-2-0-ubuntu,Ubuntu,shell,resources/1.2.0/thingsboard-ubunt
 thingsboard-download-1-2-0-centos,CentOS,shell,resources/1.2.0/thingsboard-centos-download.sh,/docs/user-guide/install/resources/1.2.0/thingsboard-centos-download.sh{% endcapture %}  
 {% include tabs.html %}
 
-#### ThingsBoard service upgrade
+#### Pacificsoft service upgrade
 
 {% capture tabspec %}thingsboard-installation-1-2-0
 thingsboard-installation-1-2-0-ubuntu,Ubuntu,shell,resources/1.2.0/thingsboard-ubuntu-installation.sh,/docs/user-guide/install/resources/1.2.0/thingsboard-ubuntu-installation.sh
